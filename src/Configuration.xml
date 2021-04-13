@@ -183,6 +183,7 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<CommonModule>РаботаСHttp</CommonModule>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
