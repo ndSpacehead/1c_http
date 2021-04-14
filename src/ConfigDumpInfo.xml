@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.10">
 	<ConfigVersions>
-		<Metadata name="CommonModule.РаботаСHttp" id="ac103767-3b16-444c-a6fd-107de0020526" configVersion="a5200fc51e1032438fb64cae7e2316de00000000"/>
-		<Metadata name="CommonModule.РаботаСHttp.Module" id="ac103767-3b16-444c-a6fd-107de0020526.0" configVersion="1ad30d4eb7ff9c4490aa17f0c3827e6700000000"/>
-		<Metadata name="Configuration.Конфигурация" id="48891051-e028-4e35-af3e-79dc57d178e0" configVersion="a1c82414f552604ebea5b07c28d958d400000000"/>
+		<Metadata name="CommonModule.РаботаСHttp" id="ac103767-3b16-444c-a6fd-107de0020526" configVersion="0f440b291145ee49b5fb3ec743d2a28600000000"/>
+		<Metadata name="CommonModule.РаботаСHttp.Module" id="ac103767-3b16-444c-a6fd-107de0020526.0" configVersion="f643070866e4cf4ba11fb7b5e0cff80c00000000"/>
+		<Metadata name="Configuration.Конфигурация" id="48891051-e028-4e35-af3e-79dc57d178e0" configVersion="f1583df6fc07db47a48e777ec43ab30c00000000"/>
+		<Metadata name="DataProcessor.КонсольРаботыСHttp" id="009ccf0f-85c3-4b5b-a5ff-eedce8d046c7" configVersion="6a377b6f77b5484684576f0b6a96987700000000"/>
+		<Metadata name="DataProcessor.КонсольРаботыСHttp.Form.Форма" id="fb7cf040-b38e-47f3-95a9-08d07b6f009a" configVersion="fa7d50b53ac3fa4aa3e01e5714d40f8c00000000"/>
+		<Metadata name="DataProcessor.КонсольРаботыСHttp.Form.Форма.Form" id="fb7cf040-b38e-47f3-95a9-08d07b6f009a.0" configVersion="7a7057a0a7187b49b2596aab9b68291c00000000"/>
 		<Metadata name="Language.Русский" id="55e212ce-13b0-4b15-af32-06df26b50926" configVersion="edb6fc807b17da4ab6d718f996a1127c00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
