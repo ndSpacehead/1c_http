@@ -184,6 +184,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<CommonModule>РаботаСHttp</CommonModule>
+			<DataProcessor>КонсольРаботыСHttp</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
