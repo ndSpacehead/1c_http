@@ -136,62 +136,100 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<Table name="ПараметрыЗапроса" id="8">
-							<Representation>List</Representation>
-							<TitleLocation>Top</TitleLocation>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<DataPath>ПараметрыЗапроса</DataPath>
+						<UsualGroup name="ГруппаПараметрыЗапроса" id="90">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Параметры запроса</v8:content>
+									<v8:content>Параметры:</v8:content>
 								</v8:item>
 							</Title>
-							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ПараметрыЗапросаКонтекстноеМеню" id="9"/>
-							<AutoCommandBar name="ПараметрыЗапросаКоманднаяПанель" id="10"/>
-							<ExtendedTooltip name="ПараметрыЗапросаРасширеннаяПодсказка" id="11"/>
-							<SearchStringAddition name="ПараметрыЗапросаСтрокаПоиска" id="12">
-								<AdditionSource>
-									<Item>ПараметрыЗапроса</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ПараметрыЗапросаСтрокаПоискаКонтекстноеМеню" id="13"/>
-								<ExtendedTooltip name="ПараметрыЗапросаСтрокаПоискаРасширеннаяПодсказка" id="14"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="ПараметрыЗапросаСостояниеПросмотра" id="15">
-								<AdditionSource>
-									<Item>ПараметрыЗапроса</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ПараметрыЗапросаСостояниеПросмотраКонтекстноеМеню" id="16"/>
-								<ExtendedTooltip name="ПараметрыЗапросаСостояниеПросмотраРасширеннаяПодсказка" id="17"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="ПараметрыЗапросаУправлениеПоиском" id="18">
-								<AdditionSource>
-									<Item>ПараметрыЗапроса</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="ПараметрыЗапросаУправлениеПоискомКонтекстноеМеню" id="19"/>
-								<ExtendedTooltip name="ПараметрыЗапросаУправлениеПоискомРасширеннаяПодсказка" id="20"/>
-							</SearchControlAddition>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры запроса</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаПараметрыЗапросаРасширеннаяПодсказка" id="91"/>
 							<ChildItems>
-								<InputField name="ПараметрыЗапросаКлюч" id="21">
-									<DataPath>ПараметрыЗапроса.Ключ</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ПараметрыЗапросаКлючКонтекстноеМеню" id="22"/>
-									<ExtendedTooltip name="ПараметрыЗапросаКлючРасширеннаяПодсказка" id="23"/>
-								</InputField>
-								<InputField name="ПараметрыЗапросаЗначение" id="24">
-									<DataPath>ПараметрыЗапроса.Значение</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ПараметрыЗапросаЗначениеКонтекстноеМеню" id="25"/>
-									<ExtendedTooltip name="ПараметрыЗапросаЗначениеРасширеннаяПодсказка" id="26"/>
-								</InputField>
+								<CheckBoxField name="МножественностьПараметровЗапроса" id="92">
+									<DataPath>МножественностьПараметровЗапроса</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя параметра может повторяться</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="МножественностьПараметровЗапросаКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="МножественностьПараметровЗапросаРасширеннаяПодсказка" id="94"/>
+								</CheckBoxField>
+								<Table name="ПараметрыЗапроса" id="8">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>ПараметрыЗапроса</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры запроса</v8:content>
+										</v8:item>
+									</Title>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ПараметрыЗапросаКонтекстноеМеню" id="9"/>
+									<AutoCommandBar name="ПараметрыЗапросаКоманднаяПанель" id="10"/>
+									<ExtendedTooltip name="ПараметрыЗапросаРасширеннаяПодсказка" id="11"/>
+									<SearchStringAddition name="ПараметрыЗапросаСтрокаПоиска" id="12">
+										<AdditionSource>
+											<Item>ПараметрыЗапроса</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПараметрыЗапросаСтрокаПоискаКонтекстноеМеню" id="13"/>
+										<ExtendedTooltip name="ПараметрыЗапросаСтрокаПоискаРасширеннаяПодсказка" id="14"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПараметрыЗапросаСостояниеПросмотра" id="15">
+										<AdditionSource>
+											<Item>ПараметрыЗапроса</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПараметрыЗапросаСостояниеПросмотраКонтекстноеМеню" id="16"/>
+										<ExtendedTooltip name="ПараметрыЗапросаСостояниеПросмотраРасширеннаяПодсказка" id="17"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПараметрыЗапросаУправлениеПоиском" id="18">
+										<AdditionSource>
+											<Item>ПараметрыЗапроса</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПараметрыЗапросаУправлениеПоискомКонтекстноеМеню" id="19"/>
+										<ExtendedTooltip name="ПараметрыЗапросаУправлениеПоискомРасширеннаяПодсказка" id="20"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<CheckBoxField name="ПараметрыЗапросаАктивно" id="87">
+											<DataPath>ПараметрыЗапроса.Активно</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>Directly</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПараметрыЗапросаАктивноКонтекстноеМеню" id="88"/>
+											<ExtendedTooltip name="ПараметрыЗапросаАктивноРасширеннаяПодсказка" id="89"/>
+										</CheckBoxField>
+										<InputField name="ПараметрыЗапросаКлюч" id="21">
+											<DataPath>ПараметрыЗапроса.Ключ</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПараметрыЗапросаКлючКонтекстноеМеню" id="22"/>
+											<ExtendedTooltip name="ПараметрыЗапросаКлючРасширеннаяПодсказка" id="23"/>
+										</InputField>
+										<InputField name="ПараметрыЗапросаЗначение" id="24">
+											<DataPath>ПараметрыЗапроса.Значение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ПараметрыЗапросаЗначениеКонтекстноеМеню" id="25"/>
+											<ExtendedTooltip name="ПараметрыЗапросаЗначениеРасширеннаяПодсказка" id="26"/>
+										</InputField>
+									</ChildItems>
+								</Table>
 							</ChildItems>
-						</Table>
+						</UsualGroup>
 					</ChildItems>
 				</Page>
 				<Page name="РазделОтвет" id="27">
@@ -238,7 +276,6 @@
 											<v8:content>Заголовки:</v8:content>
 										</v8:item>
 									</Title>
-									<TitleTextColor>style:ButtonTextColor</TitleTextColor>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -332,25 +369,43 @@
 										</Table>
 									</ChildItems>
 								</UsualGroup>
-								<InputField name="Ответ" id="29">
-									<DataPath>Ответ</DataPath>
+								<UsualGroup name="ГруппаТело" id="95">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Тело</v8:content>
+											<v8:content>Тело:</v8:content>
 										</v8:item>
 									</Title>
-									<TitleLocation>Top</TitleLocation>
-									<AutoMaxWidth>false</AutoMaxWidth>
-									<AutoMaxHeight>false</AutoMaxHeight>
-									<HorizontalStretch>true</HorizontalStretch>
-									<VerticalStretch>true</VerticalStretch>
-									<MultiLine>true</MultiLine>
-									<ExtendedEdit>true</ExtendedEdit>
-									<TextEdit>false</TextEdit>
-									<ContextMenu name="ОтветКонтекстноеМеню" id="30"/>
-									<ExtendedTooltip name="ОтветРасширеннаяПодсказка" id="31"/>
-								</InputField>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа тело</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаТелоРасширеннаяПодсказка" id="96"/>
+									<ChildItems>
+										<InputField name="Ответ" id="29">
+											<DataPath>Ответ</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тело</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<MultiLine>true</MultiLine>
+											<ExtendedEdit>true</ExtendedEdit>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ОтветКонтекстноеМеню" id="30"/>
+											<ExtendedTooltip name="ОтветРасширеннаяПодсказка" id="31"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -422,6 +477,17 @@
 							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Активно" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Активно</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
@@ -527,6 +593,17 @@
 					<v8:Length>8</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МножественностьПараметровЗапроса" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Множественность параметров запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
