@@ -148,74 +148,107 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаЗаголовкиТелоРасширеннаяПодсказка" id="57"/>
 							<ChildItems>
-								<Table name="ЗаголовкиОтвета" id="58">
-									<Representation>List</Representation>
-									<TitleLocation>Top</TitleLocation>
-									<ChangeRowSet>false</ChangeRowSet>
-									<ChangeRowOrder>false</ChangeRowOrder>
-									<AutoInsertNewRow>true</AutoInsertNewRow>
-									<EnableStartDrag>true</EnableStartDrag>
-									<EnableDrag>true</EnableDrag>
-									<DataPath>ЗаголовкиОтвета</DataPath>
+								<UsualGroup name="ГруппаЗаголовкиОтвета" id="77">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Заголовки</v8:content>
+											<v8:content>Заголовки:</v8:content>
 										</v8:item>
 									</Title>
-									<RowFilter xsi:nil="true"/>
-									<ContextMenu name="ЗаголовкиОтветаКонтекстноеМеню" id="59"/>
-									<AutoCommandBar name="ЗаголовкиОтветаКоманднаяПанель" id="60">
-										<Autofill>false</Autofill>
-									</AutoCommandBar>
-									<ExtendedTooltip name="ЗаголовкиОтветаРасширеннаяПодсказка" id="61"/>
-									<SearchStringAddition name="ЗаголовкиОтветаСтрокаПоиска" id="62">
-										<AdditionSource>
-											<Item>ЗаголовкиОтвета</Item>
-											<Type>SearchStringRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="ЗаголовкиОтветаСтрокаПоискаКонтекстноеМеню" id="63"/>
-										<ExtendedTooltip name="ЗаголовкиОтветаСтрокаПоискаРасширеннаяПодсказка" id="64"/>
-									</SearchStringAddition>
-									<ViewStatusAddition name="ЗаголовкиОтветаСостояниеПросмотра" id="65">
-										<AdditionSource>
-											<Item>ЗаголовкиОтвета</Item>
-											<Type>ViewStatusRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="ЗаголовкиОтветаСостояниеПросмотраКонтекстноеМеню" id="66"/>
-										<ExtendedTooltip name="ЗаголовкиОтветаСостояниеПросмотраРасширеннаяПодсказка" id="67"/>
-									</ViewStatusAddition>
-									<SearchControlAddition name="ЗаголовкиОтветаУправлениеПоиском" id="68">
-										<AdditionSource>
-											<Item>ЗаголовкиОтвета</Item>
-											<Type>SearchControl</Type>
-										</AdditionSource>
-										<ContextMenu name="ЗаголовкиОтветаУправлениеПоискомКонтекстноеМеню" id="69"/>
-										<ExtendedTooltip name="ЗаголовкиОтветаУправлениеПоискомРасширеннаяПодсказка" id="70"/>
-									</SearchControlAddition>
+									<TitleTextColor>style:ButtonTextColor</TitleTextColor>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа заголовки ответа</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаЗаголовкиОтветаРасширеннаяПодсказка" id="78"/>
 									<ChildItems>
-										<InputField name="ЗаголовкиОтветаКлюч" id="71">
-											<DataPath>ЗаголовкиОтвета.Ключ</DataPath>
+										<InputField name="ЗначениеЗаголовкаОтвета" id="79">
+											<DataPath>ЗначениеЗаголовкаОтвета</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MultiLine>true</MultiLine>
+											<ExtendedEdit>true</ExtendedEdit>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ЗначениеЗаголовкаОтветаКонтекстноеМеню" id="80"/>
+											<ExtendedTooltip name="ЗначениеЗаголовкаОтветаРасширеннаяПодсказка" id="81"/>
+										</InputField>
+										<Table name="ЗаголовкиОтвета" id="58">
+											<Representation>List</Representation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>ЗаголовкиОтвета</DataPath>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Имя</v8:content>
+													<v8:content>Заголовки</v8:content>
 												</v8:item>
 											</Title>
-											<EditMode>EnterOnInput</EditMode>
-											<TextEdit>false</TextEdit>
-											<ContextMenu name="ЗаголовкиОтветаКлючКонтекстноеМеню" id="72"/>
-											<ExtendedTooltip name="ЗаголовкиОтветаКлючРасширеннаяПодсказка" id="73"/>
-										</InputField>
-										<InputField name="ЗаголовкиОтветаЗначение" id="74">
-											<DataPath>ЗаголовкиОтвета.Значение</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<TextEdit>false</TextEdit>
-											<ContextMenu name="ЗаголовкиОтветаЗначениеКонтекстноеМеню" id="75"/>
-											<ExtendedTooltip name="ЗаголовкиОтветаЗначениеРасширеннаяПодсказка" id="76"/>
-										</InputField>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ЗаголовкиОтветаКонтекстноеМеню" id="59"/>
+											<AutoCommandBar name="ЗаголовкиОтветаКоманднаяПанель" id="60">
+												<Autofill>false</Autofill>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ЗаголовкиОтветаРасширеннаяПодсказка" id="61"/>
+											<SearchStringAddition name="ЗаголовкиОтветаСтрокаПоиска" id="62">
+												<AdditionSource>
+													<Item>ЗаголовкиОтвета</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ЗаголовкиОтветаСтрокаПоискаКонтекстноеМеню" id="63"/>
+												<ExtendedTooltip name="ЗаголовкиОтветаСтрокаПоискаРасширеннаяПодсказка" id="64"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ЗаголовкиОтветаСостояниеПросмотра" id="65">
+												<AdditionSource>
+													<Item>ЗаголовкиОтвета</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ЗаголовкиОтветаСостояниеПросмотраКонтекстноеМеню" id="66"/>
+												<ExtendedTooltip name="ЗаголовкиОтветаСостояниеПросмотраРасширеннаяПодсказка" id="67"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ЗаголовкиОтветаУправлениеПоиском" id="68">
+												<AdditionSource>
+													<Item>ЗаголовкиОтвета</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ЗаголовкиОтветаУправлениеПоискомКонтекстноеМеню" id="69"/>
+												<ExtendedTooltip name="ЗаголовкиОтветаУправлениеПоискомРасширеннаяПодсказка" id="70"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateRow">ЗаголовкиОтветаПриАктивизацииСтроки</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="ЗаголовкиОтветаКлюч" id="71">
+													<DataPath>ЗаголовкиОтвета.Ключ</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Имя</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<TextEdit>false</TextEdit>
+													<ContextMenu name="ЗаголовкиОтветаКлючКонтекстноеМеню" id="72"/>
+													<ExtendedTooltip name="ЗаголовкиОтветаКлючРасширеннаяПодсказка" id="73"/>
+												</InputField>
+												<InputField name="ЗаголовкиОтветаЗначение" id="74">
+													<DataPath>ЗаголовкиОтвета.Значение</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<TextEdit>false</TextEdit>
+													<ContextMenu name="ЗаголовкиОтветаЗначениеКонтекстноеМеню" id="75"/>
+													<ExtendedTooltip name="ЗаголовкиОтветаЗначениеРасширеннаяПодсказка" id="76"/>
+												</InputField>
+											</ChildItems>
+										</Table>
 									</ChildItems>
-								</Table>
+								</UsualGroup>
 								<InputField name="Ответ" id="29">
 									<DataPath>Ответ</DataPath>
 									<Title>
@@ -379,6 +412,21 @@
 					</Type>
 				</Column>
 			</Columns>
+		</Attribute>
+		<Attribute name="ЗначениеЗаголовкаОтвета" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение заголовка ответа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
