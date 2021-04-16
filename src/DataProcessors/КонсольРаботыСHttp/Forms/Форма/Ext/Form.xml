@@ -123,6 +123,7 @@
 								</InputField>
 								<InputField name="ИдентификаторРесурса" id="1">
 									<DataPath>ИдентификаторРесурса</DataPath>
+									<DefaultItem>true</DefaultItem>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -242,6 +243,147 @@
 												</InputField>
 											</ChildItems>
 										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="РазделАвторизация" id="125">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Авторизация</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Раздел авторизация</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="РазделАвторизацияРасширеннаяПодсказка" id="126"/>
+									<ChildItems>
+										<InputField name="ТипАвторизации" id="127">
+											<DataPath>ТипАвторизации</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тип</v8:content>
+												</v8:item>
+											</Title>
+											<Width>15</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<DropListButton>true</DropListButton>
+											<ChoiceButton>false</ChoiceButton>
+											<ClearButton>false</ClearButton>
+											<SpinButton>false</SpinButton>
+											<OpenButton>false</OpenButton>
+											<CreateButton>false</CreateButton>
+											<ChooseType>false</ChooseType>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Без авторизации</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Без авторизации</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Basic</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Basic</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>NTLM</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">NTLM</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипАвторизацииКонтекстноеМеню" id="128"/>
+											<ExtendedTooltip name="ТипАвторизацииРасширеннаяПодсказка" id="129"/>
+											<Events>
+												<Event name="OnChange">ТипАвторизацииПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="ПользовательАвторизации" id="130">
+											<DataPath>ПользовательАвторизации</DataPath>
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Логин</v8:content>
+												</v8:item>
+											</Title>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<VerticalStretch>false</VerticalStretch>
+											<ContextMenu name="ПользовательАвторизацииКонтекстноеМеню" id="131"/>
+											<ExtendedTooltip name="ПользовательАвторизацииРасширеннаяПодсказка" id="132"/>
+										</InputField>
+										<UsualGroup name="ГруппаПарольАвторизации" id="136">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа пароль авторизации</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа пароль авторизации</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПарольАвторизацииРасширеннаяПодсказка" id="137"/>
+											<ChildItems>
+												<InputField name="ПарольАвторизации" id="133">
+													<DataPath>ПарольАвторизации</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Пароль</v8:content>
+														</v8:item>
+													</Title>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<VerticalStretch>false</VerticalStretch>
+													<PasswordMode>true</PasswordMode>
+													<ContextMenu name="ПарольАвторизацииКонтекстноеМеню" id="134"/>
+													<ExtendedTooltip name="ПарольАвторизацииРасширеннаяПодсказка" id="135"/>
+												</InputField>
+												<Button name="ПоказатьПарольАвторизации" id="138">
+													<Type>UsualButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>Form.Command.ПоказатьПарольАвторизации</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.DataSearch</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="ПоказатьПарольАвторизацииРасширеннаяПодсказка" id="139"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</Page>
 								<Page name="РазделЗаголовкиЗапроса" id="101">
@@ -753,6 +895,51 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<Attribute name="ТипАвторизации" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПользовательАвторизации" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольАвторизации" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Выполнить" id="1">
@@ -770,6 +957,21 @@
 			</ToolTip>
 			<Shortcut>F7</Shortcut>
 			<Action>ВыполнитьЗапрос</Action>
+		</Command>
+		<Command name="ПоказатьПарольАвторизации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать пароль авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать пароль авторизации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьПарольАвторизации</Action>
 		</Command>
 	</Commands>
 </Form>
