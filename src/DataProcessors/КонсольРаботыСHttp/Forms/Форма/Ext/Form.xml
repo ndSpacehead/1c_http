@@ -117,6 +117,32 @@
 												<Value xsi:type="xs:string">PUT</Value>
 											</xr:Value>
 										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>DELETE</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">DELETE</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>HEAD</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">HEAD</Value>
+											</xr:Value>
+										</xr:Item>
 									</ChoiceList>
 									<ContextMenu name="СхемаКонтекстноеМеню" id="85"/>
 									<ExtendedTooltip name="СхемаРасширеннаяПодсказка" id="86"/>
