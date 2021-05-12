@@ -50,7 +50,7 @@
 			"audio/webm"              // WebM
 		),
 		Новый ФиксированнаяСтруктура( // image - изображение
-			"gif, jpeg, pjpeg, png, svg_xml, tiff, vnd_microsoft_icon, vnd_wap_wbmp, webp",
+			"gif, jpeg, pjpeg, png, svg_xml, tiff, vnd_microsoft_icon, vnd_wap_wbmp, webp, bmp",
 			"image/gif",                // GIF(RFC 2045 и RFC 2046)
 			"image/jpeg",               // JPEG (RFC 2045 и RFC 2046)
 			"image/pjpeg",              // JPEG
@@ -59,7 +59,8 @@
 			"image/tiff",               // TIFF(RFC 3302)
 			"image/vnd.microsoft.icon", // ICO
 			"image/vnd.wap.wbmp",       // WBMP
-			"image/webp"                // WebP
+			"image/webp",               // WebP
+			"image/bmp"                 // BMP
 		),
 		Новый ФиксированнаяСтруктура( // message - сообщение
 			"http, imdn_xml, partial, rfc822",
@@ -200,4 +201,42 @@
 Функция ТипMIMEZipCompressed() Экспорт
 	Возврат РаботаСHttpПовтИсп.ТипыMIME().x.zip_compressed;
 КонецФункции
+
+Функция ТипMIMEXWWWFormUrlEncoded() Экспорт
+	Возврат РаботаСHttpПовтИсп.ТипыMIME().x.www_form_urlencoded;
+КонецФункции
+
+Функция ТипMIMEMultipartFromData() Экспорт
+	Возврат РаботаСHttpПовтИсп.ТипыMIME().multipart.form_data;
+КонецФункции
 #КонецОбласти
+
+Функция ТипыMIMEРасширенийФайлов() Экспорт
+	фРезультат = Новый Соответствие;
+	фРезультат.Вставить("jpg",  РаботаСHttpПовтИсп.ТипMIMEJPEG());
+	фРезультат.Вставить("jpeg", РаботаСHttpПовтИсп.ТипMIMEJPEG());
+	фРезультат.Вставить("png",  РаботаСHttpПовтИсп.ТипMIMEPNG());
+	фРезультат.Вставить("gif",  РаботаСHttpПовтИсп.ТипMIMEGIF());
+	фРезультат.Вставить("tiff", РаботаСHttpПовтИсп.ТипыMIME().image.tiff);
+	фРезультат.Вставить("webp", РаботаСHttpПовтИсп.ТипыMIME().image.webp);
+	фРезультат.Вставить("bmp",  РаботаСHttpПовтИсп.ТипыMIME().image.bmp);
+	фРезультат.Вставить("xls",  РаботаСHttpПовтИсп.ТипMIMEExcel());
+	фРезультат.Вставить("xlsx", РаботаСHttpПовтИсп.ТипMIMEExcel2007());
+	фРезультат.Вставить("zip",  РаботаСHttpПовтИсп.ТипMIMEZip());
+	фРезультат.Вставить("json", РаботаСHttpПовтИсп.ТипMIMEJSON());
+	фРезультат.Вставить("xml",  РаботаСHttpПовтИсп.ТипMIMETextXML());
+	фРезультат.Вставить("pdf",  РаботаСHttpПовтИсп.ТипMIMEPDF());
+	фРезультат.Вставить("mp4",  РаботаСHttpПовтИсп.ТипыMIME().video.mp4);
+	фРезультат.Вставить("webm", РаботаСHttpПовтИсп.ТипыMIME().video.webm);
+	фРезультат.Вставить("flv",  РаботаСHttpПовтИсп.ТипыMIME().video.x_flv);
+	фРезультат.Вставить("mp3",  РаботаСHttpПовтИсп.ТипыMIME().audio.mpeg);
+	фРезультат.Вставить("bat",  РаботаСHttpПовтИсп.ТипыMIME().text.cmd);
+	фРезультат.Вставить("sh",   РаботаСHttpПовтИсп.ТипыMIME().text.cmd);
+	фРезультат.Вставить("css",  РаботаСHttpПовтИсп.ТипыMIME().text.css);
+	фРезультат.Вставить("csv",  РаботаСHttpПовтИсп.ТипыMIME().text.csv);
+	фРезультат.Вставить("html", РаботаСHttpПовтИсп.ТипыMIME().text.html);
+	фРезультат.Вставить("js",   РаботаСHttpПовтИсп.ТипыMIME().text.javascript);
+	фРезультат.Вставить("php",  РаботаСHttpПовтИсп.ТипыMIME().text.php);
+	фРезультат.Вставить("md",   РаботаСHttpПовтИсп.ТипыMIME().text.markdown);
+	фРезультат.Вставить("txt",  РаботаСHttpПовтИсп.ТипыMIME().text.plain);
+КонецФункции
