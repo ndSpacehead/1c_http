@@ -197,18 +197,6 @@
 									<Shortcut>Ctrl+Q</Shortcut>
 									<ExtendedTooltip name="РазделПараметрыЗапросаРасширеннаяПодсказка" id="100"/>
 									<ChildItems>
-										<CheckBoxField name="МножественностьПараметровЗапроса" id="92">
-											<DataPath>МножественностьПараметровЗапроса</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Имя параметра может повторяться</v8:content>
-												</v8:item>
-											</Title>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="МножественностьПараметровЗапросаКонтекстноеМеню" id="93"/>
-											<ExtendedTooltip name="МножественностьПараметровЗапросаРасширеннаяПодсказка" id="94"/>
-										</CheckBoxField>
 										<Table name="ПараметрыЗапроса" id="8">
 											<Representation>List</Representation>
 											<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -860,17 +848,6 @@
 					<v8:Length>8</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="МножественностьПараметровЗапроса" id="9">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Множественность параметров запроса</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ЗаголовкиЗапроса" id="10">
