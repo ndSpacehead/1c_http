@@ -249,6 +249,9 @@
 												<ContextMenu name="ПараметрыЗапросаУправлениеПоискомКонтекстноеМеню" id="19"/>
 												<ExtendedTooltip name="ПараметрыЗапросаУправлениеПоискомРасширеннаяПодсказка" id="20"/>
 											</SearchControlAddition>
+											<Events>
+												<Event name="OnChange">ПараметрыЗапросаПриИзменении</Event>
+											</Events>
 											<ChildItems>
 												<CheckBoxField name="ПараметрыЗапросаАктивно" id="87">
 													<DataPath>ПараметрыЗапроса.Активно</DataPath>
