@@ -203,6 +203,7 @@
 			<Language>Русский</Language>
 			<CommonModule>РаботаСHttp</CommonModule>
 			<CommonModule>РаботаСHttpСлужебный</CommonModule>
+			<CommonModule>РаботаСHttpПовтИсп</CommonModule>
 			<DataProcessor>КонсольРаботыСHttp</DataProcessor>
 		</ChildObjects>
 	</Configuration>
