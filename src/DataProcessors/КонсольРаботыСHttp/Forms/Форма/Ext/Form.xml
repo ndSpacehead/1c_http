@@ -160,6 +160,9 @@
 									<VerticalStretch>false</VerticalStretch>
 									<ContextMenu name="ИдентификаторРесурсаКонтекстноеМеню" id="2"/>
 									<ExtendedTooltip name="ИдентификаторРесурсаРасширеннаяПодсказка" id="3"/>
+									<Events>
+										<Event name="OnChange">ИдентификаторРесурсаПриИзменении</Event>
+									</Events>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
