@@ -648,47 +648,47 @@
 																<Event name="Clearing">РазделительОчистка</Event>
 															</Events>
 														</InputField>
-														<Table name="ДанныеФормы" id="157">
+														<Table name="ТелоЗапросаДанныеФормы" id="157">
 															<Representation>List</Representation>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<AutoMaxHeight>false</AutoMaxHeight>
 															<AutoMaxRowsCount>false</AutoMaxRowsCount>
 															<AutoInsertNewRow>true</AutoInsertNewRow>
-															<DataPath>ДанныеФормы</DataPath>
+															<DataPath>ТелоЗапросаДанныеФормы</DataPath>
 															<RowFilter xsi:nil="true"/>
-															<ContextMenu name="ДанныеФормыКонтекстноеМеню" id="158"/>
-															<AutoCommandBar name="ДанныеФормыКоманднаяПанель" id="159"/>
-															<ExtendedTooltip name="ДанныеФормыРасширеннаяПодсказка" id="160"/>
-															<SearchStringAddition name="ДанныеФормыСтрокаПоиска" id="161">
+															<ContextMenu name="ТелоЗапросаДанныеФормыКонтекстноеМеню" id="158"/>
+															<AutoCommandBar name="ТелоЗапросаДанныеФормыКоманднаяПанель" id="159"/>
+															<ExtendedTooltip name="ТелоЗапросаДанныеФормыРасширеннаяПодсказка" id="160"/>
+															<SearchStringAddition name="ТелоЗапросаДанныеФормыСтрокаПоиска" id="161">
 																<AdditionSource>
-																	<Item>ДанныеФормы</Item>
+																	<Item>ТелоЗапросаДанныеФормы</Item>
 																	<Type>SearchStringRepresentation</Type>
 																</AdditionSource>
-																<ContextMenu name="ДанныеФормыСтрокаПоискаКонтекстноеМеню" id="162"/>
-																<ExtendedTooltip name="ДанныеФормыСтрокаПоискаРасширеннаяПодсказка" id="163"/>
+																<ContextMenu name="ТелоЗапросаДанныеФормыСтрокаПоискаКонтекстноеМеню" id="162"/>
+																<ExtendedTooltip name="ТелоЗапросаДанныеФормыСтрокаПоискаРасширеннаяПодсказка" id="163"/>
 															</SearchStringAddition>
-															<ViewStatusAddition name="ДанныеФормыСостояниеПросмотра" id="164">
+															<ViewStatusAddition name="ТелоЗапросаДанныеФормыСостояниеПросмотра" id="164">
 																<AdditionSource>
-																	<Item>ДанныеФормы</Item>
+																	<Item>ТелоЗапросаДанныеФормы</Item>
 																	<Type>ViewStatusRepresentation</Type>
 																</AdditionSource>
-																<ContextMenu name="ДанныеФормыСостояниеПросмотраКонтекстноеМеню" id="165"/>
-																<ExtendedTooltip name="ДанныеФормыСостояниеПросмотраРасширеннаяПодсказка" id="166"/>
+																<ContextMenu name="ТелоЗапросаДанныеФормыСостояниеПросмотраКонтекстноеМеню" id="165"/>
+																<ExtendedTooltip name="ТелоЗапросаДанныеФормыСостояниеПросмотраРасширеннаяПодсказка" id="166"/>
 															</ViewStatusAddition>
-															<SearchControlAddition name="ДанныеФормыУправлениеПоиском" id="167">
+															<SearchControlAddition name="ТелоЗапросаДанныеФормыУправлениеПоиском" id="167">
 																<AdditionSource>
-																	<Item>ДанныеФормы</Item>
+																	<Item>ТелоЗапросаДанныеФормы</Item>
 																	<Type>SearchControl</Type>
 																</AdditionSource>
-																<ContextMenu name="ДанныеФормыУправлениеПоискомКонтекстноеМеню" id="168"/>
-																<ExtendedTooltip name="ДанныеФормыУправлениеПоискомРасширеннаяПодсказка" id="169"/>
+																<ContextMenu name="ТелоЗапросаДанныеФормыУправлениеПоискомКонтекстноеМеню" id="168"/>
+																<ExtendedTooltip name="ТелоЗапросаДанныеФормыУправлениеПоискомРасширеннаяПодсказка" id="169"/>
 															</SearchControlAddition>
 															<Events>
 																<Event name="OnStartEdit">ДанныеФормыПриНачалеРедактирования</Event>
 															</Events>
 															<ChildItems>
 																<CheckBoxField name="ДанныеФормыАктивно" id="170">
-																	<DataPath>ДанныеФормы.Активно</DataPath>
+																	<DataPath>ТелоЗапросаДанныеФормы.Активно</DataPath>
 																	<TitleLocation>None</TitleLocation>
 																	<EditMode>Directly</EditMode>
 																	<CheckBoxType>Auto</CheckBoxType>
@@ -696,7 +696,7 @@
 																	<ExtendedTooltip name="ДанныеФормыАктивноРасширеннаяПодсказка" id="172"/>
 																</CheckBoxField>
 																<InputField name="ДанныеФормыКлюч" id="176">
-																	<DataPath>ДанныеФормы.Ключ</DataPath>
+																	<DataPath>ТелоЗапросаДанныеФормы.Ключ</DataPath>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -715,7 +715,7 @@
 																	<ExtendedTooltip name="ДанныеФормыКлючРасширеннаяПодсказка" id="178"/>
 																</InputField>
 																<InputField name="ДанныеФормыТип" id="173">
-																	<DataPath>ДанныеФормы.Тип</DataPath>
+																	<DataPath>ТелоЗапросаДанныеФормы.Тип</DataPath>
 																	<EditMode>EnterOnInput</EditMode>
 																	<Width>9</Width>
 																	<AutoMaxWidth>false</AutoMaxWidth>
@@ -761,7 +761,7 @@
 																	<ExtendedTooltip name="ДанныеФормыТипРасширеннаяПодсказка" id="175"/>
 																</InputField>
 																<InputField name="ДанныеФормыЗначение" id="179">
-																	<DataPath>ДанныеФормы.Значение</DataPath>
+																	<DataPath>ТелоЗапросаДанныеФормы.Значение</DataPath>
 																	<EditMode>EnterOnInput</EditMode>
 																	<DropListButton>false</DropListButton>
 																	<ChoiceButton>true</ChoiceButton>
@@ -897,8 +897,8 @@
 													</ToolTip>
 													<ExtendedTooltip name="ТипыТелаЗапросаДвоичныеДанныеРасширеннаяПодсказка" id="183"/>
 													<ChildItems>
-														<InputField name="ФайлТелаЗапроса" id="184">
-															<DataPath>ФайлТелаЗапроса</DataPath>
+														<InputField name="ТелоЗапросаФайл" id="184">
+															<DataPath>ТелоЗапросаФайл</DataPath>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -915,10 +915,10 @@
 															<OpenButton>false</OpenButton>
 															<CreateButton>false</CreateButton>
 															<AutoMarkIncomplete>true</AutoMarkIncomplete>
-															<ContextMenu name="ФайлТелаЗапросаКонтекстноеМеню" id="185"/>
-															<ExtendedTooltip name="ФайлТелаЗапросаРасширеннаяПодсказка" id="186"/>
+															<ContextMenu name="ТелоЗапросаФайлКонтекстноеМеню" id="185"/>
+															<ExtendedTooltip name="ТелоЗапросаФайлРасширеннаяПодсказка" id="186"/>
 															<Events>
-																<Event name="StartChoice">ФайлТелаЗапросаНачалоВыбора</Event>
+																<Event name="StartChoice">ТелоЗапросаФайлНачалоВыбора</Event>
 															</Events>
 														</InputField>
 													</ChildItems>
@@ -1438,11 +1438,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ДанныеФормы" id="16">
+		<Attribute name="ТелоЗапросаДанныеФормы" id="16">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Данные формы</v8:content>
+					<v8:content>Тело запроса данные формы</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -1507,11 +1507,11 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="ФайлТелаЗапроса" id="17">
+		<Attribute name="ТелоЗапросаФайл" id="17">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Файл тела запроса</v8:content>
+					<v8:content>Тело запроса файл</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
