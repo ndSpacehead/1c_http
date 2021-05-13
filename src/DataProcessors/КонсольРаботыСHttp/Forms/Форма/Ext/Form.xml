@@ -696,13 +696,16 @@
 																	<DataPath>ДанныеФормы.Значение</DataPath>
 																	<EditMode>EnterOnInput</EditMode>
 																	<DropListButton>false</DropListButton>
-																	<ChoiceButton>false</ChoiceButton>
+																	<ChoiceButton>true</ChoiceButton>
 																	<ClearButton>false</ClearButton>
 																	<SpinButton>false</SpinButton>
 																	<OpenButton>false</OpenButton>
 																	<CreateButton>false</CreateButton>
 																	<ContextMenu name="ДанныеФормыЗначениеКонтекстноеМеню" id="180"/>
 																	<ExtendedTooltip name="ДанныеФормыЗначениеРасширеннаяПодсказка" id="181"/>
+																	<Events>
+																		<Event name="StartChoice">ДанныеФормыЗначениеНачалоВыбора</Event>
+																	</Events>
 																</InputField>
 															</ChildItems>
 														</Table>
@@ -841,6 +844,9 @@
 															<CreateButton>false</CreateButton>
 															<ContextMenu name="ФайлТелаЗапросаКонтекстноеМеню" id="185"/>
 															<ExtendedTooltip name="ФайлТелаЗапросаРасширеннаяПодсказка" id="186"/>
+															<Events>
+																<Event name="StartChoice">ФайлТелаЗапросаНачалоВыбора</Event>
+															</Events>
 														</InputField>
 													</ChildItems>
 												</Page>
