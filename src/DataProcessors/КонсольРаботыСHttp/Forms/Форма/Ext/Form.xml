@@ -483,6 +483,361 @@
 										</Table>
 									</ChildItems>
 								</Page>
+								<Page name="РазделТелоЗапроса" id="140">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тело</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Раздел тело запроса</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="РазделТелоЗапросаРасширеннаяПодсказка" id="141"/>
+									<ChildItems>
+										<RadioButtonField name="ТипТелаЗапроса" id="145">
+											<DataPath>ТипТелаЗапроса</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Отсутствует</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">none</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Данные формы</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">form-data</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Как есть</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">raw</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Файл</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">binary</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипТелаЗапросаКонтекстноеМеню" id="146"/>
+											<ExtendedTooltip name="ТипТелаЗапросаРасширеннаяПодсказка" id="147"/>
+										</RadioButtonField>
+										<Pages name="ГруппаТипыТелаЗапроса" id="148">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа типы тела запроса</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа типы тела запроса</v8:content>
+												</v8:item>
+											</ToolTip>
+											<PagesRepresentation>None</PagesRepresentation>
+											<ExtendedTooltip name="ГруппаТипыТелаЗапросаРасширеннаяПодсказка" id="149"/>
+											<ChildItems>
+												<Page name="ТипыТелаЗапросаДанныеФормы" id="150">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Данные формы</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Типы тела запроса данные формы</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ТипыТелаЗапросаДанныеФормыРасширеннаяПодсказка" id="151"/>
+													<ChildItems>
+														<Table name="ДанныеФормы" id="157">
+															<Representation>List</Representation>
+															<AutoMaxHeight>false</AutoMaxHeight>
+															<AutoMaxRowsCount>false</AutoMaxRowsCount>
+															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<EnableStartDrag>true</EnableStartDrag>
+															<EnableDrag>true</EnableDrag>
+															<DataPath>ДанныеФормы</DataPath>
+															<RowFilter xsi:nil="true"/>
+															<ContextMenu name="ДанныеФормыКонтекстноеМеню" id="158"/>
+															<AutoCommandBar name="ДанныеФормыКоманднаяПанель" id="159"/>
+															<ExtendedTooltip name="ДанныеФормыРасширеннаяПодсказка" id="160"/>
+															<SearchStringAddition name="ДанныеФормыСтрокаПоиска" id="161">
+																<AdditionSource>
+																	<Item>ДанныеФормы</Item>
+																	<Type>SearchStringRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="ДанныеФормыСтрокаПоискаКонтекстноеМеню" id="162"/>
+																<ExtendedTooltip name="ДанныеФормыСтрокаПоискаРасширеннаяПодсказка" id="163"/>
+															</SearchStringAddition>
+															<ViewStatusAddition name="ДанныеФормыСостояниеПросмотра" id="164">
+																<AdditionSource>
+																	<Item>ДанныеФормы</Item>
+																	<Type>ViewStatusRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="ДанныеФормыСостояниеПросмотраКонтекстноеМеню" id="165"/>
+																<ExtendedTooltip name="ДанныеФормыСостояниеПросмотраРасширеннаяПодсказка" id="166"/>
+															</ViewStatusAddition>
+															<SearchControlAddition name="ДанныеФормыУправлениеПоиском" id="167">
+																<AdditionSource>
+																	<Item>ДанныеФормы</Item>
+																	<Type>SearchControl</Type>
+																</AdditionSource>
+																<ContextMenu name="ДанныеФормыУправлениеПоискомКонтекстноеМеню" id="168"/>
+																<ExtendedTooltip name="ДанныеФормыУправлениеПоискомРасширеннаяПодсказка" id="169"/>
+															</SearchControlAddition>
+															<ChildItems>
+																<CheckBoxField name="ДанныеФормыАктивно" id="170">
+																	<DataPath>ДанныеФормы.Активно</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<EditMode>Directly</EditMode>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ДанныеФормыАктивноКонтекстноеМеню" id="171"/>
+																	<ExtendedTooltip name="ДанныеФормыАктивноРасширеннаяПодсказка" id="172"/>
+																</CheckBoxField>
+																<InputField name="ДанныеФормыКлюч" id="176">
+																	<DataPath>ДанныеФормы.Ключ</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ДанныеФормыКлючКонтекстноеМеню" id="177"/>
+																	<ExtendedTooltip name="ДанныеФормыКлючРасширеннаяПодсказка" id="178"/>
+																</InputField>
+																<InputField name="ДанныеФормыТип" id="173">
+																	<DataPath>ДанныеФормы.Тип</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<DropListButton>true</DropListButton>
+																	<ChoiceButton>false</ChoiceButton>
+																	<ClearButton>false</ClearButton>
+																	<SpinButton>false</SpinButton>
+																	<OpenButton>false</OpenButton>
+																	<CreateButton>false</CreateButton>
+																	<TextEdit>false</TextEdit>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Текст</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:string">text</Value>
+																			</xr:Value>
+																		</xr:Item>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Файл</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:string">file</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ДанныеФормыТипКонтекстноеМеню" id="174"/>
+																	<ExtendedTooltip name="ДанныеФормыТипРасширеннаяПодсказка" id="175"/>
+																</InputField>
+																<InputField name="ДанныеФормыЗначение" id="179">
+																	<DataPath>ДанныеФормы.Значение</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<DropListButton>false</DropListButton>
+																	<ChoiceButton>false</ChoiceButton>
+																	<ClearButton>false</ClearButton>
+																	<SpinButton>false</SpinButton>
+																	<OpenButton>false</OpenButton>
+																	<CreateButton>false</CreateButton>
+																	<ContextMenu name="ДанныеФормыЗначениеКонтекстноеМеню" id="180"/>
+																	<ExtendedTooltip name="ДанныеФормыЗначениеРасширеннаяПодсказка" id="181"/>
+																</InputField>
+															</ChildItems>
+														</Table>
+													</ChildItems>
+												</Page>
+												<Page name="ТипыТелаЗапросаКакЕсть" id="152">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Как есть</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Типы тела запроса как есть</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ТипыТелаЗапросаКакЕстьРасширеннаяПодсказка" id="153"/>
+													<ChildItems>
+														<InputField name="ТипТелаЗапросаКакЕсть" id="154">
+															<DataPath>ТипТелаЗапросаКакЕсть</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<Width>10</Width>
+															<HorizontalStretch>false</HorizontalStretch>
+															<VerticalStretch>false</VerticalStretch>
+															<MultiLine>false</MultiLine>
+															<DropListButton>true</DropListButton>
+															<ChoiceButton>false</ChoiceButton>
+															<ClearButton>false</ClearButton>
+															<SpinButton>false</SpinButton>
+															<OpenButton>false</OpenButton>
+															<CreateButton>false</CreateButton>
+															<ChooseType>false</ChooseType>
+															<TextEdit>false</TextEdit>
+															<ChoiceList>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Текст</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xs:string">text</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>JSON</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xs:string">JSON</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>XML</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xs:string">XML</Value>
+																	</xr:Value>
+																</xr:Item>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>HTML</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xs:string">HTML</Value>
+																	</xr:Value>
+																</xr:Item>
+															</ChoiceList>
+															<ContextMenu name="ТипТелаЗапросаКакЕстьКонтекстноеМеню" id="155"/>
+															<ExtendedTooltip name="ТипТелаЗапросаКакЕстьРасширеннаяПодсказка" id="156"/>
+														</InputField>
+														<TextDocumentField name="ТелоЗапросаТекст" id="142">
+															<DataPath>ТелоЗапросаТекст</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<AutoMaxHeight>false</AutoMaxHeight>
+															<Font ref="style:NormalTextFont" faceName="Courier New" kind="StyleItem"/>
+															<ContextMenu name="ТелоЗапросаТекстКонтекстноеМеню" id="143"/>
+															<ExtendedTooltip name="ТелоЗапросаТекстРасширеннаяПодсказка" id="144"/>
+														</TextDocumentField>
+													</ChildItems>
+												</Page>
+												<Page name="ТипыТелаЗапросаДвоичныеДанные" id="182">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Файл</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Типы тела запроса двоичные данные</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ТипыТелаЗапросаДвоичныеДанныеРасширеннаяПодсказка" id="183"/>
+													<ChildItems>
+														<InputField name="ФайлТелаЗапроса" id="184">
+															<DataPath>ФайлТелаЗапроса</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Путь к файлу</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>Top</TitleLocation>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<HorizontalStretch>true</HorizontalStretch>
+															<VerticalStretch>false</VerticalStretch>
+															<DropListButton>false</DropListButton>
+															<ChoiceButton>true</ChoiceButton>
+															<ClearButton>false</ClearButton>
+															<SpinButton>false</SpinButton>
+															<OpenButton>false</OpenButton>
+															<CreateButton>false</CreateButton>
+															<ContextMenu name="ФайлТелаЗапросаКонтекстноеМеню" id="185"/>
+															<ExtendedTooltip name="ФайлТелаЗапросаРасширеннаяПодсказка" id="186"/>
+														</InputField>
+													</ChildItems>
+												</Page>
+											</ChildItems>
+										</Pages>
+									</ChildItems>
+								</Page>
 							</ChildItems>
 						</Pages>
 					</ChildItems>
@@ -945,6 +1300,135 @@
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
 					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТелоЗапросаТекст" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тело запроса текст</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипТелаЗапроса" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип тела запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипТелаЗапросаКакЕсть" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип тела запроса как есть</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеФормы" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные формы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Активно" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Активно</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Тип" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ключ" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1000</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Значение" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ФайлТелаЗапроса" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл тела запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
