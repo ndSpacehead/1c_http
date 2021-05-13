@@ -238,6 +238,7 @@
 												<ExtendedTooltip name="ПараметрыЗапросаУправлениеПоискомРасширеннаяПодсказка" id="20"/>
 											</SearchControlAddition>
 											<Events>
+												<Event name="OnStartEdit">ПараметрыЗапросаПриНачалеРедактирования</Event>
 												<Event name="OnChange">ПараметрыЗапросаПриИзменении</Event>
 											</Events>
 											<ChildItems>
@@ -456,6 +457,9 @@
 												<ContextMenu name="ЗаголовкиЗапросаУправлениеПоискомКонтекстноеМеню" id="114"/>
 												<ExtendedTooltip name="ЗаголовкиЗапросаУправлениеПоискомРасширеннаяПодсказка" id="115"/>
 											</SearchControlAddition>
+											<Events>
+												<Event name="OnStartEdit">ЗаголовкиЗапросаПриНачалеРедактирования</Event>
+											</Events>
 											<ChildItems>
 												<CheckBoxField name="ЗаголовкиЗапросаАктивно" id="116">
 													<DataPath>ЗаголовкиЗапроса.Активно</DataPath>
@@ -596,11 +600,10 @@
 													<ChildItems>
 														<Table name="ДанныеФормы" id="157">
 															<Representation>List</Representation>
+															<AutoMaxWidth>false</AutoMaxWidth>
 															<AutoMaxHeight>false</AutoMaxHeight>
 															<AutoMaxRowsCount>false</AutoMaxRowsCount>
 															<AutoInsertNewRow>true</AutoInsertNewRow>
-															<EnableStartDrag>true</EnableStartDrag>
-															<EnableDrag>true</EnableDrag>
 															<DataPath>ДанныеФормы</DataPath>
 															<RowFilter xsi:nil="true"/>
 															<ContextMenu name="ДанныеФормыКонтекстноеМеню" id="158"/>
@@ -630,6 +633,9 @@
 																<ContextMenu name="ДанныеФормыУправлениеПоискомКонтекстноеМеню" id="168"/>
 																<ExtendedTooltip name="ДанныеФормыУправлениеПоискомРасширеннаяПодсказка" id="169"/>
 															</SearchControlAddition>
+															<Events>
+																<Event name="OnStartEdit">ДанныеФормыПриНачалеРедактирования</Event>
+															</Events>
 															<ChildItems>
 																<CheckBoxField name="ДанныеФормыАктивно" id="170">
 																	<DataPath>ДанныеФормы.Активно</DataPath>
@@ -666,7 +672,7 @@
 																						<v8:content>Текст</v8:content>
 																					</v8:item>
 																				</Presentation>
-																				<Value xsi:type="xs:string">text</Value>
+																				<Value xsi:type="xs:string">Текст</Value>
 																			</xr:Value>
 																		</xr:Item>
 																		<xr:Item>
@@ -679,7 +685,7 @@
 																						<v8:content>Файл</v8:content>
 																					</v8:item>
 																				</Presentation>
-																				<Value xsi:type="xs:string">file</Value>
+																				<Value xsi:type="xs:string">Файл</Value>
 																			</xr:Value>
 																		</xr:Item>
 																	</ChoiceList>
@@ -743,7 +749,7 @@
 																				<v8:content>Текст</v8:content>
 																			</v8:item>
 																		</Presentation>
-																		<Value xsi:type="xs:string">text</Value>
+																		<Value xsi:type="xs:string">Текст</Value>
 																	</xr:Value>
 																</xr:Item>
 																<xr:Item>
