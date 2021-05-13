@@ -158,6 +158,7 @@
 									</Title>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<VerticalStretch>false</VerticalStretch>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
 									<ContextMenu name="ИдентификаторРесурсаКонтекстноеМеню" id="2"/>
 									<ExtendedTooltip name="ИдентификаторРесурсаРасширеннаяПодсказка" id="3"/>
 									<Events>
@@ -253,12 +254,24 @@
 												<InputField name="ПараметрыЗапросаКлюч" id="21">
 													<DataPath>ПараметрыЗапроса.Ключ</DataPath>
 													<EditMode>EnterOnInput</EditMode>
+													<DropListButton>false</DropListButton>
+													<ClearButton>false</ClearButton>
+													<SpinButton>false</SpinButton>
+													<OpenButton>false</OpenButton>
+													<CreateButton>false</CreateButton>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
 													<ContextMenu name="ПараметрыЗапросаКлючКонтекстноеМеню" id="22"/>
 													<ExtendedTooltip name="ПараметрыЗапросаКлючРасширеннаяПодсказка" id="23"/>
 												</InputField>
 												<InputField name="ПараметрыЗапросаЗначение" id="24">
 													<DataPath>ПараметрыЗапроса.Значение</DataPath>
 													<EditMode>EnterOnInput</EditMode>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>false</ChoiceButton>
+													<ClearButton>false</ClearButton>
+													<SpinButton>false</SpinButton>
+													<OpenButton>false</OpenButton>
+													<CreateButton>false</CreateButton>
 													<ContextMenu name="ПараметрыЗапросаЗначениеКонтекстноеМеню" id="25"/>
 													<ExtendedTooltip name="ПараметрыЗапросаЗначениеРасширеннаяПодсказка" id="26"/>
 												</InputField>
@@ -471,7 +484,20 @@
 												</CheckBoxField>
 												<InputField name="ЗаголовкиЗапросаКлюч" id="119">
 													<DataPath>ЗаголовкиЗапроса.Ключ</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Имя</v8:content>
+														</v8:item>
+													</Title>
 													<EditMode>Directly</EditMode>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>false</ChoiceButton>
+													<ClearButton>false</ClearButton>
+													<SpinButton>false</SpinButton>
+													<OpenButton>false</OpenButton>
+													<CreateButton>false</CreateButton>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
 													<ChooseType>false</ChooseType>
 													<ContextMenu name="ЗаголовкиЗапросаКлючКонтекстноеМеню" id="120"/>
 													<ExtendedTooltip name="ЗаголовкиЗапросаКлючРасширеннаяПодсказка" id="121"/>
@@ -479,6 +505,12 @@
 												<InputField name="ЗаголовкиЗапросаЗначение" id="122">
 													<DataPath>ЗаголовкиЗапроса.Значение</DataPath>
 													<EditMode>Directly</EditMode>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>false</ChoiceButton>
+													<ClearButton>false</ClearButton>
+													<SpinButton>false</SpinButton>
+													<OpenButton>false</OpenButton>
+													<CreateButton>false</CreateButton>
 													<ChooseType>false</ChooseType>
 													<ContextMenu name="ЗаголовкиЗапросаЗначениеКонтекстноеМеню" id="123"/>
 													<ExtendedTooltip name="ЗаголовкиЗапросаЗначениеРасширеннаяПодсказка" id="124"/>
@@ -500,12 +532,13 @@
 											<v8:content>Раздел тело запроса</v8:content>
 										</v8:item>
 									</ToolTip>
+									<VerticalSpacing>Double</VerticalSpacing>
 									<ExtendedTooltip name="РазделТелоЗапросаРасширеннаяПодсказка" id="141"/>
 									<ChildItems>
 										<RadioButtonField name="ТипТелаЗапроса" id="145">
 											<DataPath>ТипТелаЗапроса</DataPath>
 											<TitleLocation>None</TitleLocation>
-											<RadioButtonType>Auto</RadioButtonType>
+											<RadioButtonType>Tumbler</RadioButtonType>
 											<ChoiceList>
 												<xr:Item>
 													<xr:Presentation/>
@@ -596,8 +629,24 @@
 															<v8:content>Типы тела запроса данные формы</v8:content>
 														</v8:item>
 													</ToolTip>
+													<VerticalSpacing>Double</VerticalSpacing>
 													<ExtendedTooltip name="ТипыТелаЗапросаДанныеФормыРасширеннаяПодсказка" id="151"/>
 													<ChildItems>
+														<InputField name="Разделитель" id="187">
+															<DataPath>Разделитель</DataPath>
+															<DropListButton>false</DropListButton>
+															<ChoiceButton>false</ChoiceButton>
+															<ClearButton>true</ClearButton>
+															<SpinButton>false</SpinButton>
+															<OpenButton>false</OpenButton>
+															<CreateButton>false</CreateButton>
+															<AutoMarkIncomplete>true</AutoMarkIncomplete>
+															<ContextMenu name="РазделительКонтекстноеМеню" id="188"/>
+															<ExtendedTooltip name="РазделительРасширеннаяПодсказка" id="189"/>
+															<Events>
+																<Event name="Clearing">РазделительОчистка</Event>
+															</Events>
+														</InputField>
 														<Table name="ДанныеФормы" id="157">
 															<Representation>List</Representation>
 															<AutoMaxWidth>false</AutoMaxWidth>
@@ -647,13 +696,31 @@
 																</CheckBoxField>
 																<InputField name="ДанныеФормыКлюч" id="176">
 																	<DataPath>ДанныеФормы.Ключ</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Имя</v8:content>
+																		</v8:item>
+																	</Title>
 																	<EditMode>EnterOnInput</EditMode>
+																	<DropListButton>false</DropListButton>
+																	<ChoiceButton>false</ChoiceButton>
+																	<ClearButton>false</ClearButton>
+																	<SpinButton>false</SpinButton>
+																	<OpenButton>false</OpenButton>
+																	<CreateButton>false</CreateButton>
+																	<AutoMarkIncomplete>true</AutoMarkIncomplete>
 																	<ContextMenu name="ДанныеФормыКлючКонтекстноеМеню" id="177"/>
 																	<ExtendedTooltip name="ДанныеФормыКлючРасширеннаяПодсказка" id="178"/>
 																</InputField>
 																<InputField name="ДанныеФормыТип" id="173">
 																	<DataPath>ДанныеФормы.Тип</DataPath>
 																	<EditMode>EnterOnInput</EditMode>
+																	<Width>9</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<VerticalStretch>false</VerticalStretch>
 																	<DropListButton>true</DropListButton>
 																	<ChoiceButton>false</ChoiceButton>
 																	<ClearButton>false</ClearButton>
@@ -798,15 +865,20 @@
 															<ContextMenu name="ТипТелаЗапросаКакЕстьКонтекстноеМеню" id="155"/>
 															<ExtendedTooltip name="ТипТелаЗапросаКакЕстьРасширеннаяПодсказка" id="156"/>
 														</InputField>
-														<TextDocumentField name="ТелоЗапросаТекст" id="142">
+														<InputField name="ТелоЗапросаТекст" id="142">
 															<DataPath>ТелоЗапросаТекст</DataPath>
 															<TitleLocation>None</TitleLocation>
+															<Width>50</Width>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<AutoMaxHeight>false</AutoMaxHeight>
+															<HorizontalStretch>true</HorizontalStretch>
+															<VerticalStretch>true</VerticalStretch>
+															<MultiLine>true</MultiLine>
+															<ExtendedEdit>true</ExtendedEdit>
 															<Font ref="style:NormalTextFont" faceName="Courier New" kind="StyleItem"/>
 															<ContextMenu name="ТелоЗапросаТекстКонтекстноеМеню" id="143"/>
 															<ExtendedTooltip name="ТелоЗапросаТекстРасширеннаяПодсказка" id="144"/>
-														</TextDocumentField>
+														</InputField>
 													</ChildItems>
 												</Page>
 												<Page name="ТипыТелаЗапросаДвоичныеДанные" id="182">
@@ -834,7 +906,6 @@
 															</Title>
 															<TitleLocation>Top</TitleLocation>
 															<AutoMaxWidth>false</AutoMaxWidth>
-															<HorizontalStretch>true</HorizontalStretch>
 															<VerticalStretch>false</VerticalStretch>
 															<DropListButton>false</DropListButton>
 															<ChoiceButton>true</ChoiceButton>
@@ -842,6 +913,7 @@
 															<SpinButton>false</SpinButton>
 															<OpenButton>false</OpenButton>
 															<CreateButton>false</CreateButton>
+															<AutoMarkIncomplete>true</AutoMarkIncomplete>
 															<ContextMenu name="ФайлТелаЗапросаКонтекстноеМеню" id="185"/>
 															<ExtendedTooltip name="ФайлТелаЗапросаРасширеннаяПодсказка" id="186"/>
 															<Events>
@@ -1445,6 +1517,21 @@
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
 					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Разделитель" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разделитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1000</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
