@@ -558,8 +558,12 @@
 											</ChoiceList>
 											<ContextMenu name="ТипТелаЗапросаКонтекстноеМеню" id="146"/>
 											<ExtendedTooltip name="ТипТелаЗапросаРасширеннаяПодсказка" id="147"/>
+											<Events>
+												<Event name="OnChange">ТипТелаЗапросаПриИзменении</Event>
+											</Events>
 										</RadioButtonField>
 										<Pages name="ГруппаТипыТелаЗапроса" id="148">
+											<Visible>false</Visible>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
