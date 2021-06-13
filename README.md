@@ -6,3 +6,7 @@
 Используются синхронные вызовы
 
 `.\src` – каталог файлов конфигурации.
+
+## Ссылки
+
+[Cookies: HTTP State Management Mechanism](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis)
