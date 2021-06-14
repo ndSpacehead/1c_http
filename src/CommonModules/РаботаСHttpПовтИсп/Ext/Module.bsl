@@ -242,3 +242,18 @@
 	
 	Возврат фРезультат;
 КонецФункции
+
+Функция ПараметрыPunycode() Экспорт
+	Возврат Новый Структура(
+		"TMin, TMax, Base, InitialN, InitialBias, Damp, Skew, Delimiter, НаибольшееЧисло",
+		1,   // TMin
+		26,  // TMax
+		36,  // Base
+		128, // InitialN
+		72,  // InitialBias
+		700, // Damp
+		38,  // Skew
+		"-", // Delimiter
+		9999999999 // НаибольшееЧисло
+	);
+КонецФункции
