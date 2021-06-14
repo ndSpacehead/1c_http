@@ -10,3 +10,5 @@
 ## Ссылки
 
 [Cookies: HTTP State Management Mechanism](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis)
+
+[Punycode](https://datatracker.ietf.org/doc/html/rfc3492)
