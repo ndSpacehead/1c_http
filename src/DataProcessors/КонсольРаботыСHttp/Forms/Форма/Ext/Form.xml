@@ -166,6 +166,20 @@
 										<Event name="OnChange">ИдентификаторРесурсаПриИзменении</Event>
 									</Events>
 								</InputField>
+								<LabelDecoration name="ОткрытьCookies" id="190">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Cookies</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ОткрытьCookiesКонтекстноеМеню" id="191"/>
+									<ExtendedTooltip name="ОткрытьCookiesРасширеннаяПодсказка" id="192"/>
+									<Events>
+										<Event name="Click">ОткрытьCookiesНажатие</Event>
+									</Events>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<Pages name="ГруппаРазделыЗапроса" id="97">
@@ -1536,6 +1550,15 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="Дополнительно" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительно</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
 		</Attribute>
 	</Attributes>
 	<Commands>
