@@ -202,8 +202,10 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<CommonModule>РаботаСHttp</CommonModule>
-			<CommonModule>РаботаСHttpСлужебный</CommonModule>
+			<CommonModule>РаботаСHttpВызовСервера</CommonModule>
+			<CommonModule>РаботаСHttpКлиентСервер</CommonModule>
 			<CommonModule>РаботаСHttpПовтИсп</CommonModule>
+			<CommonModule>РаботаСHttpСлужебный</CommonModule>
 			<DataProcessor>КонсольРаботыСHttp</DataProcessor>
 		</ChildObjects>
 	</Configuration>

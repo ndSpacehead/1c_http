@@ -30,6 +30,7 @@
 		<ChildObjects>
 			<Form>Форма</Form>
 			<Form>РедакторТекстовогоПоля</Form>
+			<Form>РедакторCookies</Form>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>
