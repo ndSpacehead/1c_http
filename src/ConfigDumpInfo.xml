@@ -13,12 +13,12 @@
 		<Metadata name="CommonModule.РаботаСHttpСлужебный.Module" id="fe54e48d-1133-4b74-b885-0b0045f131f3.0" configVersion="9351d4014cfb25488801d660383090b200000000"/>
 		<Metadata name="Configuration.Конфигурация" id="48891051-e028-4e35-af3e-79dc57d178e0" configVersion="29106343b9dcab4a80cd3442582c455c00000000"/>
 		<Metadata name="DataProcessor.КонсольРаботыСHttp" id="009ccf0f-85c3-4b5b-a5ff-eedce8d046c7" configVersion="27e7d3b3bcdb2b429ea8617ce4f8f86000000000"/>
-		<Metadata name="DataProcessor.КонсольРаботыСHttp.Form.РедакторCookies" id="419c684b-78be-4624-bd57-b2b1a9eeb22e" configVersion="f35b9ce3f730d74c990d1527e71f3c4f00000000"/>
-		<Metadata name="DataProcessor.КонсольРаботыСHttp.Form.РедакторCookies.Form" id="419c684b-78be-4624-bd57-b2b1a9eeb22e.0" configVersion="bb85c68ce85cb44994ed45514b20957900000000"/>
+		<Metadata name="DataProcessor.КонсольРаботыСHttp.Form.РедакторCookies" id="419c684b-78be-4624-bd57-b2b1a9eeb22e" configVersion="026f014f72dfb34c9675b548817628ee00000000"/>
+		<Metadata name="DataProcessor.КонсольРаботыСHttp.Form.РедакторCookies.Form" id="419c684b-78be-4624-bd57-b2b1a9eeb22e.0" configVersion="8154967d3982864e9e561e7ad4c3cfca00000000"/>
 		<Metadata name="DataProcessor.КонсольРаботыСHttp.Form.РедакторТекстовогоПоля" id="bdffbf4e-d448-4c81-a2a6-28fcd9a18adb" configVersion="1ffec64ea91578468add9463f73d1d4500000000"/>
 		<Metadata name="DataProcessor.КонсольРаботыСHttp.Form.РедакторТекстовогоПоля.Form" id="bdffbf4e-d448-4c81-a2a6-28fcd9a18adb.0" configVersion="b3acc99dfc6ca548bae571911da0db8c00000000"/>
-		<Metadata name="DataProcessor.КонсольРаботыСHttp.Form.Форма" id="fb7cf040-b38e-47f3-95a9-08d07b6f009a" configVersion="604f10eb4fc6a945b903f3caf6fb91e900000000"/>
-		<Metadata name="DataProcessor.КонсольРаботыСHttp.Form.Форма.Form" id="fb7cf040-b38e-47f3-95a9-08d07b6f009a.0" configVersion="e3d86e50b6767a4ca5b33d6eb26091dd00000000"/>
+		<Metadata name="DataProcessor.КонсольРаботыСHttp.Form.Форма" id="fb7cf040-b38e-47f3-95a9-08d07b6f009a" configVersion="39e159eab490a645ac7f27158db0e98800000000"/>
+		<Metadata name="DataProcessor.КонсольРаботыСHttp.Form.Форма.Form" id="fb7cf040-b38e-47f3-95a9-08d07b6f009a.0" configVersion="ce28a7916a8af543879be0c7d23aab3e00000000"/>
 		<Metadata name="Language.Русский" id="55e212ce-13b0-4b15-af32-06df26b50926" configVersion="edb6fc807b17da4ab6d718f996a1127c00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
