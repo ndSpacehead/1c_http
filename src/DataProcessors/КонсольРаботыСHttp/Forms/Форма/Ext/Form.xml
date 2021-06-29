@@ -124,6 +124,7 @@
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<VerticalStretch>false</VerticalStretch>
 					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<SpecialTextInputMode>URL</SpecialTextInputMode>
 					<ContextMenu name="ИдентификаторРесурсаКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="ИдентификаторРесурсаРасширеннаяПодсказка" id="3"/>
 					<Events>

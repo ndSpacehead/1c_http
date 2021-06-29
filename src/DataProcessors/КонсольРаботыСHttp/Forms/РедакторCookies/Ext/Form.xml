@@ -18,6 +18,7 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -121,7 +122,12 @@
 								<ExtendedTooltip name="ДоменныеИменаУправлениеПоискомРасширеннаяПодсказка" id="13"/>
 							</SearchControlAddition>
 							<Events>
+								<Event name="OnEditEnd">ДоменныеИменаПриОкончанииРедактирования</Event>
+								<Event name="BeforeDeleteRow">ДоменныеИменаПередУдалением</Event>
+								<Event name="BeforeEditEnd">ДоменныеИменаПередОкончаниемРедактирования</Event>
 								<Event name="OnActivateRow">ДоменныеИменаПриАктивизацииСтроки</Event>
+								<Event name="OnStartEdit">ДоменныеИменаПриНачалеРедактирования</Event>
+								<Event name="AfterDeleteRow">ДоменныеИменаПослеУдаления</Event>
 							</Events>
 							<ChildItems>
 								<InputField name="ДоменныеИменаДоменноеИмя" id="14">
