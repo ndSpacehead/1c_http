@@ -212,7 +212,12 @@
 								<ExtendedTooltip name="ПеченькиПолучателяУправлениеПоискомРасширеннаяПодсказка" id="33"/>
 							</SearchControlAddition>
 							<Events>
+								<Event name="OnEditEnd">ПеченькиПолучателяПриОкончанииРедактирования</Event>
+								<Event name="BeforeAddRow">ПеченькиПолучателяПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ПеченькиПолучателяПередУдалением</Event>
+								<Event name="BeforeEditEnd">ПеченькиПолучателяПередОкончаниемРедактирования</Event>
 								<Event name="OnActivateRow">ПеченькиПолучателяПриАктивизацииСтроки</Event>
+								<Event name="OnStartEdit">ПеченькиПолучателяПриНачалеРедактирования</Event>
 							</Events>
 							<ChildItems>
 								<InputField name="ПеченькиПолучателяИмя" id="63">
@@ -235,11 +240,16 @@
 									<MultiLine>false</MultiLine>
 									<DropListButton>false</DropListButton>
 									<ChoiceButton>true</ChoiceButton>
-									<ClearButton>false</ClearButton>
+									<ClearButton>true</ClearButton>
 									<SpinButton>false</SpinButton>
 									<OpenButton>false</OpenButton>
 									<CreateButton>false</CreateButton>
-									<ChooseType>false</ChooseType>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значение отсутствует</v8:content>
+										</v8:item>
+									</InputHint>
 									<ContextMenu name="ПеченькиПолучателяЗначениеКонтекстноеМеню" id="67"/>
 									<ExtendedTooltip name="ПеченькиПолучателяЗначениеРасширеннаяПодсказка" id="68"/>
 								</InputField>
