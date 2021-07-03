@@ -1,20 +1,158 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<VerticalSpacing>Double</VerticalSpacing>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
-		<ChildItems>
-			<Button name="ФормаВыполнить" id="32">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.Выполнить</CommandName>
-				<ExtendedTooltip name="ФормаВыполнитьРасширеннаяПодсказка" id="33"/>
-			</Button>
-		</ChildItems>
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="ГруппаИдентификаторРесурса" id="82">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа идентификатор ресурса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа идентификатор ресурса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИдентификаторРесурсаРасширеннаяПодсказка" id="83"/>
+			<ChildItems>
+				<InputField name="Схема" id="84">
+					<DataPath>Схема</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип запроса</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>8</Width>
+					<DropListButton>true</DropListButton>
+					<ChoiceButton>false</ChoiceButton>
+					<ClearButton>false</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>false</OpenButton>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>GET</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">GET</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>POST</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">POST</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>PUT</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">PUT</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>DELETE</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">DELETE</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>HEAD</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">HEAD</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="СхемаКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="СхемаРасширеннаяПодсказка" id="86"/>
+				</InputField>
+				<InputField name="ИдентификаторРесурса" id="1">
+					<DataPath>ИдентификаторРесурса</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>URI</v8:content>
+						</v8:item>
+					</Title>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<VerticalStretch>false</VerticalStretch>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<SpecialTextInputMode>URL</SpecialTextInputMode>
+					<ContextMenu name="ИдентификаторРесурсаКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ИдентификаторРесурсаРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">ИдентификаторРесурсаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="ФормаВыполнить" id="32">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Выполнить</CommandName>
+					<ExtendedTooltip name="ФормаВыполнитьРасширеннаяПодсказка" id="33"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="ОткрытьCookies" id="190">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Cookies</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="ОткрытьCookiesКонтекстноеМеню" id="191"/>
+			<ExtendedTooltip name="ОткрытьCookiesРасширеннаяПодсказка" id="192"/>
+			<Events>
+				<Event name="Click">ОткрытьCookiesНажатие</Event>
+			</Events>
+		</LabelDecoration>
 		<Pages name="ГруппаРазделы" id="4">
 			<Title>
 				<v8:item>
@@ -45,143 +183,6 @@
 					</ToolTip>
 					<ExtendedTooltip name="РазделЗапросРасширеннаяПодсказка" id="7"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаИдентификаторРесурса" id="82">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа идентификатор ресурса</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа идентификатор ресурса</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>AlwaysHorizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаИдентификаторРесурсаРасширеннаяПодсказка" id="83"/>
-							<ChildItems>
-								<InputField name="Схема" id="84">
-									<DataPath>Схема</DataPath>
-									<TitleLocation>None</TitleLocation>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Тип запроса</v8:content>
-										</v8:item>
-									</ToolTip>
-									<Width>8</Width>
-									<DropListButton>true</DropListButton>
-									<ChoiceButton>false</ChoiceButton>
-									<ClearButton>false</ClearButton>
-									<SpinButton>false</SpinButton>
-									<OpenButton>false</OpenButton>
-									<ChoiceList>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>GET</v8:content>
-													</v8:item>
-												</Presentation>
-												<Value xsi:type="xs:string">GET</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>POST</v8:content>
-													</v8:item>
-												</Presentation>
-												<Value xsi:type="xs:string">POST</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>PUT</v8:content>
-													</v8:item>
-												</Presentation>
-												<Value xsi:type="xs:string">PUT</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>DELETE</v8:content>
-													</v8:item>
-												</Presentation>
-												<Value xsi:type="xs:string">DELETE</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>HEAD</v8:content>
-													</v8:item>
-												</Presentation>
-												<Value xsi:type="xs:string">HEAD</Value>
-											</xr:Value>
-										</xr:Item>
-									</ChoiceList>
-									<ContextMenu name="СхемаКонтекстноеМеню" id="85"/>
-									<ExtendedTooltip name="СхемаРасширеннаяПодсказка" id="86"/>
-								</InputField>
-								<InputField name="ИдентификаторРесурса" id="1">
-									<DataPath>ИдентификаторРесурса</DataPath>
-									<DefaultItem>true</DefaultItem>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>URI</v8:content>
-										</v8:item>
-									</Title>
-									<AutoMaxWidth>false</AutoMaxWidth>
-									<VerticalStretch>false</VerticalStretch>
-									<AutoMarkIncomplete>true</AutoMarkIncomplete>
-									<ContextMenu name="ИдентификаторРесурсаКонтекстноеМеню" id="2"/>
-									<ExtendedTooltip name="ИдентификаторРесурсаРасширеннаяПодсказка" id="3"/>
-									<Events>
-										<Event name="OnChange">ИдентификаторРесурсаПриИзменении</Event>
-									</Events>
-								</InputField>
-								<LabelDecoration name="ОткрытьCookies" id="190">
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Cookies</v8:content>
-										</v8:item>
-									</Title>
-									<Hyperlink>true</Hyperlink>
-									<ContextMenu name="ОткрытьCookiesКонтекстноеМеню" id="191"/>
-									<ExtendedTooltip name="ОткрытьCookiesРасширеннаяПодсказка" id="192"/>
-									<Events>
-										<Event name="Click">ОткрытьCookiesНажатие</Event>
-									</Events>
-								</LabelDecoration>
-							</ChildItems>
-						</UsualGroup>
 						<Pages name="ГруппаРазделыЗапроса" id="97">
 							<Title>
 								<v8:item>

@@ -17,9 +17,13 @@
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<InputField name="Печенько" id="69">
-			<DataPath>Печенько</DataPath>
+			<DataPath>Рецепт</DataPath>
 			<TitleLocation>None</TitleLocation>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<HorizontalStretch>true</HorizontalStretch>
@@ -68,6 +72,7 @@
 					<ChildItems>
 						<Table name="ДоменныеИмена" id="1">
 							<Representation>List</Representation>
+							<DefaultItem>true</DefaultItem>
 							<Header>false</Header>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
@@ -116,9 +121,18 @@
 								<ContextMenu name="ДоменныеИменаУправлениеПоискомКонтекстноеМеню" id="12"/>
 								<ExtendedTooltip name="ДоменныеИменаУправлениеПоискомРасширеннаяПодсказка" id="13"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="OnEditEnd">ДоменныеИменаПриОкончанииРедактирования</Event>
+								<Event name="BeforeDeleteRow">ДоменныеИменаПередУдалением</Event>
+								<Event name="BeforeEditEnd">ДоменныеИменаПередОкончаниемРедактирования</Event>
+								<Event name="OnActivateRow">ДоменныеИменаПриАктивизацииСтроки</Event>
+								<Event name="OnStartEdit">ДоменныеИменаПриНачалеРедактирования</Event>
+								<Event name="AfterDeleteRow">ДоменныеИменаПослеУдаления</Event>
+							</Events>
 							<ChildItems>
 								<InputField name="ДоменныеИменаДоменноеИмя" id="14">
 									<DataPath>ДоменныеИмена.ДоменноеИмя</DataPath>
+									<DefaultItem>true</DefaultItem>
 									<EditMode>EnterOnInput</EditMode>
 									<MultiLine>false</MultiLine>
 									<DropListButton>false</DropListButton>
@@ -153,13 +167,13 @@
 					<Group>Vertical</Group>
 					<ExtendedTooltip name="ГруппаПеченьеРасширеннаяПодсказка" id="20"/>
 					<ChildItems>
-						<Table name="Печенье" id="21">
+						<Table name="ПеченькиПолучателя" id="21">
 							<Representation>List</Representation>
 							<Header>false</Header>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
-							<DataPath>Печенье</DataPath>
+							<DataPath>ПеченькиПолучателя</DataPath>
 							<CommandSet>
 								<ExcludedCommand>Change</ExcludedCommand>
 								<ExcludedCommand>Copy</ExcludedCommand>
@@ -170,36 +184,44 @@
 								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 							</CommandSet>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ПеченьеКонтекстноеМеню" id="22"/>
-							<AutoCommandBar name="ПеченьеКоманднаяПанель" id="23"/>
-							<ExtendedTooltip name="ПеченьеРасширеннаяПодсказка" id="24"/>
-							<SearchStringAddition name="ПеченьеСтрокаПоиска" id="25">
+							<ContextMenu name="ПеченькиПолучателяКонтекстноеМеню" id="22"/>
+							<AutoCommandBar name="ПеченькиПолучателяКоманднаяПанель" id="23"/>
+							<ExtendedTooltip name="ПеченькиПолучателяРасширеннаяПодсказка" id="24"/>
+							<SearchStringAddition name="ПеченькиПолучателяСтрокаПоиска" id="25">
 								<AdditionSource>
-									<Item>Печенье</Item>
+									<Item>ПеченькиПолучателя</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ПеченьеСтрокаПоискаКонтекстноеМеню" id="26"/>
-								<ExtendedTooltip name="ПеченьеСтрокаПоискаРасширеннаяПодсказка" id="27"/>
+								<ContextMenu name="ПеченькиПолучателяСтрокаПоискаКонтекстноеМеню" id="26"/>
+								<ExtendedTooltip name="ПеченькиПолучателяСтрокаПоискаРасширеннаяПодсказка" id="27"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="ПеченьеСостояниеПросмотра" id="28">
+							<ViewStatusAddition name="ПеченькиПолучателяСостояниеПросмотра" id="28">
 								<AdditionSource>
-									<Item>Печенье</Item>
+									<Item>ПеченькиПолучателя</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ПеченьеСостояниеПросмотраКонтекстноеМеню" id="29"/>
-								<ExtendedTooltip name="ПеченьеСостояниеПросмотраРасширеннаяПодсказка" id="30"/>
+								<ContextMenu name="ПеченькиПолучателяСостояниеПросмотраКонтекстноеМеню" id="29"/>
+								<ExtendedTooltip name="ПеченькиПолучателяСостояниеПросмотраРасширеннаяПодсказка" id="30"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="ПеченьеУправлениеПоиском" id="31">
+							<SearchControlAddition name="ПеченькиПолучателяУправлениеПоиском" id="31">
 								<AdditionSource>
-									<Item>Печенье</Item>
+									<Item>ПеченькиПолучателя</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="ПеченьеУправлениеПоискомКонтекстноеМеню" id="32"/>
-								<ExtendedTooltip name="ПеченьеУправлениеПоискомРасширеннаяПодсказка" id="33"/>
+								<ContextMenu name="ПеченькиПолучателяУправлениеПоискомКонтекстноеМеню" id="32"/>
+								<ExtendedTooltip name="ПеченькиПолучателяУправлениеПоискомРасширеннаяПодсказка" id="33"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="OnEditEnd">ПеченькиПолучателяПриОкончанииРедактирования</Event>
+								<Event name="BeforeAddRow">ПеченькиПолучателяПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ПеченькиПолучателяПередУдалением</Event>
+								<Event name="BeforeEditEnd">ПеченькиПолучателяПередОкончаниемРедактирования</Event>
+								<Event name="OnActivateRow">ПеченькиПолучателяПриАктивизацииСтроки</Event>
+								<Event name="OnStartEdit">ПеченькиПолучателяПриНачалеРедактирования</Event>
+							</Events>
 							<ChildItems>
-								<InputField name="ПеченьеИмя" id="63">
-									<DataPath>Печенье.Имя</DataPath>
+								<InputField name="ПеченькиПолучателяИмя" id="63">
+									<DataPath>ПеченькиПолучателя.Имя</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<MultiLine>false</MultiLine>
 									<DropListButton>false</DropListButton>
@@ -209,22 +231,34 @@
 									<OpenButton>false</OpenButton>
 									<CreateButton>false</CreateButton>
 									<ChooseType>false</ChooseType>
-									<ContextMenu name="ПеченьеИмяКонтекстноеМеню" id="64"/>
-									<ExtendedTooltip name="ПеченьеИмяРасширеннаяПодсказка" id="65"/>
+									<ContextMenu name="ПеченькиПолучателяИмяКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ПеченькиПолучателяИмяРасширеннаяПодсказка" id="65"/>
 								</InputField>
-								<InputField name="ПеченьеЗначение" id="66">
-									<DataPath>Печенье.Значение</DataPath>
+								<InputField name="ПеченькиПолучателяЗначение" id="66">
+									<DataPath>ПеченькиПолучателя.Значение</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<MultiLine>false</MultiLine>
 									<DropListButton>false</DropListButton>
 									<ChoiceButton>true</ChoiceButton>
-									<ClearButton>false</ClearButton>
+									<ClearButton>true</ClearButton>
 									<SpinButton>false</SpinButton>
 									<OpenButton>false</OpenButton>
 									<CreateButton>false</CreateButton>
-									<ChooseType>false</ChooseType>
-									<ContextMenu name="ПеченьеЗначениеКонтекстноеМеню" id="67"/>
-									<ExtendedTooltip name="ПеченьеЗначениеРасширеннаяПодсказка" id="68"/>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значение отсутствует</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="ПеченькиПолучателяЗначениеКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="ПеченькиПолучателяЗначениеРасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<InputField name="ПеченькиПолучателяКлюч" id="74">
+									<DataPath>ПеченькиПолучателя.Ключ</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПеченькиПолучателяКлючКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ПеченькиПолучателяКлючРасширеннаяПодсказка" id="76"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -248,13 +282,15 @@
 					<Group>Vertical</Group>
 					<ExtendedTooltip name="ГруппаАтрибутыРасширеннаяПодсказка" id="38"/>
 					<ChildItems>
-						<Table name="Атрибуты" id="39">
+						<Table name="АтрибутыПеченьки" id="39">
 							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
 							<Header>false</Header>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
-							<DataPath>Атрибуты</DataPath>
+							<DataPath>АтрибутыПеченьки</DataPath>
 							<CommandSet>
 								<ExcludedCommand>Add</ExcludedCommand>
 								<ExcludedCommand>CancelSearch</ExcludedCommand>
@@ -277,43 +313,46 @@
 								<ExcludedCommand>SortListDesc</ExcludedCommand>
 							</CommandSet>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="АтрибутыКонтекстноеМеню" id="40"/>
-							<AutoCommandBar name="АтрибутыКоманднаяПанель" id="41"/>
-							<ExtendedTooltip name="АтрибутыРасширеннаяПодсказка" id="42"/>
-							<SearchStringAddition name="АтрибутыСтрокаПоиска" id="43">
+							<ContextMenu name="АтрибутыПеченькиКонтекстноеМеню" id="40"/>
+							<AutoCommandBar name="АтрибутыПеченькиКоманднаяПанель" id="41"/>
+							<ExtendedTooltip name="АтрибутыПеченькиРасширеннаяПодсказка" id="42"/>
+							<SearchStringAddition name="АтрибутыПеченькиСтрокаПоиска" id="43">
 								<AdditionSource>
-									<Item>Атрибуты</Item>
+									<Item>АтрибутыПеченьки</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="АтрибутыСтрокаПоискаКонтекстноеМеню" id="44"/>
-								<ExtendedTooltip name="АтрибутыСтрокаПоискаРасширеннаяПодсказка" id="45"/>
+								<ContextMenu name="АтрибутыПеченькиСтрокаПоискаКонтекстноеМеню" id="44"/>
+								<ExtendedTooltip name="АтрибутыПеченькиСтрокаПоискаРасширеннаяПодсказка" id="45"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="АтрибутыСостояниеПросмотра" id="46">
+							<ViewStatusAddition name="АтрибутыПеченькиСостояниеПросмотра" id="46">
 								<AdditionSource>
-									<Item>Атрибуты</Item>
+									<Item>АтрибутыПеченьки</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="АтрибутыСостояниеПросмотраКонтекстноеМеню" id="47"/>
-								<ExtendedTooltip name="АтрибутыСостояниеПросмотраРасширеннаяПодсказка" id="48"/>
+								<ContextMenu name="АтрибутыПеченькиСостояниеПросмотраКонтекстноеМеню" id="47"/>
+								<ExtendedTooltip name="АтрибутыПеченькиСостояниеПросмотраРасширеннаяПодсказка" id="48"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="АтрибутыУправлениеПоиском" id="49">
+							<SearchControlAddition name="АтрибутыПеченькиУправлениеПоиском" id="49">
 								<AdditionSource>
-									<Item>Атрибуты</Item>
+									<Item>АтрибутыПеченьки</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="АтрибутыУправлениеПоискомКонтекстноеМеню" id="50"/>
-								<ExtendedTooltip name="АтрибутыУправлениеПоискомРасширеннаяПодсказка" id="51"/>
+								<ContextMenu name="АтрибутыПеченькиУправлениеПоискомКонтекстноеМеню" id="50"/>
+								<ExtendedTooltip name="АтрибутыПеченькиУправлениеПоискомРасширеннаяПодсказка" id="51"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">АтрибутыПеченькиПриИзменении</Event>
+							</Events>
 							<ChildItems>
-								<CheckBoxField name="АтрибутыАктивно" id="52">
-									<DataPath>Атрибуты.Активно</DataPath>
+								<CheckBoxField name="АтрибутыПеченькиАктивно" id="52">
+									<DataPath>АтрибутыПеченьки.Активно</DataPath>
 									<EditMode>Directly</EditMode>
 									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="АтрибутыАктивноКонтекстноеМеню" id="53"/>
-									<ExtendedTooltip name="АтрибутыАктивноРасширеннаяПодсказка" id="54"/>
+									<ContextMenu name="АтрибутыПеченькиАктивноКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="АтрибутыПеченькиАктивноРасширеннаяПодсказка" id="54"/>
 								</CheckBoxField>
-								<InputField name="АтрибутыИмя" id="55">
-									<DataPath>Атрибуты.Имя</DataPath>
+								<InputField name="АтрибутыПеченькиИмя" id="55">
+									<DataPath>АтрибутыПеченьки.Имя</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<MultiLine>false</MultiLine>
 									<DropListButton>false</DropListButton>
@@ -324,11 +363,11 @@
 									<CreateButton>false</CreateButton>
 									<ChooseType>false</ChooseType>
 									<TextEdit>false</TextEdit>
-									<ContextMenu name="АтрибутыИмяКонтекстноеМеню" id="56"/>
-									<ExtendedTooltip name="АтрибутыИмяРасширеннаяПодсказка" id="57"/>
+									<ContextMenu name="АтрибутыПеченькиИмяКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="АтрибутыПеченькиИмяРасширеннаяПодсказка" id="57"/>
 								</InputField>
-								<InputField name="АтрибутыЗначение" id="58">
-									<DataPath>Атрибуты.Значение</DataPath>
+								<InputField name="АтрибутыПеченькиЗначение" id="58">
+									<DataPath>АтрибутыПеченьки.Значение</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<MultiLine>false</MultiLine>
 									<DropListButton>false</DropListButton>
@@ -338,8 +377,15 @@
 									<OpenButton>false</OpenButton>
 									<CreateButton>false</CreateButton>
 									<ChooseType>false</ChooseType>
-									<ContextMenu name="АтрибутыЗначениеКонтекстноеМеню" id="59"/>
-									<ExtendedTooltip name="АтрибутыЗначениеРасширеннаяПодсказка" id="60"/>
+									<ContextMenu name="АтрибутыПеченькиЗначениеКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="АтрибутыПеченькиЗначениеРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<InputField name="АтрибутыПеченькиКлюч" id="77">
+									<DataPath>АтрибутыПеченьки.Ключ</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АтрибутыПеченькиКлючКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="АтрибутыПеченькиКлючРасширеннаяПодсказка" id="79"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -383,11 +429,11 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="Печенье" id="3">
+		<Attribute name="ПеченькиПолучателя" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Печенье</v8:content>
+					<v8:content>Печеньки получателя</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -424,13 +470,28 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="Ключ" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="Атрибуты" id="4">
+		<Attribute name="АтрибутыПеченьки" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Атрибуты</v8:content>
+					<v8:content>Атрибуты печеньки</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -485,17 +546,32 @@
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 						<v8:DateQualifiers>
-							<v8:DateFractions>Date</v8:DateFractions>
+							<v8:DateFractions>DateTime</v8:DateFractions>
 						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ключ" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="Печенько" id="5">
+		<Attribute name="Рецепт" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Печенько</v8:content>
+					<v8:content>Рецепт</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -505,6 +581,15 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="Дополнительно" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительно</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
 		</Attribute>
 	</Attributes>
 	<Commands>
