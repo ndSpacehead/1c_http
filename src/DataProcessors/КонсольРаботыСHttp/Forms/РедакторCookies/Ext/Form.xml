@@ -340,6 +340,9 @@
 								<ContextMenu name="АтрибутыПеченькиУправлениеПоискомКонтекстноеМеню" id="50"/>
 								<ExtendedTooltip name="АтрибутыПеченькиУправлениеПоискомРасширеннаяПодсказка" id="51"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">АтрибутыПеченькиПриИзменении</Event>
+							</Events>
 							<ChildItems>
 								<CheckBoxField name="АтрибутыПеченькиАктивно" id="52">
 									<DataPath>АтрибутыПеченьки.Активно</DataPath>
@@ -376,6 +379,13 @@
 									<ChooseType>false</ChooseType>
 									<ContextMenu name="АтрибутыПеченькиЗначениеКонтекстноеМеню" id="59"/>
 									<ExtendedTooltip name="АтрибутыПеченькиЗначениеРасширеннаяПодсказка" id="60"/>
+								</InputField>
+								<InputField name="АтрибутыПеченькиКлюч" id="77">
+									<DataPath>АтрибутыПеченьки.Ключ</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="АтрибутыПеченькиКлючКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="АтрибутыПеченькиКлючРасширеннаяПодсказка" id="79"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -536,8 +546,23 @@
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 						<v8:DateQualifiers>
-							<v8:DateFractions>Date</v8:DateFractions>
+							<v8:DateFractions>DateTime</v8:DateFractions>
 						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ключ" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>
