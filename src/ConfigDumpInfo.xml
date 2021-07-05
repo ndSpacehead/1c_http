@@ -5,10 +5,10 @@
 		<Metadata name="CommonModule.РаботаСHttp.Module" id="0693d608-53ea-4043-a121-1d37f15510a9.0" configVersion="28ff6fd1d7b00f42a16e96a794e48f9f00000000"/>
 		<Metadata name="CommonModule.РаботаСHttpВызовСервера" id="15d7239e-484e-4023-a1f7-a17c2553188c" configVersion="8c2f998eb703ad418fec27655f0143bf00000000"/>
 		<Metadata name="CommonModule.РаботаСHttpВызовСервера.Module" id="15d7239e-484e-4023-a1f7-a17c2553188c.0" configVersion="1bd147e07372df42add5c2cb86102c4000000000"/>
-		<Metadata name="CommonModule.РаботаСHttpКлиентСервер" id="ac103767-3b16-444c-a6fd-107de0020526" configVersion="00efe0adb339f24e9ebe2f625cf977d800000000"/>
-		<Metadata name="CommonModule.РаботаСHttpКлиентСервер.Module" id="ac103767-3b16-444c-a6fd-107de0020526.0" configVersion="b2b3511c27787042a47a113ccb3516da00000000"/>
-		<Metadata name="CommonModule.РаботаСHttpПовтИсп" id="c45875ca-b132-4bb9-bc96-5faaafd145c5" configVersion="4ede94c94b57fd4ca12bf60bd744c21400000000"/>
-		<Metadata name="CommonModule.РаботаСHttpПовтИсп.Module" id="c45875ca-b132-4bb9-bc96-5faaafd145c5.0" configVersion="9e883010f496a346b78832962f3f388100000000"/>
+		<Metadata name="CommonModule.РаботаСHttpКлиентСервер" id="ac103767-3b16-444c-a6fd-107de0020526" configVersion="d6248003e00eeb4dbb826c9e41e0d0f900000000"/>
+		<Metadata name="CommonModule.РаботаСHttpКлиентСервер.Module" id="ac103767-3b16-444c-a6fd-107de0020526.0" configVersion="121bd46a260d7b499072bc4bf00013aa00000000"/>
+		<Metadata name="CommonModule.РаботаСHttpПовтИсп" id="c45875ca-b132-4bb9-bc96-5faaafd145c5" configVersion="ef59da17d32ea943ad6b994da0f76c0800000000"/>
+		<Metadata name="CommonModule.РаботаСHttpПовтИсп.Module" id="c45875ca-b132-4bb9-bc96-5faaafd145c5.0" configVersion="9982d18a48cb2f43a29c3e0c1ca0680200000000"/>
 		<Metadata name="CommonModule.РаботаСHttpСлужебный" id="fe54e48d-1133-4b74-b885-0b0045f131f3" configVersion="4a0b940771cb3c4cad75ae8dc4c4277d00000000"/>
 		<Metadata name="CommonModule.РаботаСHttpСлужебный.Module" id="fe54e48d-1133-4b74-b885-0b0045f131f3.0" configVersion="9351d4014cfb25488801d660383090b200000000"/>
 		<Metadata name="Configuration.Конфигурация" id="48891051-e028-4e35-af3e-79dc57d178e0" configVersion="29106343b9dcab4a80cd3442582c455c00000000"/>
