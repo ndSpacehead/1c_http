@@ -369,6 +369,19 @@
 														<Value xsi:type="xs:string">NTLM</Value>
 													</xr:Value>
 												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Digest</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Digest</Value>
+													</xr:Value>
+												</xr:Item>
 											</ChoiceList>
 											<ContextMenu name="ТипАвторизацииКонтекстноеМеню" id="128"/>
 											<ExtendedTooltip name="ТипАвторизацииРасширеннаяПодсказка" id="129"/>

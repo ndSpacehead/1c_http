@@ -205,6 +205,7 @@
 			<CommonModule>РаботаСHttpВызовСервера</CommonModule>
 			<CommonModule>РаботаСHttpКлиентСервер</CommonModule>
 			<CommonModule>РаботаСHttpПовтИсп</CommonModule>
+			<CommonModule>РаботаСHttpСерверПовтИсп</CommonModule>
 			<CommonModule>РаботаСHttpСлужебный</CommonModule>
 			<DataProcessor>КонсольРаботыСHttp</DataProcessor>
 		</ChildObjects>
