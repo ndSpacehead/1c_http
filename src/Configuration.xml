@@ -36,10 +36,10 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Клиент HTTP</v8:content>
+					<v8:content>HTTP-клиент</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Реализация клиента HTTP</Comment>
+			<Comment>Реализация HTTP-клиента</Comment>
 			<NamePrefix/>
 			<ConfigurationExtensionCompatibilityMode>Version8_3_18</ConfigurationExtensionCompatibilityMode>
 			<DefaultRunMode>ManagedApplication</DefaultRunMode>
@@ -195,7 +195,7 @@
 			<DetailedInformation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Библиотека методов и инструменты для работы с HTTP запросами</v8:content>
+					<v8:content>Библиотека методов и инструменты для работы с HTTP-запросами</v8:content>
 				</v8:item>
 			</DetailedInformation>
 			<Copyright>
@@ -226,13 +226,13 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<CommonModule>РаботаСHttp</CommonModule>
-			<CommonModule>РаботаСHttpВызовСервера</CommonModule>
-			<CommonModule>РаботаСHttpКлиентСервер</CommonModule>
-			<CommonModule>РаботаСHttpПовтИсп</CommonModule>
-			<CommonModule>РаботаСHttpСерверПовтИсп</CommonModule>
-			<CommonModule>РаботаСHttpСлужебный</CommonModule>
-			<DataProcessor>КонсольРаботыСHttp</DataProcessor>
+			<CommonModule>КлиентHTTP</CommonModule>
+			<CommonModule>КлиентHTTPВызовСервера</CommonModule>
+			<CommonModule>КлиентHTTPКлиентСервер</CommonModule>
+			<CommonModule>КлиентHTTPПовтИсп</CommonModule>
+			<CommonModule>КлиентHTTPСерверПовтИсп</CommonModule>
+			<CommonModule>КлиентHTTPСлужебный</CommonModule>
+			<DataProcessor>КонсольКлиентаHTTP</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
