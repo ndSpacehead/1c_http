@@ -5,10 +5,10 @@
 		<Metadata name="CommonModule.КлиентHTTP.Module" id="0693d608-53ea-4043-a121-1d37f15510a9.0" configVersion="ade5774586b12e488b230d298bb3886200000000"/>
 		<Metadata name="CommonModule.КлиентHTTPВызовСервера" id="15d7239e-484e-4023-a1f7-a17c2553188c" configVersion="a17ef7d61225854cbdf797fc962f147300000000"/>
 		<Metadata name="CommonModule.КлиентHTTPВызовСервера.Module" id="15d7239e-484e-4023-a1f7-a17c2553188c.0" configVersion="a30596d4cb2f054ab6d8bd809bc6cbba00000000"/>
-		<Metadata name="CommonModule.КлиентHTTPКлиентСервер" id="ac103767-3b16-444c-a6fd-107de0020526" configVersion="c4fbad512550be4082290a0375f8689c00000000"/>
-		<Metadata name="CommonModule.КлиентHTTPКлиентСервер.Module" id="ac103767-3b16-444c-a6fd-107de0020526.0" configVersion="e11ccc1e7887c94dbdd9bc60b7c367c200000000"/>
-		<Metadata name="CommonModule.КлиентHTTPПовтИсп" id="c45875ca-b132-4bb9-bc96-5faaafd145c5" configVersion="166d17ea6d5a444688636e08f6434a1200000000"/>
-		<Metadata name="CommonModule.КлиентHTTPПовтИсп.Module" id="c45875ca-b132-4bb9-bc96-5faaafd145c5.0" configVersion="081db95550fb184ca4f7589c6b4e67ab00000000"/>
+		<Metadata name="CommonModule.КлиентHTTPКлиентСервер" id="ac103767-3b16-444c-a6fd-107de0020526" configVersion="ad233d8f80177443bd660f087c85c4d200000000"/>
+		<Metadata name="CommonModule.КлиентHTTPКлиентСервер.Module" id="ac103767-3b16-444c-a6fd-107de0020526.0" configVersion="dff887cd5bf613419b8dcf96a647da7f00000000"/>
+		<Metadata name="CommonModule.КлиентHTTPПовтИсп" id="c45875ca-b132-4bb9-bc96-5faaafd145c5" configVersion="6d7dce8d11153d41838ddf464e8a6a8000000000"/>
+		<Metadata name="CommonModule.КлиентHTTPПовтИсп.Module" id="c45875ca-b132-4bb9-bc96-5faaafd145c5.0" configVersion="ba4fc9535e601b458a4cdc659a2487e900000000"/>
 		<Metadata name="CommonModule.КлиентHTTPСерверПовтИсп" id="972446f6-09f4-4cd4-8b9e-23414420cec6" configVersion="9cae8765791b1047bd6f239d70dd555b00000000"/>
 		<Metadata name="CommonModule.КлиентHTTPСерверПовтИсп.Module" id="972446f6-09f4-4cd4-8b9e-23414420cec6.0" configVersion="9be1bb54bcc22849b020e628d9605a3c00000000"/>
 		<Metadata name="CommonModule.КлиентHTTPСлужебный" id="fe54e48d-1133-4b74-b885-0b0045f131f3" configVersion="5a4ab57bcf3bf14c807a1df9e81966f600000000"/>
