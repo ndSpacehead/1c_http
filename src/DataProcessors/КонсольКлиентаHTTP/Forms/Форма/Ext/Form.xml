@@ -277,14 +277,19 @@
 												<InputField name="ПараметрыЗапросаКлюч" id="21">
 													<DataPath>ПараметрыЗапроса.Ключ</DataPath>
 													<EditMode>EnterOnInput</EditMode>
+													<Width>10</Width>
 													<DropListButton>false</DropListButton>
+													<ChoiceButton>false</ChoiceButton>
 													<ClearButton>false</ClearButton>
 													<SpinButton>false</SpinButton>
-													<OpenButton>false</OpenButton>
+													<OpenButton>true</OpenButton>
 													<CreateButton>false</CreateButton>
 													<AutoMarkIncomplete>true</AutoMarkIncomplete>
 													<ContextMenu name="ПараметрыЗапросаКлючКонтекстноеМеню" id="22"/>
 													<ExtendedTooltip name="ПараметрыЗапросаКлючРасширеннаяПодсказка" id="23"/>
+													<Events>
+														<Event name="Opening">ПараметрыЗапросаКлючОткрытие</Event>
+													</Events>
 												</InputField>
 												<InputField name="ПараметрыЗапросаЗначение" id="24">
 													<DataPath>ПараметрыЗапроса.Значение</DataPath>
@@ -293,10 +298,13 @@
 													<ChoiceButton>false</ChoiceButton>
 													<ClearButton>false</ClearButton>
 													<SpinButton>false</SpinButton>
-													<OpenButton>false</OpenButton>
+													<OpenButton>true</OpenButton>
 													<CreateButton>false</CreateButton>
 													<ContextMenu name="ПараметрыЗапросаЗначениеКонтекстноеМеню" id="25"/>
 													<ExtendedTooltip name="ПараметрыЗапросаЗначениеРасширеннаяПодсказка" id="26"/>
+													<Events>
+														<Event name="Opening">ПараметрыЗапросаЗначениеОткрытие</Event>
+													</Events>
 												</InputField>
 											</ChildItems>
 										</Table>
@@ -531,12 +539,16 @@
 													<ChoiceButton>false</ChoiceButton>
 													<ClearButton>false</ClearButton>
 													<SpinButton>false</SpinButton>
-													<OpenButton>false</OpenButton>
+													<OpenButton>true</OpenButton>
 													<CreateButton>false</CreateButton>
 													<AutoMarkIncomplete>true</AutoMarkIncomplete>
 													<ChooseType>false</ChooseType>
 													<ContextMenu name="ЗаголовкиЗапросаКлючКонтекстноеМеню" id="120"/>
 													<ExtendedTooltip name="ЗаголовкиЗапросаКлючРасширеннаяПодсказка" id="121"/>
+													<Events>
+														<Event name="OnChange">ЗаголовкиЗапросаКлючПриИзменении</Event>
+														<Event name="Opening">ЗаголовкиЗапросаКлючОткрытие</Event>
+													</Events>
 												</InputField>
 												<InputField name="ЗаголовкиЗапросаЗначение" id="122">
 													<DataPath>ЗаголовкиЗапроса.Значение</DataPath>
@@ -545,11 +557,14 @@
 													<ChoiceButton>false</ChoiceButton>
 													<ClearButton>false</ClearButton>
 													<SpinButton>false</SpinButton>
-													<OpenButton>false</OpenButton>
+													<OpenButton>true</OpenButton>
 													<CreateButton>false</CreateButton>
 													<ChooseType>false</ChooseType>
 													<ContextMenu name="ЗаголовкиЗапросаЗначениеКонтекстноеМеню" id="123"/>
 													<ExtendedTooltip name="ЗаголовкиЗапросаЗначениеРасширеннаяПодсказка" id="124"/>
+													<Events>
+														<Event name="Opening">ЗаголовкиЗапросаЗначениеОткрытие</Event>
+													</Events>
 												</InputField>
 											</ChildItems>
 										</Table>
@@ -609,7 +624,7 @@
 														<Presentation>
 															<v8:item>
 																<v8:lang>ru</v8:lang>
-																<v8:content>Как есть</v8:content>
+																<v8:content>Текст</v8:content>
 															</v8:item>
 														</Presentation>
 														<Value xsi:type="xs:string">raw</Value>
@@ -743,11 +758,14 @@
 																	<ChoiceButton>false</ChoiceButton>
 																	<ClearButton>false</ClearButton>
 																	<SpinButton>false</SpinButton>
-																	<OpenButton>false</OpenButton>
+																	<OpenButton>true</OpenButton>
 																	<CreateButton>false</CreateButton>
 																	<AutoMarkIncomplete>true</AutoMarkIncomplete>
 																	<ContextMenu name="ДанныеФормыКлючКонтекстноеМеню" id="177"/>
 																	<ExtendedTooltip name="ДанныеФормыКлючРасширеннаяПодсказка" id="178"/>
+																	<Events>
+																		<Event name="Opening">ДанныеФормыКлючОткрытие</Event>
+																	</Events>
 																</InputField>
 																<InputField name="ДанныеФормыТип" id="173">
 																	<DataPath>ТелоЗапросаДанныеФормы.Тип</DataPath>
@@ -794,6 +812,9 @@
 																	</ChoiceList>
 																	<ContextMenu name="ДанныеФормыТипКонтекстноеМеню" id="174"/>
 																	<ExtendedTooltip name="ДанныеФормыТипРасширеннаяПодсказка" id="175"/>
+																	<Events>
+																		<Event name="OnChange">ДанныеФормыТипПриИзменении</Event>
+																	</Events>
 																</InputField>
 																<InputField name="ДанныеФормыЗначение" id="179">
 																	<DataPath>ТелоЗапросаДанныеФормы.Значение</DataPath>
@@ -831,6 +852,7 @@
 													<ChildItems>
 														<InputField name="ТипТелаЗапросаКакЕсть" id="154">
 															<DataPath>ТипТелаЗапросаКакЕсть</DataPath>
+															<Visible>false</Visible>
 															<TitleLocation>None</TitleLocation>
 															<Width>10</Width>
 															<HorizontalStretch>false</HorizontalStretch>
@@ -953,7 +975,7 @@
 															<ContextMenu name="ТелоЗапросаФайлКонтекстноеМеню" id="185"/>
 															<ExtendedTooltip name="ТелоЗапросаФайлРасширеннаяПодсказка" id="186"/>
 															<Events>
-																<Event name="StartChoice">ТелоЗапросаФайлНачалоВыбора</Event>
+																<Event name="StartChoice">ФайлТелаЗапросаНачалоВыбора</Event>
 															</Events>
 														</InputField>
 													</ChildItems>
@@ -1193,7 +1215,7 @@
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>50</v8:Length>
+							<v8:Length>100</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
