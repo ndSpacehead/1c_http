@@ -5,8 +5,8 @@
 		<Metadata name="CommonModule.КлиентHTTP.Module" id="0693d608-53ea-4043-a121-1d37f15510a9.0" configVersion="963c02e6a90b7641af6bf75891d668ed00000000"/>
 		<Metadata name="CommonModule.КлиентHTTPВызовСервера" id="15d7239e-484e-4023-a1f7-a17c2553188c" configVersion="3bd9dd8ab6caca45afadc7c392d9068800000000"/>
 		<Metadata name="CommonModule.КлиентHTTPВызовСервера.Module" id="15d7239e-484e-4023-a1f7-a17c2553188c.0" configVersion="c1189f932890654cb059e11eb104761000000000"/>
-		<Metadata name="CommonModule.КлиентHTTPКлиентСервер" id="ac103767-3b16-444c-a6fd-107de0020526" configVersion="51ed1b50ae7cf646b642fdbd259371db00000000"/>
-		<Metadata name="CommonModule.КлиентHTTPКлиентСервер.Module" id="ac103767-3b16-444c-a6fd-107de0020526.0" configVersion="836f7d5c502ff744a639d501ce2fb41600000000"/>
+		<Metadata name="CommonModule.КлиентHTTPКлиентСервер" id="ac103767-3b16-444c-a6fd-107de0020526" configVersion="a7706d5ef0a1d8419b95a6c91da817de00000000"/>
+		<Metadata name="CommonModule.КлиентHTTPКлиентСервер.Module" id="ac103767-3b16-444c-a6fd-107de0020526.0" configVersion="ddab9bdbe6fada408cb0399a1622443800000000"/>
 		<Metadata name="CommonModule.КлиентHTTPПовтИсп" id="c45875ca-b132-4bb9-bc96-5faaafd145c5" configVersion="6d7dce8d11153d41838ddf464e8a6a8000000000"/>
 		<Metadata name="CommonModule.КлиентHTTPПовтИсп.Module" id="c45875ca-b132-4bb9-bc96-5faaafd145c5.0" configVersion="ba4fc9535e601b458a4cdc659a2487e900000000"/>
 		<Metadata name="CommonModule.КлиентHTTPСерверПовтИсп" id="972446f6-09f4-4cd4-8b9e-23414420cec6" configVersion="9cae8765791b1047bd6f239d70dd555b00000000"/>
