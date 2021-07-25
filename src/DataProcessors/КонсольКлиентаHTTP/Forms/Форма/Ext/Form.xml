@@ -515,6 +515,7 @@
 												<ExtendedTooltip name="ЗаголовкиЗапросаУправлениеПоискомРасширеннаяПодсказка" id="115"/>
 											</SearchControlAddition>
 											<Events>
+												<Event name="BeforeEditEnd">ЗаголовкиЗапросаПередОкончаниемРедактирования</Event>
 												<Event name="OnStartEdit">ЗаголовкиЗапросаПриНачалеРедактирования</Event>
 											</Events>
 											<ChildItems>
