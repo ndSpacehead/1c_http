@@ -225,24 +225,27 @@
 									<EditMode>EnterOnInput</EditMode>
 									<MultiLine>false</MultiLine>
 									<DropListButton>false</DropListButton>
-									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButton>false</ChoiceButton>
 									<ClearButton>false</ClearButton>
 									<SpinButton>false</SpinButton>
-									<OpenButton>false</OpenButton>
+									<OpenButton>true</OpenButton>
 									<CreateButton>false</CreateButton>
 									<ChooseType>false</ChooseType>
 									<ContextMenu name="ПеченькиПолучателяИмяКонтекстноеМеню" id="64"/>
 									<ExtendedTooltip name="ПеченькиПолучателяИмяРасширеннаяПодсказка" id="65"/>
+									<Events>
+										<Event name="Opening">ПеченькиПолучателяИмяОткрытие</Event>
+									</Events>
 								</InputField>
 								<InputField name="ПеченькиПолучателяЗначение" id="66">
 									<DataPath>ПеченькиПолучателя.Значение</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<MultiLine>false</MultiLine>
 									<DropListButton>false</DropListButton>
-									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButton>false</ChoiceButton>
 									<ClearButton>true</ClearButton>
 									<SpinButton>false</SpinButton>
-									<OpenButton>false</OpenButton>
+									<OpenButton>true</OpenButton>
 									<CreateButton>false</CreateButton>
 									<InputHint>
 										<v8:item>
@@ -252,6 +255,9 @@
 									</InputHint>
 									<ContextMenu name="ПеченькиПолучателяЗначениеКонтекстноеМеню" id="67"/>
 									<ExtendedTooltip name="ПеченькиПолучателяЗначениеРасширеннаяПодсказка" id="68"/>
+									<Events>
+										<Event name="Opening">ПеченькиПолучателяЗначениеОткрытие</Event>
+									</Events>
 								</InputField>
 								<InputField name="ПеченькиПолучателяКлюч" id="74">
 									<DataPath>ПеченькиПолучателя.Ключ</DataPath>

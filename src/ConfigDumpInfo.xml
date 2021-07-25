@@ -15,8 +15,8 @@
 		<Metadata name="CommonModule.КлиентHTTPСлужебный.Module" id="fe54e48d-1133-4b74-b885-0b0045f131f3.0" configVersion="fea6e0376ee08944b50e7ab76a341b4b00000000"/>
 		<Metadata name="Configuration.КлиентHTTP" id="48891051-e028-4e35-af3e-79dc57d178e0" configVersion="029a361718ed2c4ba0287132dde0b51e00000000"/>
 		<Metadata name="DataProcessor.КонсольКлиентаHTTP" id="009ccf0f-85c3-4b5b-a5ff-eedce8d046c7" configVersion="e453426deb516b4796249d15943e2acb00000000"/>
-		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторCookies" id="419c684b-78be-4624-bd57-b2b1a9eeb22e" configVersion="a74e08950242a14f83522803459e4acc00000000"/>
-		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторCookies.Form" id="419c684b-78be-4624-bd57-b2b1a9eeb22e.0" configVersion="ab4d7238f0bbbe44a85fbb5c9b4d889400000000"/>
+		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторCookies" id="419c684b-78be-4624-bd57-b2b1a9eeb22e" configVersion="06331e4c28bbf04d93172ceb1deee8cb00000000"/>
+		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторCookies.Form" id="419c684b-78be-4624-bd57-b2b1a9eeb22e.0" configVersion="15698dfa6b621e4d9cc19dcc00174ad700000000"/>
 		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторТекстовогоПоля" id="bdffbf4e-d448-4c81-a2a6-28fcd9a18adb" configVersion="10e76698793bdb4fa5cc88286a80415700000000"/>
 		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторТекстовогоПоля.Form" id="bdffbf4e-d448-4c81-a2a6-28fcd9a18adb.0" configVersion="13ddd6c7ee52654ebb886009b685d69b00000000"/>
 		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.Форма" id="fb7cf040-b38e-47f3-95a9-08d07b6f009a" configVersion="d6fed449dbd65a4b96b08459e4dd6f2700000000"/>
