@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.11">
 	<ConfigVersions>
-		<Metadata name="CommonModule.КлиентHTTP" id="0693d608-53ea-4043-a121-1d37f15510a9" configVersion="1fa0414b5ebd814d922507dd8ab52d5700000000"/>
-		<Metadata name="CommonModule.КлиентHTTP.Module" id="0693d608-53ea-4043-a121-1d37f15510a9.0" configVersion="963c02e6a90b7641af6bf75891d668ed00000000"/>
-		<Metadata name="CommonModule.КлиентHTTPВызовСервера" id="15d7239e-484e-4023-a1f7-a17c2553188c" configVersion="3bd9dd8ab6caca45afadc7c392d9068800000000"/>
-		<Metadata name="CommonModule.КлиентHTTPВызовСервера.Module" id="15d7239e-484e-4023-a1f7-a17c2553188c.0" configVersion="c1189f932890654cb059e11eb104761000000000"/>
-		<Metadata name="CommonModule.КлиентHTTPКлиентСервер" id="ac103767-3b16-444c-a6fd-107de0020526" configVersion="8412768b5ce49a4aac41b29fc3551b6000000000"/>
-		<Metadata name="CommonModule.КлиентHTTPКлиентСервер.Module" id="ac103767-3b16-444c-a6fd-107de0020526.0" configVersion="16c29ffe6715e040871f8a87bfe13be500000000"/>
+		<Metadata name="CommonModule.КлиентHTTP" id="0693d608-53ea-4043-a121-1d37f15510a9" configVersion="d5b2f20e5613cd4f822cf3525388129300000000"/>
+		<Metadata name="CommonModule.КлиентHTTP.Module" id="0693d608-53ea-4043-a121-1d37f15510a9.0" configVersion="20ee91c26e44e24ea783d3d882cd0aa300000000"/>
+		<Metadata name="CommonModule.КлиентHTTPВызовСервера" id="15d7239e-484e-4023-a1f7-a17c2553188c" configVersion="dbceea60696a67419bf38991683f464500000000"/>
+		<Metadata name="CommonModule.КлиентHTTPВызовСервера.Module" id="15d7239e-484e-4023-a1f7-a17c2553188c.0" configVersion="6eb01ddbff705c4b9c42d55fb7e48a5e00000000"/>
+		<Metadata name="CommonModule.КлиентHTTPКлиентСервер" id="ac103767-3b16-444c-a6fd-107de0020526" configVersion="8cabd7877b14c44aa09ae0d75e4b10e200000000"/>
+		<Metadata name="CommonModule.КлиентHTTPКлиентСервер.Module" id="ac103767-3b16-444c-a6fd-107de0020526.0" configVersion="c82b22bcadd9ea42ae0b47bfebf48f5300000000"/>
 		<Metadata name="CommonModule.КлиентHTTPПовтИсп" id="c45875ca-b132-4bb9-bc96-5faaafd145c5" configVersion="141400618772ec428036a4b19de52f7400000000"/>
 		<Metadata name="CommonModule.КлиентHTTPПовтИсп.Module" id="c45875ca-b132-4bb9-bc96-5faaafd145c5.0" configVersion="e94be8e4cfd4ac4c895db276f02a674100000000"/>
 		<Metadata name="CommonModule.КлиентHTTPСерверПовтИсп" id="972446f6-09f4-4cd4-8b9e-23414420cec6" configVersion="9cae8765791b1047bd6f239d70dd555b00000000"/>
@@ -19,8 +19,8 @@
 		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторCookies.Form" id="419c684b-78be-4624-bd57-b2b1a9eeb22e.0" configVersion="6cdc7ce22e0327409a78541ef25ea0d500000000"/>
 		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторТекстовогоПоля" id="bdffbf4e-d448-4c81-a2a6-28fcd9a18adb" configVersion="10e76698793bdb4fa5cc88286a80415700000000"/>
 		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторТекстовогоПоля.Form" id="bdffbf4e-d448-4c81-a2a6-28fcd9a18adb.0" configVersion="13ddd6c7ee52654ebb886009b685d69b00000000"/>
-		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.Форма" id="fb7cf040-b38e-47f3-95a9-08d07b6f009a" configVersion="c843343cd269ea4f946a9b6d45f4735300000000"/>
-		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.Форма.Form" id="fb7cf040-b38e-47f3-95a9-08d07b6f009a.0" configVersion="bc8928dca285644bb375e59d1a4626c200000000"/>
+		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.Форма" id="fb7cf040-b38e-47f3-95a9-08d07b6f009a" configVersion="b37ec4f5651a7c4fa60f5b7ede9a294e00000000"/>
+		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.Форма.Form" id="fb7cf040-b38e-47f3-95a9-08d07b6f009a.0" configVersion="e7b7811c85584f4597ac8e1e9121972f00000000"/>
 		<Metadata name="Language.Русский" id="55e212ce-13b0-4b15-af32-06df26b50926" configVersion="edb6fc807b17da4ab6d718f996a1127c00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
