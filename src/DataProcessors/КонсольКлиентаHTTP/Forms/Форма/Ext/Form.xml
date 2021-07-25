@@ -515,6 +515,7 @@
 												<ExtendedTooltip name="ЗаголовкиЗапросаУправлениеПоискомРасширеннаяПодсказка" id="115"/>
 											</SearchControlAddition>
 											<Events>
+												<Event name="BeforeEditEnd">ЗаголовкиЗапросаПередОкончаниемРедактирования</Event>
 												<Event name="OnStartEdit">ЗаголовкиЗапросаПриНачалеРедактирования</Event>
 											</Events>
 											<ChildItems>
@@ -1138,9 +1139,29 @@
 											<v8:content>Группа тело</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ExtendedTooltip name="ГруппаТелоРасширеннаяПодсказка" id="96"/>
 									<ChildItems>
+										<InputField name="ИмяФайлаТела" id="193">
+											<DataPath>ИмяФайлаТела</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Файл</v8:content>
+												</v8:item>
+											</Title>
+											<TextEdit>false</TextEdit>
+											<ContextMenu name="ИмяФайлаТелаКонтекстноеМеню" id="194"/>
+											<ExtendedTooltip name="ИмяФайлаТелаРасширеннаяПодсказка" id="195">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Имя файла с данными тела HTTP-ответа</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</InputField>
 										<InputField name="Ответ" id="29">
 											<DataPath>Ответ</DataPath>
 											<Title>
@@ -1602,6 +1623,21 @@
 				</v8:item>
 			</Title>
 			<Type/>
+		</Attribute>
+		<Attribute name="ИмяФайлаТела" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя файла тела</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
