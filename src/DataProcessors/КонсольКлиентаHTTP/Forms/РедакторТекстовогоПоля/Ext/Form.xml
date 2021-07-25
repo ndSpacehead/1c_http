@@ -29,8 +29,8 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="Текст" id="3">
-			<DataPath>Текст</DataPath>
+		<InputField name="РедактируемыйТекст" id="3">
+			<DataPath>РедактируемыйТекст</DataPath>
 			<TitleLocation>None</TitleLocation>
 			<Width>50</Width>
 			<AutoMaxWidth>false</AutoMaxWidth>
@@ -39,8 +39,14 @@
 			<VerticalStretch>true</VerticalStretch>
 			<MultiLine>true</MultiLine>
 			<ExtendedEdit>true</ExtendedEdit>
-			<ContextMenu name="ТекстКонтекстноеМеню" id="4"/>
-			<ExtendedTooltip name="ТекстРасширеннаяПодсказка" id="5"/>
+			<DropListButton>false</DropListButton>
+			<ChoiceButton>false</ChoiceButton>
+			<ClearButton>false</ClearButton>
+			<SpinButton>false</SpinButton>
+			<OpenButton>false</OpenButton>
+			<CreateButton>false</CreateButton>
+			<ContextMenu name="РедактируемыйТекстКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="РедактируемыйТекстРасширеннаяПодсказка" id="5"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>
@@ -50,11 +56,11 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
-		<Attribute name="Текст" id="2">
+		<Attribute name="РедактируемыйТекст" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Текст</v8:content>
+					<v8:content>Редактируемый текст</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
