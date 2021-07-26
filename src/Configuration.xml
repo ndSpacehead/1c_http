@@ -226,6 +226,7 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>КлиентHTTP</Subsystem>
 			<CommonModule>КлиентHTTP</CommonModule>
 			<CommonModule>КлиентHTTPВызовСервера</CommonModule>
 			<CommonModule>КлиентHTTPКлиентСервер</CommonModule>
