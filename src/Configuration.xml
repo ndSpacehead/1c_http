@@ -49,8 +49,8 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Брызгалин Андрей Васильевич (andrew.bryzgalin@gmail.com)</Vendor>
-			<Version/>
-			<UpdateCatalogAddress/>
+			<Version>0.9.1</Version>
+			<UpdateCatalogAddress>https://github.com/SpaceHead1C/1c_http/releases</UpdateCatalogAddress>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
 			<UseOrdinaryFormInManagedApplication>false</UseOrdinaryFormInManagedApplication>
@@ -201,7 +201,7 @@
 			<Copyright>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Брызгалин Андрей Васильевич</v8:content>
+					<v8:content>Copyright (C) Брызгалин Андрей Васильевич, 2021. Все права защищены.</v8:content>
 				</v8:item>
 			</Copyright>
 			<VendorInformationAddress>
@@ -221,11 +221,12 @@
 			<ModalityUseMode>DontUse</ModalityUseMode>
 			<SynchronousPlatformExtensionAndAddInCallUseMode>Use</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
-			<CompatibilityMode>Version8_3_17</CompatibilityMode>
+			<CompatibilityMode>Version8_3_10</CompatibilityMode>
 			<DefaultConstantsForm/>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>КлиентHTTP</Subsystem>
 			<CommonModule>КлиентHTTP</CommonModule>
 			<CommonModule>КлиентHTTPВызовСервера</CommonModule>
 			<CommonModule>КлиентHTTPКлиентСервер</CommonModule>
