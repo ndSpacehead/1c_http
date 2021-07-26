@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.11">
 	<ConfigVersions>
-		<Metadata name="CommonModule.КлиентHTTP" id="0693d608-53ea-4043-a121-1d37f15510a9" configVersion="d5b2f20e5613cd4f822cf3525388129300000000"/>
-		<Metadata name="CommonModule.КлиентHTTP.Module" id="0693d608-53ea-4043-a121-1d37f15510a9.0" configVersion="20ee91c26e44e24ea783d3d882cd0aa300000000"/>
-		<Metadata name="CommonModule.КлиентHTTPВызовСервера" id="15d7239e-484e-4023-a1f7-a17c2553188c" configVersion="dbceea60696a67419bf38991683f464500000000"/>
-		<Metadata name="CommonModule.КлиентHTTPВызовСервера.Module" id="15d7239e-484e-4023-a1f7-a17c2553188c.0" configVersion="6eb01ddbff705c4b9c42d55fb7e48a5e00000000"/>
-		<Metadata name="CommonModule.КлиентHTTPКлиентСервер" id="ac103767-3b16-444c-a6fd-107de0020526" configVersion="8cabd7877b14c44aa09ae0d75e4b10e200000000"/>
-		<Metadata name="CommonModule.КлиентHTTPКлиентСервер.Module" id="ac103767-3b16-444c-a6fd-107de0020526.0" configVersion="c82b22bcadd9ea42ae0b47bfebf48f5300000000"/>
-		<Metadata name="CommonModule.КлиентHTTPПовтИсп" id="c45875ca-b132-4bb9-bc96-5faaafd145c5" configVersion="141400618772ec428036a4b19de52f7400000000"/>
-		<Metadata name="CommonModule.КлиентHTTPПовтИсп.Module" id="c45875ca-b132-4bb9-bc96-5faaafd145c5.0" configVersion="e94be8e4cfd4ac4c895db276f02a674100000000"/>
-		<Metadata name="CommonModule.КлиентHTTPСерверПовтИсп" id="972446f6-09f4-4cd4-8b9e-23414420cec6" configVersion="9cae8765791b1047bd6f239d70dd555b00000000"/>
-		<Metadata name="CommonModule.КлиентHTTPСерверПовтИсп.Module" id="972446f6-09f4-4cd4-8b9e-23414420cec6.0" configVersion="9be1bb54bcc22849b020e628d9605a3c00000000"/>
-		<Metadata name="CommonModule.КлиентHTTPСлужебный" id="fe54e48d-1133-4b74-b885-0b0045f131f3" configVersion="835c30377853f1488489395e27b0502600000000"/>
-		<Metadata name="CommonModule.КлиентHTTPСлужебный.Module" id="fe54e48d-1133-4b74-b885-0b0045f131f3.0" configVersion="fea6e0376ee08944b50e7ab76a341b4b00000000"/>
-		<Metadata name="Configuration.КлиентHTTP" id="48891051-e028-4e35-af3e-79dc57d178e0" configVersion="029a361718ed2c4ba0287132dde0b51e00000000"/>
-		<Metadata name="DataProcessor.КонсольКлиентаHTTP" id="009ccf0f-85c3-4b5b-a5ff-eedce8d046c7" configVersion="e453426deb516b4796249d15943e2acb00000000"/>
-		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторCookies" id="419c684b-78be-4624-bd57-b2b1a9eeb22e" configVersion="3d81f69858952646a222960d0eba771c00000000"/>
-		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторCookies.Form" id="419c684b-78be-4624-bd57-b2b1a9eeb22e.0" configVersion="6cdc7ce22e0327409a78541ef25ea0d500000000"/>
-		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторТекстовогоПоля" id="bdffbf4e-d448-4c81-a2a6-28fcd9a18adb" configVersion="10e76698793bdb4fa5cc88286a80415700000000"/>
-		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторТекстовогоПоля.Form" id="bdffbf4e-d448-4c81-a2a6-28fcd9a18adb.0" configVersion="13ddd6c7ee52654ebb886009b685d69b00000000"/>
-		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.Форма" id="fb7cf040-b38e-47f3-95a9-08d07b6f009a" configVersion="b37ec4f5651a7c4fa60f5b7ede9a294e00000000"/>
-		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.Форма.Form" id="fb7cf040-b38e-47f3-95a9-08d07b6f009a.0" configVersion="e7b7811c85584f4597ac8e1e9121972f00000000"/>
-		<Metadata name="Language.Русский" id="55e212ce-13b0-4b15-af32-06df26b50926" configVersion="edb6fc807b17da4ab6d718f996a1127c00000000"/>
+		<Metadata name="CommonModule.КлиентHTTP" id="0693d608-53ea-4043-a121-1d37f15510a9" configVersion="2c171d19b0b4d145a619385a307b2ace00000000"/>
+		<Metadata name="CommonModule.КлиентHTTP.Module" id="0693d608-53ea-4043-a121-1d37f15510a9.0" configVersion="a576c6596bd7dc4ca69b38932193400600000000"/>
+		<Metadata name="CommonModule.КлиентHTTPВызовСервера" id="15d7239e-484e-4023-a1f7-a17c2553188c" configVersion="f68d591e38361449aae547194e43689500000000"/>
+		<Metadata name="CommonModule.КлиентHTTPВызовСервера.Module" id="15d7239e-484e-4023-a1f7-a17c2553188c.0" configVersion="86932d1dc9ca8e4abe6e6ead523042e300000000"/>
+		<Metadata name="CommonModule.КлиентHTTPКлиентСервер" id="ac103767-3b16-444c-a6fd-107de0020526" configVersion="38d2214ee06b214eba335e3fb00ff78900000000"/>
+		<Metadata name="CommonModule.КлиентHTTPКлиентСервер.Module" id="ac103767-3b16-444c-a6fd-107de0020526.0" configVersion="53a1fe1bed3cc24cb5ee4f1b02fc630900000000"/>
+		<Metadata name="CommonModule.КлиентHTTPПовтИсп" id="c45875ca-b132-4bb9-bc96-5faaafd145c5" configVersion="bec7fad9874d7845aea44d010054dc2400000000"/>
+		<Metadata name="CommonModule.КлиентHTTPПовтИсп.Module" id="c45875ca-b132-4bb9-bc96-5faaafd145c5.0" configVersion="0f001179570de44c97f1cc98bb0bc06400000000"/>
+		<Metadata name="CommonModule.КлиентHTTPСерверПовтИсп" id="972446f6-09f4-4cd4-8b9e-23414420cec6" configVersion="1e602721e57c154094962c73ca4fec6d00000000"/>
+		<Metadata name="CommonModule.КлиентHTTPСерверПовтИсп.Module" id="972446f6-09f4-4cd4-8b9e-23414420cec6.0" configVersion="377b899506484e42aed4c2826482b0d000000000"/>
+		<Metadata name="CommonModule.КлиентHTTPСлужебный" id="fe54e48d-1133-4b74-b885-0b0045f131f3" configVersion="28cda45005d6ec4e81a027c77d84911c00000000"/>
+		<Metadata name="CommonModule.КлиентHTTPСлужебный.Module" id="fe54e48d-1133-4b74-b885-0b0045f131f3.0" configVersion="e6219c09b6d2c446a0bfa1a49c05b4aa00000000"/>
+		<Metadata name="Configuration.КлиентHTTP" id="48891051-e028-4e35-af3e-79dc57d178e0" configVersion="e558372db5bdeb479f008407e094f5e800000000"/>
+		<Metadata name="DataProcessor.КонсольКлиентаHTTP" id="009ccf0f-85c3-4b5b-a5ff-eedce8d046c7" configVersion="1c044498365ea14da40dce475120919f00000000"/>
+		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторCookies" id="419c684b-78be-4624-bd57-b2b1a9eeb22e" configVersion="b9385750ef2d944089f9ab4dfd242ca400000000"/>
+		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторCookies.Form" id="419c684b-78be-4624-bd57-b2b1a9eeb22e.0" configVersion="3e7eaf3ff5191a4fb15a06d99b6286b700000000"/>
+		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторТекстовогоПоля" id="bdffbf4e-d448-4c81-a2a6-28fcd9a18adb" configVersion="eca59240bd8cc84491e73f94fa106d6200000000"/>
+		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.РедакторТекстовогоПоля.Form" id="bdffbf4e-d448-4c81-a2a6-28fcd9a18adb.0" configVersion="9a823ecc8c1ac44d8e6a558ab0daa0a700000000"/>
+		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.Форма" id="fb7cf040-b38e-47f3-95a9-08d07b6f009a" configVersion="da8a8e603ec1bb4a8d1b8cbe23c2ff5000000000"/>
+		<Metadata name="DataProcessor.КонсольКлиентаHTTP.Form.Форма.Form" id="fb7cf040-b38e-47f3-95a9-08d07b6f009a.0" configVersion="804cd7cd1c60c443ba5f0ed0822d8e2000000000"/>
+		<Metadata name="Language.Русский" id="55e212ce-13b0-4b15-af32-06df26b50926" configVersion="e4d2917fa66056419e888c920484a5a400000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
