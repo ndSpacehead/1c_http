@@ -205,9 +205,37 @@
 									</Title>
 									<Hyperlink>true</Hyperlink>
 									<ContextMenu name="ОткрытьНастройкиКонтекстноеМеню" id="221"/>
-									<ExtendedTooltip name="ОткрытьНастройкиРасширеннаяПодсказка" id="222"/>
+									<ExtendedTooltip name="ОткрытьНастройкиРасширеннаяПодсказка" id="222">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Открыть настройки консоли</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
 									<Events>
 										<Event name="Click">ОткрытьНастройкиНажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="СгенерироватьКод" id="228">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Код</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="СгенерироватьКодКонтекстноеМеню" id="229"/>
+									<ExtendedTooltip name="СгенерироватьКодРасширеннаяПодсказка" id="230">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сгенерировать код запроса консоли</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="Click">СгенерироватьКодНажатие</Event>
 									</Events>
 								</LabelDecoration>
 								<LabelDecoration name="ОткрытьCookies" id="190">
@@ -219,7 +247,14 @@
 									</Title>
 									<Hyperlink>true</Hyperlink>
 									<ContextMenu name="ОткрытьCookiesКонтекстноеМеню" id="191"/>
-									<ExtendedTooltip name="ОткрытьCookiesРасширеннаяПодсказка" id="192"/>
+									<ExtendedTooltip name="ОткрытьCookiesРасширеннаяПодсказка" id="192">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Открыть редактор Cookie</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
 									<Events>
 										<Event name="Click">ОткрытьCookiesНажатие</Event>
 									</Events>
