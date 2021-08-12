@@ -196,16 +196,16 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаПереходыРасширеннаяПодсказка" id="219"/>
 							<ChildItems>
-								<LabelDecoration name="ОткрытьНастройки" id="220">
-									<Title formatted="false">
+								<Button name="ОткрытьНастройки" id="239">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьНастройки</CommandName>
+									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
 											<v8:content>Настройки</v8:content>
 										</v8:item>
 									</Title>
-									<Hyperlink>true</Hyperlink>
-									<ContextMenu name="ОткрытьНастройкиКонтекстноеМеню" id="221"/>
-									<ExtendedTooltip name="ОткрытьНастройкиРасширеннаяПодсказка" id="222">
+									<ExtendedTooltip name="ОткрытьНастройкиРасширеннаяПодсказка" id="240">
 										<Title formatted="false">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
@@ -213,20 +213,17 @@
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
-									<Events>
-										<Event name="Click">ОткрытьНастройкиНажатие</Event>
-									</Events>
-								</LabelDecoration>
-								<LabelDecoration name="СгенерироватьКод" id="228">
-									<Title formatted="false">
+								</Button>
+								<Button name="СгенерироватьКод" id="241">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.СгенерироватьКод</CommandName>
+									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
 											<v8:content>Код</v8:content>
 										</v8:item>
 									</Title>
-									<Hyperlink>true</Hyperlink>
-									<ContextMenu name="СгенерироватьКодКонтекстноеМеню" id="229"/>
-									<ExtendedTooltip name="СгенерироватьКодРасширеннаяПодсказка" id="230">
+									<ExtendedTooltip name="СгенерироватьКодРасширеннаяПодсказка" id="242">
 										<Title formatted="false">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
@@ -234,20 +231,17 @@
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
-									<Events>
-										<Event name="Click">СгенерироватьКодНажатие</Event>
-									</Events>
-								</LabelDecoration>
-								<LabelDecoration name="ОткрытьCookies" id="190">
-									<Title formatted="false">
+								</Button>
+								<Button name="ОткрытьCookies" id="243">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьCookies</CommandName>
+									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
 											<v8:content>Cookies</v8:content>
 										</v8:item>
 									</Title>
-									<Hyperlink>true</Hyperlink>
-									<ContextMenu name="ОткрытьCookiesКонтекстноеМеню" id="191"/>
-									<ExtendedTooltip name="ОткрытьCookiesРасширеннаяПодсказка" id="192">
+									<ExtendedTooltip name="ОткрытьCookiesРасширеннаяПодсказка" id="244">
 										<Title formatted="false">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
@@ -255,10 +249,7 @@
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
-									<Events>
-										<Event name="Click">ОткрытьCookiesНажатие</Event>
-									</Events>
-								</LabelDecoration>
+								</Button>
 							</ChildItems>
 						</UsualGroup>
 						<Pages name="ГруппаРазделы" id="4">
@@ -2091,6 +2082,54 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПрименитьНастройки</Action>
+		</Command>
+		<Command name="ОткрытьНастройки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+1</Shortcut>
+			<Action>ОткрытьНастройки</Action>
+		</Command>
+		<Command name="СгенерироватьКод" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+2</Shortcut>
+			<Action>СгенерироватьКод</Action>
+		</Command>
+		<Command name="ОткрытьCookies" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть cookies</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть cookies</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+3</Shortcut>
+			<Action>ОткрытьCookies</Action>
 		</Command>
 	</Commands>
 </Form>
