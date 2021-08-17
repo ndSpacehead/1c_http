@@ -250,6 +250,18 @@
 										</Title>
 									</ExtendedTooltip>
 								</Button>
+								<Button name="Импортировать" id="245">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.Импортировать</CommandName>
+									<ExtendedTooltip name="ИмпортироватьРасширеннаяПодсказка" id="246">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Имполртировать файл Postman формата 2.1</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
 							</ChildItems>
 						</UsualGroup>
 						<Pages name="ГруппаРазделы" id="4">
@@ -2130,6 +2142,21 @@
 			</ToolTip>
 			<Shortcut>Ctrl+3</Shortcut>
 			<Action>ОткрытьCookies</Action>
+		</Command>
+		<Command name="Импортировать" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импорт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импортировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Импортировать</Action>
 		</Command>
 	</Commands>
 </Form>
