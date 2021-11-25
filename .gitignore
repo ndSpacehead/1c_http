@@ -1,1 +1,6 @@
 ConfigDumpInfo.xml
+
+# sonar
+.scannerwork
+.bsl-language-server.json
+sonar-project.properties
