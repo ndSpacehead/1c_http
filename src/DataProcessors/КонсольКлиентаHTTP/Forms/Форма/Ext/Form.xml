@@ -47,6 +47,117 @@
 					</ToolTip>
 					<ExtendedTooltip name="СтраницаКонсольРасширеннаяПодсказка" id="199"/>
 					<ChildItems>
+						<UsualGroup name="ГруппаПереходы" id="218">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа переходы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа переходы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<HorizontalSpacing>Double</HorizontalSpacing>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПереходыРасширеннаяПодсказка" id="219"/>
+							<ChildItems>
+								<Button name="ОткрытьНастройки" id="239">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьНастройки</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ОткрытьНастройкиРасширеннаяПодсказка" id="240">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Открыть настройки консоли</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+								<Button name="СгенерироватьКод" id="241">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.СгенерироватьКод</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Код</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СгенерироватьКодРасширеннаяПодсказка" id="242">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сгенерировать код запроса консоли</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+								<Button name="ОткрытьCookies" id="243">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьCookies</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Cookies</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ОткрытьCookiesРасширеннаяПодсказка" id="244">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Открыть редактор Cookie</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+								<Button name="ИмпортироватьPostman" id="245">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ИмпортироватьPostman</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Postman</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ИмпортироватьPostmanРасширеннаяПодсказка" id="246">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Имполртировать файл Postman формата 2.1</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+								<Button name="ИмпортироватьCurl" id="255">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ИмпортироватьCurl</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>curl</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ИмпортироватьCurlРасширеннаяПодсказка" id="256">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Натроить HTTP-запрос по команде консольной утилиты curl</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 						<UsualGroup name="ГруппаИдентификаторРесурса" id="82">
 							<Title>
 								<v8:item>
@@ -65,6 +176,12 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаИдентификаторРесурсаРасширеннаяПодсказка" id="83"/>
 							<ChildItems>
+								<Button name="ФормаВыполнить" id="32">
+									<Type>UsualButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.Выполнить</CommandName>
+									<ExtendedTooltip name="ФормаВыполнитьРасширеннаяПодсказка" id="33"/>
+								</Button>
 								<InputField name="Схема" id="84">
 									<DataPath>Схема</DataPath>
 									<TitleLocation>None</TitleLocation>
@@ -176,123 +293,6 @@
 										<Event name="OnChange">ИдентификаторРесурсаПриИзменении</Event>
 									</Events>
 								</InputField>
-								<Button name="ФормаВыполнить" id="32">
-									<Type>UsualButton</Type>
-									<DefaultButton>true</DefaultButton>
-									<CommandName>Form.Command.Выполнить</CommandName>
-									<ExtendedTooltip name="ФормаВыполнитьРасширеннаяПодсказка" id="33"/>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="ГруппаПереходы" id="218">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа переходы</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа переходы</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>AlwaysHorizontal</Group>
-							<HorizontalSpacing>Double</HorizontalSpacing>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаПереходыРасширеннаяПодсказка" id="219"/>
-							<ChildItems>
-								<Button name="ОткрытьНастройки" id="239">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ОткрытьНастройки</CommandName>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Настройки</v8:content>
-										</v8:item>
-									</Title>
-									<ExtendedTooltip name="ОткрытьНастройкиРасширеннаяПодсказка" id="240">
-										<Title formatted="false">
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Открыть настройки консоли</v8:content>
-											</v8:item>
-										</Title>
-									</ExtendedTooltip>
-								</Button>
-								<Button name="СгенерироватьКод" id="241">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.СгенерироватьКод</CommandName>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Код</v8:content>
-										</v8:item>
-									</Title>
-									<ExtendedTooltip name="СгенерироватьКодРасширеннаяПодсказка" id="242">
-										<Title formatted="false">
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Сгенерировать код запроса консоли</v8:content>
-											</v8:item>
-										</Title>
-									</ExtendedTooltip>
-								</Button>
-								<Button name="ОткрытьCookies" id="243">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ОткрытьCookies</CommandName>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Cookies</v8:content>
-										</v8:item>
-									</Title>
-									<ExtendedTooltip name="ОткрытьCookiesРасширеннаяПодсказка" id="244">
-										<Title formatted="false">
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Открыть редактор Cookie</v8:content>
-											</v8:item>
-										</Title>
-									</ExtendedTooltip>
-								</Button>
-								<Button name="ИмпортироватьPostman" id="245">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ИмпортироватьPostman</CommandName>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Postman</v8:content>
-										</v8:item>
-									</Title>
-									<ExtendedTooltip name="ИмпортироватьPostmanРасширеннаяПодсказка" id="246">
-										<Title formatted="false">
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Имполртировать файл Postman формата 2.1</v8:content>
-											</v8:item>
-										</Title>
-									</ExtendedTooltip>
-								</Button>
-								<Button name="ФормаИмпортироватьCurl" id="255">
-									<Type>Hyperlink</Type>
-									<CommandName>Form.Command.ИмпортироватьCurl</CommandName>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>curl</v8:content>
-										</v8:item>
-									</Title>
-									<ExtendedTooltip name="ФормаИмпортироватьCurlРасширеннаяПодсказка" id="256">
-										<Title formatted="false">
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Натроить HTTP-запрос по команде консольной утилиты curl</v8:content>
-											</v8:item>
-										</Title>
-									</ExtendedTooltip>
-								</Button>
 							</ChildItems>
 						</UsualGroup>
 						<Pages name="ГруппаРазделы" id="4">
@@ -619,6 +619,8 @@
 																	<v8:content>Токен</v8:content>
 																</v8:item>
 															</Title>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<VerticalStretch>false</VerticalStretch>
 															<ContextMenu name="ТокенАвторизацииКонтекстноеМеню" id="248"/>
 															<ExtendedTooltip name="ТокенАвторизацииРасширеннаяПодсказка" id="249"/>
 														</InputField>
