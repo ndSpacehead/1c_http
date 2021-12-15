@@ -1508,36 +1508,40 @@
 																	</v8:item>
 																</Title>
 															</ExtendedTooltip>
+															<Events>
+																<Event name="OnChange">ФорматТелаОтветаПриИзменении</Event>
+															</Events>
 														</RadioButtonField>
-														<Pages name="ГруппаФорматыТела" id="278">
+														<Pages name="ГруппаФорматыТелаОтвета" id="278">
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа форматы тела</v8:content>
+																	<v8:content>Группа форматы тела ответа</v8:content>
 																</v8:item>
 															</Title>
 															<ToolTip>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа форматы тела</v8:content>
+																	<v8:content>Группа форматы тела ответа</v8:content>
 																</v8:item>
 															</ToolTip>
-															<ExtendedTooltip name="ГруппаФорматыТелаРасширеннаяПодсказка" id="279"/>
+															<PagesRepresentation>None</PagesRepresentation>
+															<ExtendedTooltip name="ГруппаФорматыТелаОтветаРасширеннаяПодсказка" id="279"/>
 															<ChildItems>
-																<Page name="ФорматТелаТекст" id="280">
+																<Page name="ФорматТелаОтветаТекст" id="280">
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Формат тела текст</v8:content>
+																			<v8:content>Формат тела ответа текст</v8:content>
 																		</v8:item>
 																	</Title>
 																	<ToolTip>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Формат тела текст</v8:content>
+																			<v8:content>Формат тела ответа текст</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="ФорматТелаТекстРасширеннаяПодсказка" id="281"/>
+																	<ExtendedTooltip name="ФорматТелаОтветаТекстРасширеннаяПодсказка" id="281"/>
 																	<ChildItems>
 																		<FormattedDocumentField name="ОтветТекст" id="250">
 																			<DataPath>ОтветТекст</DataPath>
@@ -1550,20 +1554,49 @@
 																		</FormattedDocumentField>
 																	</ChildItems>
 																</Page>
-																<Page name="ФорматТелаHTML" id="303">
+																<Page name="ФорматТелаОтветаJSON" id="308">
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Формат тела HTML</v8:content>
+																			<v8:content>Формат тела ответа JSON</v8:content>
 																		</v8:item>
 																	</Title>
 																	<ToolTip>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Формат тела HTML</v8:content>
+																			<v8:content>Формат тела ответа JSON</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="ФорматТелаHTMLРасширеннаяПодсказка" id="304"/>
+																	<ExtendedTooltip name="ФорматТелаОтветаJSONРасширеннаяПодсказка" id="309"/>
+																	<ChildItems>
+																		<HTMLDocumentField name="ОтветJSON" id="310">
+																			<DataPath>ОтветJSON</DataPath>
+																			<ReadOnly>true</ReadOnly>
+																			<TitleLocation>None</TitleLocation>
+																			<AutoMaxWidth>false</AutoMaxWidth>
+																			<AutoMaxHeight>false</AutoMaxHeight>
+																			<ContextMenu name="ОтветJSONКонтекстноеМеню" id="311"/>
+																			<ExtendedTooltip name="ОтветJSONРасширеннаяПодсказка" id="312"/>
+																			<Events>
+																				<Event name="DocumentComplete">ОтветJSONДокументСформирован</Event>
+																			</Events>
+																		</HTMLDocumentField>
+																	</ChildItems>
+																</Page>
+																<Page name="ФорматТелаОтветаHTML" id="303">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Формат тела ответа HTML</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Формат тела ответа HTML</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ExtendedTooltip name="ФорматТелаОтветаHTMLРасширеннаяПодсказка" id="304"/>
 																	<ChildItems>
 																		<HTMLDocumentField name="ОтветHTML" id="305">
 																			<DataPath>ОтветHTML</DataPath>
@@ -1576,37 +1609,31 @@
 																		</HTMLDocumentField>
 																	</ChildItems>
 																</Page>
-																<Page name="ФорматТелаКартинка" id="282">
+																<Page name="ФорматТелаОтветаКартинка" id="282">
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Формат тела картинка</v8:content>
+																			<v8:content>Формат тела ответа картинка</v8:content>
 																		</v8:item>
 																	</Title>
 																	<ToolTip>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Формат тела картинка</v8:content>
+																			<v8:content>Формат тела ответа картинка</v8:content>
 																		</v8:item>
 																	</ToolTip>
-																	<ExtendedTooltip name="ФорматТелаКартинкаРасширеннаяПодсказка" id="283"/>
+																	<ExtendedTooltip name="ФорматТелаОтветаКартинкаРасширеннаяПодсказка" id="283"/>
 																	<ChildItems>
-																		<PictureDecoration name="ОтветКартинка" id="287">
+																		<PictureField name="ОтветКартинка" id="313">
+																			<DataPath>ОтветКартинка</DataPath>
 																			<Visible>false</Visible>
+																			<TitleLocation>None</TitleLocation>
 																			<AutoMaxWidth>false</AutoMaxWidth>
 																			<AutoMaxHeight>false</AutoMaxHeight>
-																			<HorizontalStretch>true</HorizontalStretch>
-																			<VerticalStretch>true</VerticalStretch>
-																			<Title formatted="false">
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Ответ картинка</v8:content>
-																				</v8:item>
-																			</Title>
 																			<PictureSize>AutoSize</PictureSize>
-																			<ContextMenu name="ОтветКартинкаКонтекстноеМеню" id="288"/>
-																			<ExtendedTooltip name="ОтветКартинкаРасширеннаяПодсказка" id="289"/>
-																		</PictureDecoration>
+																			<ContextMenu name="ОтветКартинкаКонтекстноеМеню" id="314"/>
+																			<ExtendedTooltip name="ОтветКартинкаРасширеннаяПодсказка" id="315"/>
+																		</PictureField>
 																		<UsualGroup name="ГруппаОтветНеКартинка" id="290">
 																			<Title>
 																				<v8:item>
@@ -1646,12 +1673,6 @@
 																					<AutoMaxHeight>false</AutoMaxHeight>
 																					<HorizontalStretch>true</HorizontalStretch>
 																					<VerticalStretch>false</VerticalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>text/html</v8:content>
-																						</v8:item>
-																					</Title>
 																					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 																					<HorizontalAlign>Center</HorizontalAlign>
 																					<ContextMenu name="ДекорацияНеКартинкаContentTypeКонтекстноеМеню" id="296"/>
@@ -2517,7 +2538,11 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>v8ui:Picture</v8:Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 		<Attribute name="ФорматТелаОтвета" id="31">
@@ -2540,6 +2565,21 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Ответ HTML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтветJSON" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ JSON</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -2689,6 +2729,7 @@
 					<v8:content>Попробовать отобразить картинку</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>ПопробоватьОтобразитьКартинку</Action>
 		</Command>
 	</Commands>
 </Form>
