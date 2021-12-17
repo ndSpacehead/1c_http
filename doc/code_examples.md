@@ -18,6 +18,7 @@
 - `ОтправитьДвоичныеДанные` – POST, тело содержит двоичные данные
 - `ОтправитьФайл` – POST, тело содержит двоичные данные переданного по имени файла
 - `ОтправитьДанныеФормы` – POST, тело содержит данные формата `multipart/form-data`
+- `ОтправитьДанныеHTMLФормы` – POST, тело содержит данные формата `application/x-www-form-urlencoded`
 - `ЗаписатьТекст` – PUT, тело содержит текст
 - `ЗаписатьДвоичныеДанные` – PUT, тело содержит двоичные данные
 - `ЗаписатьФайл` – PUT, тело содержит двоичные данные переданного по имени файла
@@ -80,7 +81,7 @@ URI = "https://jsonplaceholder.typicode.com/posts";
 ### multipart/form-data
 
 ```bsl
-URI = "https://jsonplaceholder.typicode.com/posts";
+URI = "https://httpbin.org/post";
 
 ПФ = КлиентHTTPКлиентСервер.НовыеПоляФормы();
 ФайлПоля = Новый Файл("C:\temp\1.png");
@@ -96,7 +97,7 @@ URI = "https://jsonplaceholder.typicode.com/posts";
 ### application/x-www-form-urlencoded
 
 ```bsl
-URI = "https://jsonplaceholder.typicode.com/posts";
+URI = "https://httpbin.org/post";
 ПФ = КлиентHTTPКлиентСервер.НовыеПоляФормы();
 
 Ответ = КлиентHTTPКлиентСервер
