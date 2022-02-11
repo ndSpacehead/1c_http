@@ -267,6 +267,19 @@
 									<ContextMenu name="СхемаКонтекстноеМеню" id="85"/>
 									<ExtendedTooltip name="СхемаРасширеннаяПодсказка" id="86"/>
 								</InputField>
+								<Button name="КонструкторURL" id="327">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<CommandName>Form.Command.КонструкторURL</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.DataCompositionSettingsWizard</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КонструкторURLРасширеннаяПодсказка" id="328"/>
+								</Button>
 								<InputField name="ИдентификаторРесурса" id="1">
 									<DataPath>ИдентификаторРесурса</DataPath>
 									<DefaultItem>true</DefaultItem>
@@ -2906,6 +2919,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПопробоватьОтобразитьКартинку</Action>
+		</Command>
+		<Command name="КонструкторURL" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конструктор URL</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конструктор URL</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КонструкторURL</Action>
 		</Command>
 	</Commands>
 </Form>
