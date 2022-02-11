@@ -32,6 +32,7 @@
 			<Form>РедакторТекстовогоПоля</Form>
 			<Form>РедакторCookies</Form>
 			<Form>ЭлементыИмпортаPostman</Form>
+			<Form>КонструкторИдентификатораРесурса</Form>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>
