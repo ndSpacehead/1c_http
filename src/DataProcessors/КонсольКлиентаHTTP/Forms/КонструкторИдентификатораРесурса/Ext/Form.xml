@@ -7,6 +7,7 @@
 		</v8:item>
 	</Title>
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ФормаОК" id="4">
@@ -78,6 +79,11 @@
 					<ExtendedTooltip name="ЭлементыURLРасширеннаяПодсказка" id="9"/>
 					<ChildItems>
 						<LabelDecoration name="ДекорацияСхема" id="22">
+							<Width>5</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
 							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 							<Title formatted="false">
 								<v8:item>
@@ -103,6 +109,10 @@
 							</ExtendedTooltip>
 						</InputField>
 						<LabelDecoration name="ДекорацияРазделитель" id="19">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
 							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 							<Title formatted="false">
 								<v8:item>
@@ -116,6 +126,10 @@
 						<InputField name="Порт" id="13">
 							<DataPath>Порт</DataPath>
 							<TitleLocation>Top</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
 							<ContextMenu name="ПортКонтекстноеМеню" id="14"/>
 							<ExtendedTooltip name="ПортРасширеннаяПодсказка" id="15">
 								<Title formatted="false">
