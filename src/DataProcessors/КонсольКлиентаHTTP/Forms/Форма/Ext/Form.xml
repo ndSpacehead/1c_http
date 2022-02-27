@@ -267,6 +267,19 @@
 									<ContextMenu name="СхемаКонтекстноеМеню" id="85"/>
 									<ExtendedTooltip name="СхемаРасширеннаяПодсказка" id="86"/>
 								</InputField>
+								<Button name="КонструкторURL" id="327">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<CommandName>Form.Command.КонструкторURL</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.DataCompositionSettingsWizard</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="КонструкторURLРасширеннаяПодсказка" id="328"/>
+								</Button>
 								<InputField name="ИдентификаторРесурса" id="1">
 									<DataPath>ИдентификаторРесурса</DataPath>
 									<DefaultItem>true</DefaultItem>
@@ -2051,6 +2064,137 @@
 										</CheckBoxField>
 									</ChildItems>
 								</UsualGroup>
+								<UsualGroup name="ГруппаПрокси" id="329">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Прокси</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа прокси</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<VerticalSpacing>Single</VerticalSpacing>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаПроксиРасширеннаяПодсказка" id="330"/>
+									<ChildItems>
+										<CheckBoxField name="ИспользоватьПрокси" id="331">
+											<DataPath>ИспользоватьПрокси</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Использовать</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Использовать прокси-сервер для выполнения запроса</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользоватьПроксиКонтекстноеМеню" id="332"/>
+											<ExtendedTooltip name="ИспользоватьПроксиРасширеннаяПодсказка" id="333"/>
+											<Events>
+												<Event name="OnChange">ИспользоватьПроксиПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<CheckBoxField name="НеИспользоватьПроксиДляЛокальныхАдресов" id="349">
+											<DataPath>НеИспользоватьПроксиДляЛокальныхАдресов</DataPath>
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Кроме локальных адресов</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Если опция включена, то при запросе ресурсов с локальных адресов прокси не используется</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="НеИспользоватьПроксиДляЛокальныхАдресовКонтекстноеМеню" id="350"/>
+											<ExtendedTooltip name="НеИспользоватьПроксиДляЛокальныхАдресовРасширеннаяПодсказка" id="351"/>
+										</CheckBoxField>
+										<InputField name="СерверПрокси" id="334">
+											<DataPath>СерверПрокси</DataPath>
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сервер</v8:content>
+												</v8:item>
+											</Title>
+											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<ContextMenu name="СерверПроксиКонтекстноеМеню" id="335"/>
+											<ExtendedTooltip name="СерверПроксиРасширеннаяПодсказка" id="336"/>
+										</InputField>
+										<InputField name="ПортПрокси" id="337">
+											<DataPath>ПортПрокси</DataPath>
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Порт</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПортПроксиКонтекстноеМеню" id="338"/>
+											<ExtendedTooltip name="ПортПроксиРасширеннаяПодсказка" id="339"/>
+										</InputField>
+										<InputField name="ПользовательПрокси" id="340">
+											<DataPath>ПользовательПрокси</DataPath>
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пользователь</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПользовательПроксиКонтекстноеМеню" id="341"/>
+											<ExtendedTooltip name="ПользовательПроксиРасширеннаяПодсказка" id="342"/>
+										</InputField>
+										<InputField name="ПарольПрокси" id="343">
+											<DataPath>ПарольПрокси</DataPath>
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пароль</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПарольПроксиКонтекстноеМеню" id="344"/>
+											<ExtendedTooltip name="ПарольПроксиРасширеннаяПодсказка" id="345"/>
+										</InputField>
+										<CheckBoxField name="ИспользоватьАутентификациюОСПрокси" id="346">
+											<DataPath>ИспользоватьАутентификациюОСПрокси</DataPath>
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Аутентификация ОС</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Использовать аутентификацию ОС для осуществления NTLM-аутентификации на прокси. Если опция выключена, то будет выполнена Basic-аутентификация</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользоватьАутентификациюОСПроксиКонтекстноеМеню" id="347"/>
+											<ExtendedTooltip name="ИспользоватьАутентификациюОСПроксиРасширеннаяПодсказка" id="348"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -2766,6 +2910,100 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ИспользоватьПрокси" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать прокси</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СерверПрокси" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер прокси</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПортПрокси" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порт прокси</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПользовательПрокси" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь прокси</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольПрокси" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль прокси</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьАутентификациюОСПрокси" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать аутентификацию ОСПрокси</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НеИспользоватьПроксиДляЛокальныхАдресов" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не использовать прокси для локальных адресов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Выполнить" id="1">
@@ -2906,6 +3144,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПопробоватьОтобразитьКартинку</Action>
+		</Command>
+		<Command name="КонструкторURL" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конструктор URL</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конструктор URL</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КонструкторURL</Action>
 		</Command>
 	</Commands>
 </Form>
