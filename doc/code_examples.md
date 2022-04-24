@@ -134,3 +134,9 @@ URI = "https://httpbin.org/post";
 ```
 
 [вверх](#примеры-кода)
+
+---
+
+[Расширенный список примеров использования](https://github.com/SpaceHead1C/1c_http/wiki/%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B)
+
+[Документация](https://github.com/SpaceHead1C/1c_http/wiki/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F)

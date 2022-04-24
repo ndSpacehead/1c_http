@@ -20,7 +20,7 @@
 
 [Установка](/doc/installation.md)
 
-[Примеры кода](/doc/code_examples.md)
+[Примеры кода](/doc/code_examples.md) (расширенный список примеров представлен в Wiki репозитория)
 
 [Способ разбора Set-Cookie](/doc/dfa.md)
 
