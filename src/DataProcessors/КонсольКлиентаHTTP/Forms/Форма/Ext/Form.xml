@@ -66,6 +66,24 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаПереходыРасширеннаяПодсказка" id="219"/>
 							<ChildItems>
+								<Button name="ОткрытьИсторию" id="411">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьИсторию</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>История</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ОткрытьИсториюРасширеннаяПодсказка" id="412">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Открыть историю выполненных запросов</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
 								<Button name="ОткрытьНастройки" id="239">
 									<Type>Hyperlink</Type>
 									<CommandName>Form.Command.ОткрытьНастройки</CommandName>
@@ -104,6 +122,7 @@
 								</Button>
 								<Button name="ОткрытьCookies" id="243">
 									<Type>Hyperlink</Type>
+									<Enabled>false</Enabled>
 									<CommandName>Form.Command.ОткрытьCookies</CommandName>
 									<Title>
 										<v8:item>
@@ -183,7 +202,9 @@
 									<ExtendedTooltip name="ФормаВыполнитьРасширеннаяПодсказка" id="33"/>
 								</Button>
 								<LabelDecoration name="ДекорацияКонтекстВыполнения" id="352">
-									<Width>7</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<VerticalStretch>false</VerticalStretch>
 									<Title formatted="false">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -2098,6 +2119,7 @@
 									</Events>
 								</CheckBoxField>
 								<UsualGroup name="ГруппаНастройкиСессии" id="205">
+									<Enabled>false</Enabled>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -2284,6 +2306,245 @@
 								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаИстория" id="363">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница история</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница история</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаИсторияРасширеннаяПодсказка" id="364"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаИсторияШапка" id="406">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа история шапка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа история шапка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИсторияШапкаРасширеннаяПодсказка" id="407"/>
+							<ChildItems>
+								<Button name="ЗакрытьИсторию" id="399">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗакрытьИсторию</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>OK</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ЗакрытьИсториюРасширеннаяПодсказка" id="400">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Закрыть историю</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+								<LabelDecoration name="ДекорацияИсторияОтступ1" id="408">
+									<Width>4</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ДекорацияИсторияОтступ1КонтекстноеМеню" id="409"/>
+									<ExtendedTooltip name="ДекорацияИсторияОтступ1РасширеннаяПодсказка" id="410"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияИстория" id="403">
+									<TextColor>style:AccentColor</TextColor>
+									<Font ref="style:LargeTextFont" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>История</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияИсторияКонтекстноеМеню" id="404"/>
+									<ExtendedTooltip name="ДекорацияИсторияРасширеннаяПодсказка" id="405"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="История" id="365">
+							<Representation>List</Representation>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<AutoMaxRowsCount>false</AutoMaxRowsCount>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>История</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ИсторияКонтекстноеМеню" id="366"/>
+							<AutoCommandBar name="ИсторияКоманднаяПанель" id="367">
+								<ChildItems>
+									<Button name="ИсторияЭкспортироватьИсторию" id="415">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.ЭкспортироватьИсторию</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Write</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ИсторияЭкспортироватьИсториюРасширеннаяПодсказка" id="416">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Экспортировать историю выполненных запросов</v8:content>
+												</v8:item>
+											</Title>
+										</ExtendedTooltip>
+									</Button>
+									<Button name="ИсторияИмпортироватьИсторию" id="413">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ИмпортироватьИсторию</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.OpenFile</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ИсторияИмпортироватьИсториюРасширеннаяПодсказка" id="414">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Импортировать историю выполненных запросов</v8:content>
+												</v8:item>
+											</Title>
+										</ExtendedTooltip>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ИсторияРасширеннаяПодсказка" id="368"/>
+							<SearchStringAddition name="ИсторияСтрокаПоиска" id="369">
+								<AdditionSource>
+									<Item>История</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияСтрокаПоискаКонтекстноеМеню" id="370"/>
+								<ExtendedTooltip name="ИсторияСтрокаПоискаРасширеннаяПодсказка" id="371"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИсторияСостояниеПросмотра" id="372">
+								<AdditionSource>
+									<Item>История</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияСостояниеПросмотраКонтекстноеМеню" id="373"/>
+								<ExtendedTooltip name="ИсторияСостояниеПросмотраРасширеннаяПодсказка" id="374"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИсторияУправлениеПоиском" id="375">
+								<AdditionSource>
+									<Item>История</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияУправлениеПоискомКонтекстноеМеню" id="376"/>
+								<ExtendedTooltip name="ИсторияУправлениеПоискомРасширеннаяПодсказка" id="377"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ИсторияВыбор</Event>
+								<Event name="BeforeAddRow">ИсторияПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ИсторияПередУдалением</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ИсторияВременнаяМетка" id="378">
+									<DataPath>История.ВременнаяМетка</DataPath>
+									<Visible>false</Visible>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияВременнаяМеткаКонтекстноеМеню" id="379"/>
+									<ExtendedTooltip name="ИсторияВременнаяМеткаРасширеннаяПодсказка" id="380"/>
+								</InputField>
+								<InputField name="ИсторияКонтекстВыполнения" id="417">
+									<DataPath>История.КонтекстВыполнения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Контекст</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияКонтекстВыполненияКонтекстноеМеню" id="418"/>
+									<ExtendedTooltip name="ИсторияКонтекстВыполненияРасширеннаяПодсказка" id="419"/>
+								</InputField>
+								<InputField name="ИсторияДата" id="381">
+									<DataPath>История.Дата</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияДатаКонтекстноеМеню" id="382"/>
+									<ExtendedTooltip name="ИсторияДатаРасширеннаяПодсказка" id="383"/>
+								</InputField>
+								<InputField name="ИсторияКодСостояния" id="384">
+									<DataPath>История.КодСостояния</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Код</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияКодСостоянияКонтекстноеМеню" id="385"/>
+									<ExtendedTooltip name="ИсторияКодСостоянияРасширеннаяПодсказка" id="386"/>
+								</InputField>
+								<InputField name="ИсторияСхема" id="387">
+									<DataPath>История.Схема</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияСхемаКонтекстноеМеню" id="388"/>
+									<ExtendedTooltip name="ИсторияСхемаРасширеннаяПодсказка" id="389"/>
+								</InputField>
+								<InputField name="ИсторияПротокол" id="390">
+									<DataPath>История.Протокол</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияПротоколКонтекстноеМеню" id="391"/>
+									<ExtendedTooltip name="ИсторияПротоколРасширеннаяПодсказка" id="392"/>
+								</InputField>
+								<InputField name="ИсторияХост" id="393">
+									<DataPath>История.Хост</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Wrap>false</Wrap>
+									<ContextMenu name="ИсторияХостКонтекстноеМеню" id="394"/>
+									<ExtendedTooltip name="ИсторияХостРасширеннаяПодсказка" id="395"/>
+								</InputField>
+								<InputField name="ИсторияURN" id="396">
+									<DataPath>История.URN</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Wrap>false</Wrap>
+									<ContextMenu name="ИсторияURNКонтекстноеМеню" id="397"/>
+									<ExtendedTooltip name="ИсторияURNРасширеннаяПодсказка" id="398"/>
+								</InputField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
 				</Page>
 			</ChildItems>
@@ -3102,6 +3363,338 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="История" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВременнаяМетка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Временная метка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Дата" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="КодСостояния" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код состояния</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Схема" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Схема</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>8</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Протокол" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Протокол</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>5</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Хост" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Хост</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="URN" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>URN</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КонтекстВыполнения" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контекст выполнения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ИсторияВременнаяМетка</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияДата</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияКодСостояния</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияСхема</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияПротокол</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияХост</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияURN</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияКонтекстВыполнения</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">История.КодСостояния</dcsset:left>
+							<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">400</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">История.КодСостояния</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">500</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Red</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ИсторияВременнаяМетка</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияДата</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияКодСостояния</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияСхема</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияПротокол</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияХост</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияURN</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияКонтекстВыполнения</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">История.КодСостояния</dcsset:left>
+							<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">200</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">История.КодСостояния</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">300</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:ForestGreen</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ИсторияВременнаяМетка</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияДата</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияКодСостояния</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияСхема</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияПротокол</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияХост</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияURN</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияКонтекстВыполнения</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">История.КодСостояния</dcsset:left>
+							<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">300</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">История.КодСостояния</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">400</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkOrange</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ИсторияВременнаяМетка</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияДата</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияКодСостояния</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияСхема</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияПротокол</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияХост</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияURN</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИсторияКонтекстВыполнения</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">История.КодСостояния</dcsset:left>
+							<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">100</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">История.КодСостояния</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">200</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:RoyalBlue</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="Выполнить" id="1">
@@ -3163,7 +3756,7 @@
 					<v8:content>Открыть настройки</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Shortcut>Ctrl+1</Shortcut>
+			<Shortcut>Ctrl+2</Shortcut>
 			<Action>ОткрытьНастройки</Action>
 		</Command>
 		<Command name="СгенерироватьКод" id="5">
@@ -3179,7 +3772,7 @@
 					<v8:content>Сгенерировать код</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Shortcut>Ctrl+2</Shortcut>
+			<Shortcut>Ctrl+3</Shortcut>
 			<Action>СгенерироватьКод</Action>
 		</Command>
 		<Command name="ОткрытьCookies" id="6">
@@ -3195,7 +3788,7 @@
 					<v8:content>Открыть cookies</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Shortcut>Ctrl+3</Shortcut>
+			<Shortcut>Ctrl+4</Shortcut>
 			<Action>ОткрытьCookies</Action>
 		</Command>
 		<Command name="ИмпортироватьPostman" id="7">
@@ -3211,6 +3804,7 @@
 					<v8:content>Импортировать postman</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Shortcut>Ctrl+5</Shortcut>
 			<Action>ИмпортироватьPostman</Action>
 		</Command>
 		<Command name="ИмпортироватьCurl" id="8">
@@ -3226,6 +3820,7 @@
 					<v8:content>Импортировать curl</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Shortcut>Ctrl+6</Shortcut>
 			<Action>ИмпортироватьCurl</Action>
 		</Command>
 		<Command name="ПопробоватьОтобразитьКартинку" id="9">
@@ -3257,6 +3852,67 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КонструкторURL</Action>
+		</Command>
+		<Command name="ЗакрытьИсторию" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть историю</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть историю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакрытьИсторию</Action>
+		</Command>
+		<Command name="ОткрытьИсторию" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть историю</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть историю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+1</Shortcut>
+			<Action>ОткрытьИсторию</Action>
+		</Command>
+		<Command name="ЭкспортироватьИсторию" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспортировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспортировать историю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЭкспортироватьИсторию</Action>
+		</Command>
+		<Command name="ИмпортироватьИсторию" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импортировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импортировать историю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИмпортироватьИсторию</Action>
 		</Command>
 	</Commands>
 </Form>
