@@ -696,6 +696,7 @@
 																	<v8:content>Группа пароль авторизации</v8:content>
 																</v8:item>
 															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаПарольАвторизацииРасширеннаяПодсказка" id="137"/>
@@ -726,20 +727,51 @@
 																</Button>
 															</ChildItems>
 														</UsualGroup>
-														<InputField name="ТокенАвторизации" id="247">
-															<DataPath>ТокенАвторизации</DataPath>
+														<UsualGroup name="ГруппаТокенАвторизации" id="434">
 															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Токен</v8:content>
+																	<v8:content>Группа токен авторизации</v8:content>
 																</v8:item>
 															</Title>
-															<AutoMaxWidth>false</AutoMaxWidth>
-															<VerticalStretch>false</VerticalStretch>
-															<ContextMenu name="ТокенАвторизацииКонтекстноеМеню" id="248"/>
-															<ExtendedTooltip name="ТокенАвторизацииРасширеннаяПодсказка" id="249"/>
-														</InputField>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа токен авторизации</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаТокенАвторизацииРасширеннаяПодсказка" id="435"/>
+															<ChildItems>
+																<InputField name="ТокенАвторизации" id="247">
+																	<DataPath>ТокенАвторизации</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Токен</v8:content>
+																		</v8:item>
+																	</Title>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<VerticalStretch>false</VerticalStretch>
+																	<PasswordMode>true</PasswordMode>
+																	<ContextMenu name="ТокенАвторизацииКонтекстноеМеню" id="248"/>
+																	<ExtendedTooltip name="ТокенАвторизацииРасширеннаяПодсказка" id="249"/>
+																</InputField>
+																<Button name="ПоказатьТокенАвторизации" id="436">
+																	<Type>UsualButton</Type>
+																	<Representation>Picture</Representation>
+																	<CommandName>Form.Command.ПоказатьТокенАвторизации</CommandName>
+																	<Picture>
+																		<xr:Ref>StdPicture.DataSearch</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ExtendedTooltip name="ПоказатьТокенАвторизацииРасширеннаяПодсказка" id="437"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
 													</ChildItems>
 												</Page>
 												<Page name="РазделЗаголовкиЗапроса" id="101">
@@ -1929,24 +1961,68 @@
 					</ToolTip>
 					<ExtendedTooltip name="СтраницаНастройкиРасширеннаяПодсказка" id="201"/>
 					<ChildItems>
-						<Button name="ПрименитьНастройки" id="207">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ПрименитьНастройки</CommandName>
+						<UsualGroup name="ГруппаНастройкиШапка" id="420">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>OK</v8:content>
+									<v8:content>Группа настройки шапка</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="ПрименитьНастройкиРасширеннаяПодсказка" id="208">
-								<Title formatted="false">
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Применить настройки и вернуться в консоль</v8:content>
-									</v8:item>
-								</Title>
-							</ExtendedTooltip>
-						</Button>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки шапка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкиШапкаРасширеннаяПодсказка" id="421"/>
+							<ChildItems>
+								<Button name="ПрименитьНастройки" id="207">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПрименитьНастройки</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>OK</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПрименитьНастройкиРасширеннаяПодсказка" id="208">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Применить настройки и вернуться в консоль</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+								<LabelDecoration name="ДекорацияНастройкиОтступ1" id="422">
+									<Width>4</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияНастройкиОтступ1КонтекстноеМеню" id="423"/>
+									<ExtendedTooltip name="ДекорацияНастройкиОтступ1РасширеннаяПодсказка" id="424"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДекорацияНастройки" id="425">
+									<TextColor>style:AccentColor</TextColor>
+									<Font ref="style:LargeTextFont" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияНастройкиКонтекстноеМеню" id="426"/>
+									<ExtendedTooltip name="ДекорацияНастройкиРасширеннаяПодсказка" id="427"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
 						<UsualGroup name="ГруппаНастройки" id="226">
 							<Title>
 								<v8:item>
@@ -1961,6 +2037,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="227"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаКонтекстВыполнения" id="358">
@@ -2060,6 +2137,7 @@
 													<v8:content>Имя файла</v8:content>
 												</v8:item>
 											</Title>
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<DropListButton>false</DropListButton>
 											<ChoiceButton>true</ChoiceButton>
 											<ClearButton>false</ClearButton>
@@ -2095,82 +2173,107 @@
 										</Title>
 									</ExtendedTooltip>
 								</CheckBoxField>
-								<CheckBoxField name="ИспользоватьСессию" id="202">
-									<DataPath>ИспользоватьСессию</DataPath>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Использовать возможности отправки запросов в рамках сессии: ограничение количества перенаправлений; использавание Cookie.</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ToolTipRepresentation>Button</ToolTipRepresentation>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ИспользоватьСессиюКонтекстноеМеню" id="203"/>
-									<ExtendedTooltip name="ИспользоватьСессиюРасширеннаяПодсказка" id="204">
-										<Title formatted="false">
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Использовать возможности отправки запросов в рамках сессии</v8:content>
-											</v8:item>
-										</Title>
-									</ExtendedTooltip>
-									<Events>
-										<Event name="OnChange">ИспользоватьСессиюПриИзменении</Event>
-									</Events>
-								</CheckBoxField>
-								<UsualGroup name="ГруппаНастройкиСессии" id="205">
-									<Enabled>false</Enabled>
+								<UsualGroup name="ГруппаНастройкиИспользованияСессии" id="428">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа настройки сессии</v8:content>
+											<v8:content>Сессия</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа настройки сессии</v8:content>
+											<v8:content>Группа настройки использования сессии</v8:content>
 										</v8:item>
 									</ToolTip>
 									<Group>Vertical</Group>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаНастройкиСессииРасширеннаяПодсказка" id="206"/>
+									<Representation>NormalSeparation</Representation>
+									<ExtendedTooltip name="ГруппаНастройкиИспользованияСессииРасширеннаяПодсказка" id="429"/>
 									<ChildItems>
-										<InputField name="ПорогПеренаправлений" id="209">
-											<DataPath>ПорогПеренаправлений</DataPath>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Ограничение количества перенаправлеий, инициируемых внешним сервисом</v8:content>
-												</v8:item>
-											</ToolTip>
-											<ToolTipRepresentation>Button</ToolTipRepresentation>
-											<ContextMenu name="ПорогПеренаправленийКонтекстноеМеню" id="210"/>
-											<ExtendedTooltip name="ПорогПеренаправленийРасширеннаяПодсказка" id="211"/>
-										</InputField>
-										<CheckBoxField name="ПоддержкаCookie" id="212">
-											<DataPath>ПоддержкаCookie</DataPath>
+										<CheckBoxField name="ИспользоватьСессию" id="202">
+											<DataPath>ИспользоватьСессию</DataPath>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Поддержка Cookie</v8:content>
+													<v8:content>Использовать</v8:content>
 												</v8:item>
 											</Title>
 											<ToolTip>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Управление опцией использования Cookie при работе с внешними сервисами (парсинг заголовка ответа "Set-Cookie" и формирование заголовка запроса "Cookie")</v8:content>
+													<v8:content>Использовать возможности отправки запросов в рамках сессии: ограничение количества перенаправлений; использавание Cookie.</v8:content>
 												</v8:item>
 											</ToolTip>
 											<ToolTipRepresentation>Button</ToolTipRepresentation>
 											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ПоддержкаCookieКонтекстноеМеню" id="213"/>
-											<ExtendedTooltip name="ПоддержкаCookieРасширеннаяПодсказка" id="214"/>
+											<ContextMenu name="ИспользоватьСессиюКонтекстноеМеню" id="203"/>
+											<ExtendedTooltip name="ИспользоватьСессиюРасширеннаяПодсказка" id="204">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Использовать возможности отправки запросов в рамках сессии</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
 											<Events>
-												<Event name="OnChange">ПоддержкаCookieПриИзменении</Event>
+												<Event name="OnChange">ИспользоватьСессиюПриИзменении</Event>
 											</Events>
 										</CheckBoxField>
+										<UsualGroup name="ГруппаНастройкиСессии" id="205">
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа настройки сессии</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа настройки сессии</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаНастройкиСессииРасширеннаяПодсказка" id="206"/>
+											<ChildItems>
+												<InputField name="ПорогПеренаправлений" id="209">
+													<DataPath>ПорогПеренаправлений</DataPath>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ограничение количества перенаправлеий, инициируемых внешним сервисом</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<ContextMenu name="ПорогПеренаправленийКонтекстноеМеню" id="210"/>
+													<ExtendedTooltip name="ПорогПеренаправленийРасширеннаяПодсказка" id="211"/>
+												</InputField>
+												<CheckBoxField name="ПоддержкаCookie" id="212">
+													<DataPath>ПоддержкаCookie</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Поддержка Cookie</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Управление опцией использования Cookie при работе с внешними сервисами (парсинг заголовка ответа "Set-Cookie" и формирование заголовка запроса "Cookie")</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ПоддержкаCookieКонтекстноеМеню" id="213"/>
+													<ExtendedTooltip name="ПоддержкаCookieРасширеннаяПодсказка" id="214"/>
+													<Events>
+														<Event name="OnChange">ПоддержкаCookieПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="ГруппаПрокси" id="329">
@@ -2187,8 +2290,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Vertical</Group>
-									<VerticalSpacing>Single</VerticalSpacing>
-									<Representation>None</Representation>
+									<Representation>NormalSeparation</Representation>
 									<ExtendedTooltip name="ГруппаПроксиРасширеннаяПодсказка" id="330"/>
 									<ChildItems>
 										<CheckBoxField name="ИспользоватьПрокси" id="331">
@@ -2267,21 +2369,54 @@
 													<v8:content>Пользователь</v8:content>
 												</v8:item>
 											</Title>
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<ContextMenu name="ПользовательПроксиКонтекстноеМеню" id="341"/>
 											<ExtendedTooltip name="ПользовательПроксиРасширеннаяПодсказка" id="342"/>
 										</InputField>
-										<InputField name="ПарольПрокси" id="343">
-											<DataPath>ПарольПрокси</DataPath>
+										<UsualGroup name="ГруппаПарольПрокси" id="430">
 											<Enabled>false</Enabled>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Пароль</v8:content>
+													<v8:content>Группа пароль прокси</v8:content>
 												</v8:item>
 											</Title>
-											<ContextMenu name="ПарольПроксиКонтекстноеМеню" id="344"/>
-											<ExtendedTooltip name="ПарольПроксиРасширеннаяПодсказка" id="345"/>
-										</InputField>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа пароль прокси</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПарольПроксиРасширеннаяПодсказка" id="431"/>
+											<ChildItems>
+												<InputField name="ПарольПрокси" id="343">
+													<DataPath>ПарольПрокси</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Пароль</v8:content>
+														</v8:item>
+													</Title>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<PasswordMode>true</PasswordMode>
+													<ContextMenu name="ПарольПроксиКонтекстноеМеню" id="344"/>
+													<ExtendedTooltip name="ПарольПроксиРасширеннаяПодсказка" id="345"/>
+												</InputField>
+												<Button name="ПоказатьПарольПрокси" id="432">
+													<Type>UsualButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>Form.Command.ПоказатьПарольПрокси</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.DataSearch</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="ПоказатьПарольПроксиРасширеннаяПодсказка" id="433"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
 										<CheckBoxField name="ИспользоватьАутентификациюОСПрокси" id="346">
 											<DataPath>ИспользоватьАутентификациюОСПрокси</DataPath>
 											<Enabled>false</Enabled>
@@ -3914,5 +4049,45 @@
 			</ToolTip>
 			<Action>ИмпортироватьИсторию</Action>
 		</Command>
+		<Command name="ПоказатьПарольПрокси" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать пароль прокси</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать пароль прокси</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьПарольПрокси</Action>
+		</Command>
+		<Command name="ПоказатьТокенАвторизации" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать токен авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать токен авторизации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьТокенАвторизации</Action>
+		</Command>
 	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>0</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
 </Form>
