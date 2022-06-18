@@ -239,6 +239,7 @@
 			<CommonPicture>КлиентHTTP</CommonPicture>
 			<CommonModule>КлиентHTTP</CommonModule>
 			<CommonModule>КлиентHTTPВызовСервера</CommonModule>
+			<CommonModule>КлиентHTTPКлиент</CommonModule>
 			<CommonModule>КлиентHTTPКлиентСервер</CommonModule>
 			<CommonModule>КлиентHTTPПовтИсп</CommonModule>
 			<CommonModule>КлиентHTTPСерверПовтИсп</CommonModule>

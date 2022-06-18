@@ -26,6 +26,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КлиентHTTPСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонсольКлиентаHTTP</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КлиентHTTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КлиентHTTPКлиент</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
