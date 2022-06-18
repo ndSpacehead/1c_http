@@ -2069,7 +2069,9 @@
 											<ExtendedTooltip name="ДекорацияЗаголовокКонтекстВыполненияНастройкиРасширеннаяПодсказка" id="362"/>
 										</LabelDecoration>
 										<LabelDecoration name="ДекорацияКонтекстВыполненияНастройки" id="355">
-											<Width>7</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<VerticalStretch>false</VerticalStretch>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
