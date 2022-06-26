@@ -316,6 +316,291 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="ОсновнаяМП" id="47">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная МП</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная МП</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОсновнаяМПРасширеннаяПодсказка" id="48"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаШапкаМП" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка МП</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка МП</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаМПРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<Button name="ОК" id="49">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОК</CommandName>
+							<ExtendedTooltip name="ОКРасширеннаяПодсказка" id="50"/>
+						</Button>
+						<LabelField name="URIМП" id="53">
+							<DataPath>URI</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>URI:</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Left</TitleLocation>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<TextColor>#0078D7</TextColor>
+							<ContextMenu name="URIМПКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="URIМПРасширеннаяПодсказка" id="55"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<CheckBoxField name="ЗащищенноеСоединениеМП" id="86">
+					<DataPath>ЗащищенноеСоединение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Защищённое соединение</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗащищенноеСоединениеМПКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ЗащищенноеСоединениеМПРасширеннаяПодсказка" id="88">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Опция осуществления HTTPS соединения</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
+					<Events>
+						<Event name="OnChange">ЗащищенноеСоединениеМППриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<UsualGroup name="ЭлементыURLМП" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элементы URL</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элементы URL</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<HorizontalSpacing>Double</HorizontalSpacing>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>DontUse</ThroughAlign>
+					<ExtendedTooltip name="ЭлементыURLМПРасширеннаяПодсказка" id="57"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаХостМП" id="73">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа хост МП</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа хост МП</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаХостМПРасширеннаяПодсказка" id="74"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияСхемаМП" id="58">
+									<Width>5</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>http://</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияСхемаМПКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ДекорацияСхемаМПРасширеннаяПодсказка" id="60"/>
+								</LabelDecoration>
+								<InputField name="СерверМП" id="61">
+									<DataPath>Сервер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>сервер:</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="СерверМПКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="СерверМПРасширеннаяПодсказка" id="63">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Хост сервера, с которым осуществляется соединение</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">СерверМППриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ПортМП" id="67">
+							<DataPath>Порт</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>порт:</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Top</TitleLocation>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ContextMenu name="ПортМПКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ПортМПРасширеннаяПодсказка" id="69">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Порт сервера, с которым осуществляется соединение</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">ПортМППриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="АдресРесурсаМП" id="70">
+							<DataPath>АдресРесурса</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>адрес ресурса:</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Top</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>/</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="АдресРесурсаМПКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="АдресРесурсаМПРасширеннаяПодсказка" id="72">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Адрес ресурса, к которому будет происходить HTTP-запрос</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">АдресРесурсаМППриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ЭлементыАутентификацииМП" id="75">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аутентификация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элементы аутентификации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<HorizontalSpacing>Double</HorizontalSpacing>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ЭлементыАутентификацииМПРасширеннаяПодсказка" id="76"/>
+					<ChildItems>
+						<InputField name="ПользовательМП" id="77">
+							<DataPath>Пользователь</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>пользователь:</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Top</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ContextMenu name="ПользовательМПКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ПользовательМПРасширеннаяПодсказка" id="79"/>
+							<Events>
+								<Event name="OnChange">ПользовательМППриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ПарольМП" id="83">
+							<DataPath>Пароль</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>пароль:</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Top</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ContextMenu name="ПарольМПКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="ПарольМПРасширеннаяПодсказка" id="85"/>
+							<Events>
+								<Event name="OnChange">ПарольМППриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
