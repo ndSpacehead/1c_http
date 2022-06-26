@@ -242,6 +242,7 @@
 									<ClearButton>false</ClearButton>
 									<SpinButton>false</SpinButton>
 									<OpenButton>false</OpenButton>
+									<TextEdit>false</TextEdit>
 									<ChoiceList>
 										<xr:Item>
 											<xr:Presentation/>
@@ -532,6 +533,8 @@
 																	<DataPath>ПараметрыЗапроса.Ключ</DataPath>
 																	<EditMode>EnterOnInput</EditMode>
 																	<Width>10</Width>
+																	<Wrap>false</Wrap>
+																	<MultiLine>false</MultiLine>
 																	<DropListButton>false</DropListButton>
 																	<ChoiceButton>false</ChoiceButton>
 																	<ClearButton>false</ClearButton>
@@ -548,6 +551,8 @@
 																<InputField name="ПараметрыЗапросаЗначение" id="24">
 																	<DataPath>ПараметрыЗапроса.Значение</DataPath>
 																	<EditMode>EnterOnInput</EditMode>
+																	<Wrap>false</Wrap>
+																	<MultiLine>false</MultiLine>
 																	<DropListButton>false</DropListButton>
 																	<ChoiceButton>false</ChoiceButton>
 																	<ClearButton>false</ClearButton>
@@ -564,20 +569,20 @@
 														</Table>
 													</ChildItems>
 												</Page>
-												<Page name="РазделАвторизация" id="125">
+												<Page name="РазделАутентификация" id="125">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Авторизация</v8:content>
+															<v8:content>Аутентификация</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Раздел авторизация</v8:content>
+															<v8:content>Раздел аутентификация</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ExtendedTooltip name="РазделАвторизацияРасширеннаяПодсказка" id="126"/>
+													<ExtendedTooltip name="РазделАутентификацияРасширеннаяПодсказка" id="126"/>
 													<ChildItems>
 														<InputField name="ТипАвторизации" id="127">
 															<DataPath>ТипАвторизации</DataPath>
@@ -1159,6 +1164,7 @@
 																					<ExtendedTooltip name="ДанныеФормыЗначениеРасширеннаяПодсказка" id="181"/>
 																					<Events>
 																						<Event name="StartChoice">ДанныеФормыЗначениеНачалоВыбора</Event>
+																						<Event name="Opening">ДанныеФормыЗначениеОткрытие</Event>
 																					</Events>
 																				</InputField>
 																			</ChildItems>
@@ -1215,7 +1221,7 @@
 																				<ExtendedTooltip name="ТелоЗапросаДанныеHTMLФормыУправлениеПоискомРасширеннаяПодсказка" id="267"/>
 																			</SearchControlAddition>
 																			<Events>
-																				<Event name="OnStartEdit">ТелоЗапросаДанныеHTMLФормыПриНачалеРедактирования</Event>
+																				<Event name="OnStartEdit">ДанныеHTMLФормыПриНачалеРедактирования</Event>
 																			</Events>
 																			<ChildItems>
 																				<CheckBoxField name="ДанныеHTMLФормыАктивно" id="268">
