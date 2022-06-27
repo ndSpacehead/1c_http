@@ -83,7 +83,7 @@
 					<Enabled>false</Enabled>
 					<CommandName>Form.Command.ОткрытьCookies</CommandName>
 					<Picture>
-						<xr:Ref>StdPicture.Attach</xr:Ref>
+						<xr:Ref>StdPicture.ExternalDataSourceCube</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
 					<ExtendedTooltip name="ОткрытьCookiesРасширеннаяПодсказка" id="86"/>
@@ -1544,14 +1544,20 @@
 																	<ContextMenu name="ОтветТекстКонтекстноеМеню" id="317"/>
 																	<ExtendedTooltip name="ОтветТекстРасширеннаяПодсказка" id="318"/>
 																</FormattedDocumentField>
-																<TextDocumentField name="ОтветТекстСтрока" id="347">
+																<InputField name="ОтветТекстСтрока" id="347">
 																	<DataPath>ОтветТекстСтрока</DataPath>
 																	<Visible>false</Visible>
 																	<TitleLocation>None</TitleLocation>
+																	<Width>50</Width>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<VerticalStretch>true</VerticalStretch>
+																	<MultiLine>true</MultiLine>
 																	<Font ref="style:SmallTextFont" faceName="Courier New" kind="StyleItem"/>
 																	<ContextMenu name="ОтветТекстСтрокаКонтекстноеМеню" id="348"/>
 																	<ExtendedTooltip name="ОтветТекстСтрокаРасширеннаяПодсказка" id="349"/>
-																</TextDocumentField>
+																</InputField>
 															</ChildItems>
 														</Page>
 														<Page name="ФорматТелаОтветаJSON" id="319">

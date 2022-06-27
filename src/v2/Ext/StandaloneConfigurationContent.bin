@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StandaloneContent xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<UsedItem>
+		<Metadata>DataProcessor.КонсольКлиентаHTTP</Metadata>
+	</UsedItem>
+	<UsedItem>
+		<Metadata>CommonModule.КлиентHTTP</Metadata>
+	</UsedItem>
+	<UsedItem>
+		<Metadata>CommonModule.КлиентHTTPВызовСервера</Metadata>
+	</UsedItem>
+	<UsedItem>
+		<Metadata>Subsystem.КлиентHTTP</Metadata>
+	</UsedItem>
+	<UsedItem>
+		<Metadata>CommonModule.КлиентHTTPСерверПовтИсп</Metadata>
+	</UsedItem>
+	<UsedItem>
+		<Metadata>CommonModule.КлиентHTTPКлиентСервер</Metadata>
+	</UsedItem>
+	<UsedItem>
+		<Metadata>CommonModule.КлиентHTTPПовтИсп</Metadata>
+	</UsedItem>
+	<UsedItem>
+		<Metadata>CommonPicture.КлиентHTTP</Metadata>
+	</UsedItem>
+	<UsedItem>
+		<Metadata>CommonModule.КлиентHTTPКлиент</Metadata>
+	</UsedItem>
+	<UsedItem>
+		<Metadata>CommonModule.КлиентHTTPСлужебный</Metadata>
+	</UsedItem>
+</StandaloneContent>
