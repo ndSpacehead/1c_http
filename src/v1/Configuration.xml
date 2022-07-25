@@ -49,7 +49,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Брызгалин Андрей Васильевич (andrew.bryzgalin@gmail.com)</Vendor>
-			<Version>1.7.0</Version>
+			<Version>1.8.0</Version>
 			<UpdateCatalogAddress>https://github.com/SpaceHead1C/1c_http/releases</UpdateCatalogAddress>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
