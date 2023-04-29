@@ -56,7 +56,7 @@ URI = "https://evilinsult.com/generate_insult.php";
 
 ```bsl
 // Пример сохранения тела ответа в файл
-URI = "https://epic.gsfc.nasa.gov/archive/natural/2015/10/31/png/epic_1b_20151031074844.png";
+URI = "https://upload.wikimedia.org/wikipedia/commons/0/0d/Africa_and_Europe_from_a_Million_Miles_Away.png";
 
 ДП = КлиентHTTPКлиентСервер.НовыеДополнительныеПараметры();
 Ответ = КлиентHTTPКлиентСервер
