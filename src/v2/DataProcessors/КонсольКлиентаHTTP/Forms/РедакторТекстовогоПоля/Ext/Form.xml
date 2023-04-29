@@ -26,28 +26,85 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="РедактируемыйТекст" id="3">
-			<DataPath>РедактируемыйТекст</DataPath>
-			<TitleLocation>None</TitleLocation>
-			<Width>50</Width>
-			<AutoMaxWidth>false</AutoMaxWidth>
-			<AutoMaxHeight>false</AutoMaxHeight>
-			<HorizontalStretch>true</HorizontalStretch>
-			<VerticalStretch>true</VerticalStretch>
-			<MultiLine>true</MultiLine>
-			<ExtendedEdit>true</ExtendedEdit>
-			<DropListButton>false</DropListButton>
-			<ChoiceButton>false</ChoiceButton>
-			<ClearButton>false</ClearButton>
-			<SpinButton>false</SpinButton>
-			<OpenButton>false</OpenButton>
-			<CreateButton>false</CreateButton>
-			<ContextMenu name="РедактируемыйТекстКонтекстноеМеню" id="4"/>
-			<ExtendedTooltip name="РедактируемыйТекстРасширеннаяПодсказка" id="5"/>
-		</InputField>
+		<Pages name="Основная" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ОсновнаяРасширеннаяПодсказка" id="7"/>
+			<ChildItems>
+				<Page name="СтраницаРедактируемыйТекст" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница редактируемый текст</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница редактируемый текст</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаРедактируемыйТекстРасширеннаяПодсказка" id="9"/>
+					<ChildItems>
+						<InputField name="РедактируемыйТекст" id="3">
+							<DataPath>РедактируемыйТекст</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<MultiLine>true</MultiLine>
+							<ExtendedEdit>true</ExtendedEdit>
+							<ContextMenu name="РедактируемыйТекстКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="РедактируемыйТекстРасширеннаяПодсказка" id="5"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаФорматированныйТекст" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница форматированный текст</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница форматированный текст</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаФорматированныйТекстРасширеннаяПодсказка" id="11"/>
+					<ChildItems>
+						<HTMLDocumentField name="ТекстMonaco" id="12">
+							<DataPath>ТекстMonaco</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ТекстMonacoКонтекстноеМеню" id="13">
+								<Autofill>false</Autofill>
+							</ContextMenu>
+							<ExtendedTooltip name="ТекстMonacoРасширеннаяПодсказка" id="14"/>
+							<Events>
+								<Event name="DocumentComplete">ФорматированныйТекстДокументСформирован</Event>
+							</Events>
+						</HTMLDocumentField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -70,6 +127,30 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="ТекстMonaco" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст monaco</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Конфигурация" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конфигурация</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
 		</Attribute>
 	</Attributes>
 	<Commands>
@@ -100,6 +181,26 @@
 			</Type>
 		</Parameter>
 		<Parameter name="ЗаголовокФормы">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:Type>v8:Null</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ФорматТекста">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:Type>v8:Null</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>10</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="АдресMonaco">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:Type>v8:Null</v8:Type>
