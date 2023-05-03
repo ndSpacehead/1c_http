@@ -243,6 +243,7 @@
 									<ClearButton>false</ClearButton>
 									<SpinButton>false</SpinButton>
 									<OpenButton>false</OpenButton>
+									<CreateButton>false</CreateButton>
 									<TextEdit>false</TextEdit>
 									<ChoiceList>
 										<xr:Item>
@@ -2497,19 +2498,96 @@
 											<ContextMenu name="НеИспользоватьПроксиДляЛокальныхАдресовКонтекстноеМеню" id="350"/>
 											<ExtendedTooltip name="НеИспользоватьПроксиДляЛокальныхАдресовРасширеннаяПодсказка" id="351"/>
 										</CheckBoxField>
-										<InputField name="СерверПрокси" id="334">
-											<DataPath>СерверПрокси</DataPath>
+										<UsualGroup name="ГруппаСерверПрокси" id="465">
 											<Enabled>false</Enabled>
-											<Title>
+											<ToolTip>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Сервер</v8:content>
+													<v8:content>Сервер прокси</v8:content>
 												</v8:item>
-											</Title>
-											<AutoMarkIncomplete>true</AutoMarkIncomplete>
-											<ContextMenu name="СерверПроксиКонтекстноеМеню" id="335"/>
-											<ExtendedTooltip name="СерверПроксиРасширеннаяПодсказка" id="336"/>
-										</InputField>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСерверПроксиРасширеннаяПодсказка" id="466"/>
+											<ChildItems>
+												<InputField name="ПротоколПрокси" id="467">
+													<DataPath>ПротоколПрокси</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сервер</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Протокол прокси</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HorizontalStretch>false</HorizontalStretch>
+													<VerticalStretch>false</VerticalStretch>
+													<DropListButton>true</DropListButton>
+													<ChoiceButton>false</ChoiceButton>
+													<ClearButton>false</ClearButton>
+													<SpinButton>false</SpinButton>
+													<OpenButton>false</OpenButton>
+													<CreateButton>false</CreateButton>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>https</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">https</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>http</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">http</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ПротоколПроксиКонтекстноеМеню" id="468"/>
+													<ExtendedTooltip name="ПротоколПроксиРасширеннаяПодсказка" id="469"/>
+												</InputField>
+												<InputField name="СерверПрокси" id="334">
+													<DataPath>СерверПрокси</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сервер</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сервер прокси</v8:content>
+														</v8:item>
+													</ToolTip>
+													<VerticalStretch>false</VerticalStretch>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<ContextMenu name="СерверПроксиКонтекстноеМеню" id="335"/>
+													<ExtendedTooltip name="СерверПроксиРасширеннаяПодсказка" id="336"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
 										<InputField name="ПортПрокси" id="337">
 											<DataPath>ПортПрокси</DataPath>
 											<Enabled>false</Enabled>
@@ -3885,6 +3963,21 @@
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
 					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПротоколПрокси" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Протокол прокси</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>5</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
