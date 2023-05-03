@@ -72,6 +72,9 @@
 							<ExtendedEdit>true</ExtendedEdit>
 							<ContextMenu name="РедактируемыйТекстКонтекстноеМеню" id="4"/>
 							<ExtendedTooltip name="РедактируемыйТекстРасширеннаяПодсказка" id="5"/>
+							<Events>
+								<Event name="EditTextChange">РедактируемыйТекстИзменениеТекстаРедактирования</Event>
+							</Events>
 						</InputField>
 					</ChildItems>
 				</Page>
@@ -208,6 +211,12 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ЦветРедактируемогоТекста">
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+				<v8:Type>v8:Null</v8:Type>
 			</Type>
 		</Parameter>
 	</Parameters>
