@@ -372,6 +372,7 @@
 						<RadioButtonField name="РазделыКонсоли" id="324">
 							<DataPath>РазделыКонсоли</DataPath>
 							<TitleLocation>None</TitleLocation>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 							<RadioButtonType>Tumbler</RadioButtonType>
 							<EqualColumnsWidth>true</EqualColumnsWidth>
 							<ChoiceList>
@@ -2581,6 +2582,8 @@
 															<v8:content>Сервер прокси</v8:content>
 														</v8:item>
 													</ToolTip>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<AutoMaxHeight>false</AutoMaxHeight>
 													<VerticalStretch>false</VerticalStretch>
 													<AutoMarkIncomplete>true</AutoMarkIncomplete>
 													<ContextMenu name="СерверПроксиКонтекстноеМеню" id="335"/>
