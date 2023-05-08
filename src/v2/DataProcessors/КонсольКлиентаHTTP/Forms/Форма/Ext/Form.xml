@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
 	<Title>
 		<v8:item>
@@ -374,6 +374,7 @@
 							<TitleLocation>None</TitleLocation>
 							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 							<RadioButtonType>Tumbler</RadioButtonType>
+							<ItemWidth>10</ItemWidth>
 							<EqualColumnsWidth>true</EqualColumnsWidth>
 							<ChoiceList>
 								<xr:Item>
@@ -587,91 +588,111 @@
 													</ToolTip>
 													<ExtendedTooltip name="РазделАутентификацияРасширеннаяПодсказка" id="126"/>
 													<ChildItems>
-														<InputField name="ТипАвторизации" id="127">
-															<DataPath>ТипАвторизации</DataPath>
+														<UsualGroup name="ГруппаТипАвторизации" id="486">
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Тип</v8:content>
+																	<v8:content>Группа тип авторизации</v8:content>
 																</v8:item>
 															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа тип авторизации</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ThroughAlign>DontUse</ThroughAlign>
+															<ExtendedTooltip name="ГруппаТипАвторизацииРасширеннаяПодсказка" id="487"/>
+															<ChildItems>
+																<InputField name="ТипАвторизации" id="127">
+																	<DataPath>ТипАвторизации</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Тип</v8:content>
+																		</v8:item>
+																	</Title>
 																	<Width>16</Width>
-															<HorizontalStretch>false</HorizontalStretch>
-															<VerticalStretch>false</VerticalStretch>
-															<DropListButton>true</DropListButton>
-															<ChoiceButton>false</ChoiceButton>
-															<ClearButton>false</ClearButton>
-															<SpinButton>false</SpinButton>
-															<OpenButton>false</OpenButton>
-															<CreateButton>false</CreateButton>
-															<ChooseType>false</ChooseType>
-															<TextEdit>false</TextEdit>
-															<ChoiceList>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>Без авторизации</v8:content>
-																			</v8:item>
-																		</Presentation>
-																		<Value xsi:type="xs:string">Без авторизации</Value>
-																	</xr:Value>
-																</xr:Item>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>Basic</v8:content>
-																			</v8:item>
-																		</Presentation>
-																		<Value xsi:type="xs:string">Basic</Value>
-																	</xr:Value>
-																</xr:Item>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>NTLM</v8:content>
-																			</v8:item>
-																		</Presentation>
-																		<Value xsi:type="xs:string">NTLM</Value>
-																	</xr:Value>
-																</xr:Item>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>Digest</v8:content>
-																			</v8:item>
-																		</Presentation>
-																		<Value xsi:type="xs:string">Digest</Value>
-																	</xr:Value>
-																</xr:Item>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>Bearer</v8:content>
-																			</v8:item>
-																		</Presentation>
-																		<Value xsi:type="xs:string">Bearer</Value>
-																	</xr:Value>
-																</xr:Item>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<VerticalStretch>false</VerticalStretch>
+																	<DropListButton>true</DropListButton>
+																	<ChoiceButton>false</ChoiceButton>
+																	<ClearButton>false</ClearButton>
+																	<SpinButton>false</SpinButton>
+																	<OpenButton>false</OpenButton>
+																	<CreateButton>false</CreateButton>
+																	<ChooseType>false</ChooseType>
+																	<TextEdit>false</TextEdit>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Без авторизации</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:string">Без авторизации</Value>
+																			</xr:Value>
+																		</xr:Item>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Basic</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:string">Basic</Value>
+																			</xr:Value>
+																		</xr:Item>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>NTLM</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:string">NTLM</Value>
+																			</xr:Value>
+																		</xr:Item>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Digest</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:string">Digest</Value>
+																			</xr:Value>
+																		</xr:Item>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Bearer</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:string">Bearer</Value>
+																			</xr:Value>
+																		</xr:Item>
 																		<xr:Item>
 																			<xr:Presentation/>
 																			<xr:CheckState>0</xr:CheckState>
@@ -685,13 +706,15 @@
 																				<Value xsi:type="xs:string">AWS4-HMAC-SHA256</Value>
 																			</xr:Value>
 																		</xr:Item>
-															</ChoiceList>
-															<ContextMenu name="ТипАвторизацииКонтекстноеМеню" id="128"/>
-															<ExtendedTooltip name="ТипАвторизацииРасширеннаяПодсказка" id="129"/>
-															<Events>
-																<Event name="OnChange">ТипАвторизацииПриИзменении</Event>
-															</Events>
-														</InputField>
+																	</ChoiceList>
+																	<ContextMenu name="ТипАвторизацииКонтекстноеМеню" id="128"/>
+																	<ExtendedTooltip name="ТипАвторизацииРасширеннаяПодсказка" id="129"/>
+																	<Events>
+																		<Event name="OnChange">ТипАвторизацииПриИзменении</Event>
+																	</Events>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
 														<InputField name="ПользовательАвторизации" id="130">
 															<DataPath>ПользовательАвторизации</DataPath>
 															<Visible>false</Visible>

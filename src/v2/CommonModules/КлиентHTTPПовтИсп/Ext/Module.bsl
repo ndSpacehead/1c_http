@@ -1,4 +1,4 @@
-
+﻿
 // SPDX-License-Identifier: Apache-2.0+
 
 #Область ПрограммныйИнтерфейс
@@ -528,6 +528,15 @@
 //
 Функция ТипMIMETextXML() Экспорт
 	Возврат КлиентHTTPПовтИсп.ТипыMIME().text.xml;
+КонецФункции
+
+// Возвращает MIME-тип application/xml
+// 
+// Возвращаемое значение:
+//  Строка - MIME-тип
+//
+Функция ТипMIMEApplicationXML() Экспорт
+	Возврат КлиентHTTPПовтИсп.ТипыMIME().application.xml;
 КонецФункции
 
 // Возвращает MIME-тип text/html
