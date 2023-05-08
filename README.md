@@ -42,3 +42,5 @@
 [Описание формата ZIP файла](https://blog2k.ru/archives/3391), [Запись ZIP файла](https://blog2k.ru/archives/3397)
 
 [curl man page](https://curl.se/docs/manpage.html)
+
+[Создание подписанного запроса для AWS API](https://docs.aws.amazon.com/IAM/latest/UserGuide/create-signed-request.html) и [аутентификация AWS Signature v4](https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html) от Amazon.
