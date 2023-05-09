@@ -372,9 +372,7 @@
 						<RadioButtonField name="РазделыКонсоли" id="324">
 							<DataPath>РазделыКонсоли</DataPath>
 							<TitleLocation>None</TitleLocation>
-							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 							<RadioButtonType>Tumbler</RadioButtonType>
-							<ItemWidth>10</ItemWidth>
 							<EqualColumnsWidth>true</EqualColumnsWidth>
 							<ChoiceList>
 								<xr:Item>
