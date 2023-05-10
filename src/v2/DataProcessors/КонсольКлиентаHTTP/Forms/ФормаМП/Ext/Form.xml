@@ -1647,6 +1647,7 @@
 																	<HorizontalStretch>true</HorizontalStretch>
 																	<VerticalStretch>true</VerticalStretch>
 																	<MultiLine>true</MultiLine>
+																	<TextEdit>false</TextEdit>
 																	<Font ref="style:SmallTextFont" faceName="Courier New" kind="StyleItem"/>
 																	<ContextMenu name="ОтветТекстСтрокаКонтекстноеМеню" id="348"/>
 																	<ExtendedTooltip name="ОтветТекстСтрокаРасширеннаяПодсказка" id="349"/>
