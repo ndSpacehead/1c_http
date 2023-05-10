@@ -35,6 +35,8 @@
 
 ## Ссылки
 
+[URI - Uniform Resource Identifier (RFC 3986)](https://www.ietf.org/rfc/rfc3986)
+
 [Cookies: HTTP State Management Mechanism](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis)
 
 [Punycode](https://datatracker.ietf.org/doc/html/rfc3492)
