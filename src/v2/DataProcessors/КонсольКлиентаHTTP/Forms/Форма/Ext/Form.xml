@@ -586,17 +586,17 @@
 													</ToolTip>
 													<ExtendedTooltip name="РазделАутентификацияРасширеннаяПодсказка" id="126"/>
 													<ChildItems>
-														<UsualGroup name="ГруппаТипАвторизации" id="486">
+														<UsualGroup name="ГруппаТипАутентификации" id="486">
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа тип авторизации</v8:content>
+																	<v8:content>Группа тип аутентификации</v8:content>
 																</v8:item>
 															</Title>
 															<ToolTip>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа тип авторизации</v8:content>
+																	<v8:content>Группа тип аутентификации</v8:content>
 																</v8:item>
 															</ToolTip>
 															<Group>AlwaysHorizontal</Group>
@@ -604,10 +604,10 @@
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ThroughAlign>DontUse</ThroughAlign>
-															<ExtendedTooltip name="ГруппаТипАвторизацииРасширеннаяПодсказка" id="487"/>
+															<ExtendedTooltip name="ГруппаТипАутентификацииРасширеннаяПодсказка" id="487"/>
 															<ChildItems>
-																<InputField name="ТипАвторизации" id="127">
-																	<DataPath>ТипАвторизации</DataPath>
+																<InputField name="ТипАутентификации" id="127">
+																	<DataPath>ТипАутентификации</DataPath>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -633,10 +633,10 @@
 																				<Presentation>
 																					<v8:item>
 																						<v8:lang>ru</v8:lang>
-																						<v8:content>Без авторизации</v8:content>
+																						<v8:content>Без аутентификации</v8:content>
 																					</v8:item>
 																				</Presentation>
-																				<Value xsi:type="xs:string">Без авторизации</Value>
+																				<Value xsi:type="xs:string">Без аутентификации</Value>
 																			</xr:Value>
 																		</xr:Item>
 																		<xr:Item>
@@ -705,16 +705,16 @@
 																			</xr:Value>
 																		</xr:Item>
 																	</ChoiceList>
-																	<ContextMenu name="ТипАвторизацииКонтекстноеМеню" id="128"/>
-																	<ExtendedTooltip name="ТипАвторизацииРасширеннаяПодсказка" id="129"/>
+																	<ContextMenu name="ТипАутентификацииКонтекстноеМеню" id="128"/>
+																	<ExtendedTooltip name="ТипАутентификацииРасширеннаяПодсказка" id="129"/>
 																	<Events>
-																		<Event name="OnChange">ТипАвторизацииПриИзменении</Event>
+																		<Event name="OnChange">ТипАутентификацииПриИзменении</Event>
 																	</Events>
 																</InputField>
 															</ChildItems>
 														</UsualGroup>
-														<InputField name="ПользовательАвторизации" id="130">
-															<DataPath>ПользовательАвторизации</DataPath>
+														<InputField name="ПользовательАутентификации" id="130">
+															<DataPath>ПользовательАутентификации</DataPath>
 															<Visible>false</Visible>
 															<Title>
 																<v8:item>
@@ -724,31 +724,31 @@
 															</Title>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<VerticalStretch>false</VerticalStretch>
-															<ContextMenu name="ПользовательАвторизацииКонтекстноеМеню" id="131"/>
-															<ExtendedTooltip name="ПользовательАвторизацииРасширеннаяПодсказка" id="132"/>
+															<ContextMenu name="ПользовательАутентификацииКонтекстноеМеню" id="131"/>
+															<ExtendedTooltip name="ПользовательАутентификацииРасширеннаяПодсказка" id="132"/>
 														</InputField>
-														<UsualGroup name="ГруппаПарольАвторизации" id="136">
+														<UsualGroup name="ГруппаПарольАутентификации" id="136">
 															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа пароль авторизации</v8:content>
+																	<v8:content>Группа пароль аутентификации</v8:content>
 																</v8:item>
 															</Title>
 															<ToolTip>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа пароль авторизации</v8:content>
+																	<v8:content>Группа пароль аутентификации</v8:content>
 																</v8:item>
 															</ToolTip>
 															<Group>AlwaysHorizontal</Group>
 															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ГруппаПарольАвторизацииРасширеннаяПодсказка" id="137"/>
+															<ExtendedTooltip name="ГруппаПарольАутентификацииРасширеннаяПодсказка" id="137"/>
 															<ChildItems>
-																<InputField name="ПарольАвторизации" id="133">
-																	<DataPath>ПарольАвторизации</DataPath>
+																<InputField name="ПарольАутентификации" id="133">
+																	<DataPath>ПарольАутентификации</DataPath>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -758,43 +758,43 @@
 																	<AutoMaxWidth>false</AutoMaxWidth>
 																	<VerticalStretch>false</VerticalStretch>
 																	<PasswordMode>true</PasswordMode>
-																	<ContextMenu name="ПарольАвторизацииКонтекстноеМеню" id="134"/>
-																	<ExtendedTooltip name="ПарольАвторизацииРасширеннаяПодсказка" id="135"/>
+																	<ContextMenu name="ПарольАутентификацииКонтекстноеМеню" id="134"/>
+																	<ExtendedTooltip name="ПарольАутентификацииРасширеннаяПодсказка" id="135"/>
 																</InputField>
-																<Button name="ПоказатьПарольАвторизации" id="138">
+																<Button name="ПоказатьПарольАутентификации" id="138">
 																	<Type>UsualButton</Type>
 																	<Representation>Picture</Representation>
-																	<CommandName>Form.Command.ПоказатьПарольАвторизации</CommandName>
+																	<CommandName>Form.Command.ПоказатьПарольАутентификации</CommandName>
 																	<Picture>
 																		<xr:Ref>StdPicture.DataSearch</xr:Ref>
 																		<xr:LoadTransparent>true</xr:LoadTransparent>
 																	</Picture>
-																	<ExtendedTooltip name="ПоказатьПарольАвторизацииРасширеннаяПодсказка" id="139"/>
+																	<ExtendedTooltip name="ПоказатьПарольАутентификацииРасширеннаяПодсказка" id="139"/>
 																</Button>
 															</ChildItems>
 														</UsualGroup>
-														<UsualGroup name="ГруппаТокенАвторизации" id="434">
+														<UsualGroup name="ГруппаТокенАутентификации" id="434">
 															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа токен авторизации</v8:content>
+																	<v8:content>Группа токен аутентификации</v8:content>
 																</v8:item>
 															</Title>
 															<ToolTip>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа токен авторизации</v8:content>
+																	<v8:content>Группа токен аутентификации</v8:content>
 																</v8:item>
 															</ToolTip>
 															<Group>AlwaysHorizontal</Group>
 															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ГруппаТокенАвторизацииРасширеннаяПодсказка" id="435"/>
+															<ExtendedTooltip name="ГруппаТокенАутентификацииРасширеннаяПодсказка" id="435"/>
 															<ChildItems>
-																<InputField name="ТокенАвторизации" id="247">
-																	<DataPath>ТокенАвторизации</DataPath>
+																<InputField name="ТокенАутентификации" id="247">
+																	<DataPath>ТокенАутентификации</DataPath>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -804,18 +804,18 @@
 																	<AutoMaxWidth>false</AutoMaxWidth>
 																	<VerticalStretch>false</VerticalStretch>
 																	<PasswordMode>true</PasswordMode>
-																	<ContextMenu name="ТокенАвторизацииКонтекстноеМеню" id="248"/>
-																	<ExtendedTooltip name="ТокенАвторизацииРасширеннаяПодсказка" id="249"/>
+																	<ContextMenu name="ТокенАутентификацииКонтекстноеМеню" id="248"/>
+																	<ExtendedTooltip name="ТокенАутентификацииРасширеннаяПодсказка" id="249"/>
 																</InputField>
-																<Button name="ПоказатьТокенАвторизации" id="436">
+																<Button name="ПоказатьТокенАутентификации" id="436">
 																	<Type>UsualButton</Type>
 																	<Representation>Picture</Representation>
-																	<CommandName>Form.Command.ПоказатьТокенАвторизации</CommandName>
+																	<CommandName>Form.Command.ПоказатьТокенАутентификации</CommandName>
 																	<Picture>
 																		<xr:Ref>StdPicture.DataSearch</xr:Ref>
 																		<xr:LoadTransparent>true</xr:LoadTransparent>
 																	</Picture>
-																	<ExtendedTooltip name="ПоказатьТокенАвторизацииРасширеннаяПодсказка" id="437"/>
+																	<ExtendedTooltip name="ПоказатьТокенАутентификацииРасширеннаяПодсказка" id="437"/>
 																</Button>
 															</ChildItems>
 														</UsualGroup>
@@ -3314,11 +3314,11 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="ТипАвторизации" id="11">
+		<Attribute name="ТипАутентификации" id="11">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Тип авторизации</v8:content>
+					<v8:content>Тип аутентификации</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -3329,11 +3329,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ПользовательАвторизации" id="12">
+		<Attribute name="ПользовательАутентификации" id="12">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Пользователь авторизации</v8:content>
+					<v8:content>Пользователь аутентификации</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -3344,11 +3344,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ПарольАвторизации" id="13">
+		<Attribute name="ПарольАутентификации" id="13">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Пароль авторизации</v8:content>
+					<v8:content>Пароль аутентификации</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -3617,11 +3617,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ТокенАвторизации" id="28">
+		<Attribute name="ТокенАутентификации" id="28">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Токен авторизации</v8:content>
+					<v8:content>Токен аутентификации</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -4375,20 +4375,20 @@
 			<Shortcut>F7</Shortcut>
 			<Action>ВыполнитьЗапрос</Action>
 		</Command>
-		<Command name="ПоказатьПарольАвторизации" id="2">
+		<Command name="ПоказатьПарольАутентификации" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Показать пароль авторизации</v8:content>
+					<v8:content>Показать пароль аутентификации</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Показать пароль авторизации</v8:content>
+					<v8:content>Показать пароль аутентификации</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ПоказатьПарольАвторизации</Action>
+			<Action>ПоказатьПарольАутентификации</Action>
 		</Command>
 		<Command name="ПрименитьНастройки" id="3">
 			<Title>
@@ -4591,20 +4591,20 @@
 			</ToolTip>
 			<Action>ПоказатьПарольПрокси</Action>
 		</Command>
-		<Command name="ПоказатьТокенАвторизации" id="16">
+		<Command name="ПоказатьТокенАутентификации" id="16">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Показать токен авторизации</v8:content>
+					<v8:content>Показать токен аутентификации</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Показать токен авторизации</v8:content>
+					<v8:content>Показать токен аутентификации</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ПоказатьТокенАвторизации</Action>
+			<Action>ПоказатьТокенАутентификации</Action>
 		</Command>
 		<Command name="ИзвлечьMonaco" id="17">
 			<Title>
