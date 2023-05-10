@@ -518,6 +518,19 @@
 																<Value xsi:type="xs:string">Bearer</Value>
 															</xr:Value>
 														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>AWS4-HMAC-SHA256</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">AWS4-HMAC-SHA256</Value>
+															</xr:Value>
+														</xr:Item>
 													</ChoiceList>
 													<ContextMenu name="ТипАутентификацииКонтекстноеМеню" id="143"/>
 													<ExtendedTooltip name="ТипАутентификацииРасширеннаяПодсказка" id="144"/>
@@ -649,6 +662,86 @@
 														</Button>
 													</ChildItems>
 												</UsualGroup>
+												<InputField name="КлючДоступаAWS" id="350">
+													<DataPath>AWSКлючДоступа</DataPath>
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ключ доступа:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="КлючДоступаAWSКонтекстноеМеню" id="351"/>
+													<ExtendedTooltip name="КлючДоступаAWSРасширеннаяПодсказка" id="352"/>
+												</InputField>
+												<UsualGroup name="ГруппаСекретныйКлючAWS" id="353">
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа секретный ключ AWS</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа секретный ключ AWS</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСекретныйКлючAWSРасширеннаяПодсказка" id="354"/>
+													<ChildItems>
+														<InputField name="СекретныйКлючAWS" id="355">
+															<DataPath>AWSСекретныйКлюч</DataPath>
+															<PasswordMode>true</PasswordMode>
+															<DropListButton>false</DropListButton>
+															<ChoiceButton>false</ChoiceButton>
+															<ClearButton>false</ClearButton>
+															<SpinButton>false</SpinButton>
+															<OpenButton>true</OpenButton>
+															<CreateButton>false</CreateButton>
+															<ContextMenu name="СекретныйКлючAWSКонтекстноеМеню" id="356"/>
+															<ExtendedTooltip name="СекретныйКлючAWSРасширеннаяПодсказка" id="357"/>
+														</InputField>
+														<Button name="ПоказатьСекретныйКлючAWS" id="358">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Command.ПоказатьСекретныйКлючAWS</CommandName>
+															<Picture>
+																<xr:Ref>StdPicture.DataSearch</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ExtendedTooltip name="ПоказатьСекретныйКлючAWSРасширеннаяПодсказка" id="359"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<InputField name="РегионAWS" id="360">
+													<DataPath>AWSРегион</DataPath>
+													<Visible>false</Visible>
+													<DropListButton>true</DropListButton>
+													<ChoiceButton>false</ChoiceButton>
+													<ClearButton>true</ClearButton>
+													<SpinButton>false</SpinButton>
+													<OpenButton>false</OpenButton>
+													<CreateButton>false</CreateButton>
+													<ContextMenu name="РегионAWSКонтекстноеМеню" id="361"/>
+													<ExtendedTooltip name="РегионAWSРасширеннаяПодсказка" id="362"/>
+												</InputField>
+												<InputField name="СервисAWS" id="363">
+													<DataPath>AWSСервис</DataPath>
+													<Visible>false</Visible>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>например, s3</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="СервисAWSКонтекстноеМеню" id="364"/>
+													<ExtendedTooltip name="СервисAWSРасширеннаяПодсказка" id="365"/>
+												</InputField>
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="ГруппаЗаголовкиЗапроса" id="182">
@@ -1554,6 +1647,7 @@
 																	<HorizontalStretch>true</HorizontalStretch>
 																	<VerticalStretch>true</VerticalStretch>
 																	<MultiLine>true</MultiLine>
+																	<TextEdit>false</TextEdit>
 																	<Font ref="style:SmallTextFont" faceName="Courier New" kind="StyleItem"/>
 																	<ContextMenu name="ОтветТекстСтрокаКонтекстноеМеню" id="348"/>
 																	<ExtendedTooltip name="ОтветТекстСтрокаРасширеннаяПодсказка" id="349"/>
@@ -1992,6 +2086,59 @@
 											<ContextMenu name="НеИспользоватьПроксиДляЛокальныхАдресовКонтекстноеМеню" id="64"/>
 											<ExtendedTooltip name="НеИспользоватьПроксиДляЛокальныхАдресовРасширеннаяПодсказка" id="65"/>
 										</CheckBoxField>
+										<InputField name="ПротоколПрокси" id="366">
+											<DataPath>ПротоколПрокси</DataPath>
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Схема</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Протокол прокси</v8:content>
+												</v8:item>
+											</ToolTip>
+											<DropListButton>true</DropListButton>
+											<ChoiceButton>false</ChoiceButton>
+											<ClearButton>false</ClearButton>
+											<SpinButton>false</SpinButton>
+											<OpenButton>false</OpenButton>
+											<CreateButton>false</CreateButton>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>https</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">https</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>http</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">http</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ПротоколПроксиКонтекстноеМеню" id="367"/>
+											<ExtendedTooltip name="ПротоколПроксиРасширеннаяПодсказка" id="368"/>
+										</InputField>
 										<InputField name="СерверПрокси" id="66">
 											<DataPath>СерверПрокси</DataPath>
 											<Enabled>false</Enabled>
@@ -2806,6 +2953,81 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="AWSРегион" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регион</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="AWSСекретныйКлюч" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Секретный ключ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1000</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="AWSСервис" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервис</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="AWSКлючДоступа" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ доступа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1000</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПротоколПрокси" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Протокол прокси</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>5</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -3054,6 +3276,21 @@
 					<v8:content>Показать пароль прокси</v8:content>
 				</v8:item>
 			</ToolTip>
+		</Command>
+		<Command name="ПоказатьСекретныйКлючAWS" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать секретный ключ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать секретный ключ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСекретныйКлючAWS</Action>
 		</Command>
 	</Commands>
 </Form>
