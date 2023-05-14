@@ -681,6 +681,19 @@
 																				<Value xsi:type="xs:string">Bearer</Value>
 																			</xr:Value>
 																		</xr:Item>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>AWS4-HMAC-SHA256</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:string">AWS4-HMAC-SHA256</Value>
+																			</xr:Value>
+																		</xr:Item>
 																	</ChoiceList>
 																	<ContextMenu name="ТипАутентификацииКонтекстноеМеню" id="128"/>
 																	<ExtendedTooltip name="ТипАутентификацииРасширеннаяПодсказка" id="129"/>
@@ -794,6 +807,109 @@
 																</Button>
 															</ChildItems>
 														</UsualGroup>
+														<InputField name="КлючДоступаAWS" id="451">
+															<DataPath>AWSКлючДоступа</DataPath>
+															<Visible>false</Visible>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Ключ доступа</v8:content>
+																</v8:item>
+															</Title>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<HorizontalStretch>true</HorizontalStretch>
+															<VerticalStretch>false</VerticalStretch>
+															<ContextMenu name="КлючДоступаAWSКонтекстноеМеню" id="452"/>
+															<ExtendedTooltip name="КлючДоступаAWSРасширеннаяПодсказка" id="453"/>
+														</InputField>
+														<UsualGroup name="ГруппаСекретныйКлючAWS" id="454">
+															<Visible>false</Visible>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа секретный ключ AWS</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа секретный ключ AWS</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаСекретныйКлючAWSРасширеннаяПодсказка" id="455"/>
+															<ChildItems>
+																<InputField name="СекретныйКлючAWS" id="456">
+																	<DataPath>AWSСекретныйКлюч</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Секретный ключ</v8:content>
+																		</v8:item>
+																	</Title>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<VerticalStretch>false</VerticalStretch>
+																	<PasswordMode>true</PasswordMode>
+																	<ContextMenu name="СекретныйКлючAWSКонтекстноеМеню" id="457"/>
+																	<ExtendedTooltip name="СекретныйКлючAWSРасширеннаяПодсказка" id="458"/>
+																</InputField>
+																<Button name="ПоказатьСекретныйКлючAWS" id="459">
+																	<Type>UsualButton</Type>
+																	<Representation>Picture</Representation>
+																	<CommandName>Form.Command.ПоказатьСекретныйКлючAWS</CommandName>
+																	<Picture>
+																		<xr:Ref>StdPicture.DataSearch</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ExtendedTooltip name="ПоказатьСекретныйКлючAWSРасширеннаяПодсказка" id="460"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+														<InputField name="РегионAWS" id="464">
+															<DataPath>AWSРегион</DataPath>
+															<Visible>false</Visible>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Регион</v8:content>
+																</v8:item>
+															</Title>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<HorizontalStretch>true</HorizontalStretch>
+															<VerticalStretch>false</VerticalStretch>
+															<DropListButton>true</DropListButton>
+															<ChoiceButton>false</ChoiceButton>
+															<ClearButton>true</ClearButton>
+															<SpinButton>false</SpinButton>
+															<OpenButton>false</OpenButton>
+															<CreateButton>false</CreateButton>
+															<ContextMenu name="РегионAWSКонтекстноеМеню" id="465"/>
+															<ExtendedTooltip name="РегионAWSРасширеннаяПодсказка" id="466"/>
+														</InputField>
+														<InputField name="СервисAWS" id="461">
+															<DataPath>AWSСервис</DataPath>
+															<Visible>false</Visible>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сервис</v8:content>
+																</v8:item>
+															</Title>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<HorizontalStretch>true</HorizontalStretch>
+															<VerticalStretch>false</VerticalStretch>
+															<InputHint>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>например, s3</v8:content>
+																</v8:item>
+															</InputHint>
+															<ContextMenu name="СервисAWSКонтекстноеМеню" id="462"/>
+															<ExtendedTooltip name="СервисAWSРасширеннаяПодсказка" id="463"/>
+														</InputField>
 													</ChildItems>
 												</Page>
 												<Page name="РазделЗаголовкиЗапроса" id="101">
@@ -3787,6 +3903,66 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="AWSРегион" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регион AWS</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="AWSСекретныйКлюч" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Секретный ключ AWS</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1000</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="AWSСервис" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервис AWS</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="AWSКлючДоступа" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ доступа AWS</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1000</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -4233,6 +4409,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПоказатьТокенАутентификации</Action>
+		</Command>
+		<Command name="ПоказатьСекретныйКлючAWS" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать секретный ключ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать секретный ключ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСекретныйКлючAWS</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
