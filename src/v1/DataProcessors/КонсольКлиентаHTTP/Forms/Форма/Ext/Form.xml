@@ -477,6 +477,7 @@
 															<AutoInsertNewRow>true</AutoInsertNewRow>
 															<EnableStartDrag>true</EnableStartDrag>
 															<EnableDrag>true</EnableDrag>
+															<FileDragMode>AsFile</FileDragMode>
 															<DataPath>ПараметрыЗапроса</DataPath>
 															<Title>
 																<v8:item>
@@ -561,115 +562,136 @@
 														</Table>
 													</ChildItems>
 												</Page>
-												<Page name="РазделАвторизация" id="125">
+												<Page name="РазделАутентификация" id="125">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Авторизация</v8:content>
+															<v8:content>Аутентификация</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Раздел авторизация</v8:content>
+															<v8:content>Раздел аутентификация</v8:content>
 														</v8:item>
 													</ToolTip>
-													<ExtendedTooltip name="РазделАвторизацияРасширеннаяПодсказка" id="126"/>
+													<ExtendedTooltip name="РазделАутентификацияРасширеннаяПодсказка" id="126"/>
 													<ChildItems>
-														<InputField name="ТипАвторизации" id="127">
-															<DataPath>ТипАвторизации</DataPath>
+														<UsualGroup name="ГруппаТипАутентификации" id="441">
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Тип</v8:content>
+																	<v8:content>Группа тип аутентификации</v8:content>
 																</v8:item>
 															</Title>
-															<Width>15</Width>
-															<HorizontalStretch>false</HorizontalStretch>
-															<VerticalStretch>false</VerticalStretch>
-															<DropListButton>true</DropListButton>
-															<ChoiceButton>false</ChoiceButton>
-															<ClearButton>false</ClearButton>
-															<SpinButton>false</SpinButton>
-															<OpenButton>false</OpenButton>
-															<CreateButton>false</CreateButton>
-															<ChooseType>false</ChooseType>
-															<TextEdit>false</TextEdit>
-															<ChoiceList>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>Без авторизации</v8:content>
-																			</v8:item>
-																		</Presentation>
-																		<Value xsi:type="xs:string">Без авторизации</Value>
-																	</xr:Value>
-																</xr:Item>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>Basic</v8:content>
-																			</v8:item>
-																		</Presentation>
-																		<Value xsi:type="xs:string">Basic</Value>
-																	</xr:Value>
-																</xr:Item>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>NTLM</v8:content>
-																			</v8:item>
-																		</Presentation>
-																		<Value xsi:type="xs:string">NTLM</Value>
-																	</xr:Value>
-																</xr:Item>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>Digest</v8:content>
-																			</v8:item>
-																		</Presentation>
-																		<Value xsi:type="xs:string">Digest</Value>
-																	</xr:Value>
-																</xr:Item>
-																<xr:Item>
-																	<xr:Presentation/>
-																	<xr:CheckState>0</xr:CheckState>
-																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
-																		<Presentation>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>Bearer</v8:content>
-																			</v8:item>
-																		</Presentation>
-																		<Value xsi:type="xs:string">Bearer</Value>
-																	</xr:Value>
-																</xr:Item>
-															</ChoiceList>
-															<ContextMenu name="ТипАвторизацииКонтекстноеМеню" id="128"/>
-															<ExtendedTooltip name="ТипАвторизацииРасширеннаяПодсказка" id="129"/>
-															<Events>
-																<Event name="OnChange">ТипАвторизацииПриИзменении</Event>
-															</Events>
-														</InputField>
-														<InputField name="ПользовательАвторизации" id="130">
-															<DataPath>ПользовательАвторизации</DataPath>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа тип аутентификации</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ThroughAlign>DontUse</ThroughAlign>
+															<ExtendedTooltip name="ГруппаТипАутентификацииРасширеннаяПодсказка" id="442"/>
+															<ChildItems>
+																<InputField name="ТипАутентификации" id="127">
+																	<DataPath>ТипАутентификации</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Тип</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Width>15</Width>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<VerticalStretch>false</VerticalStretch>
+																	<DropListButton>true</DropListButton>
+																	<ChoiceButton>false</ChoiceButton>
+																	<ClearButton>false</ClearButton>
+																	<SpinButton>false</SpinButton>
+																	<OpenButton>false</OpenButton>
+																	<CreateButton>false</CreateButton>
+																	<ChooseType>false</ChooseType>
+																	<TextEdit>false</TextEdit>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Без авторизации</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:string">Без авторизации</Value>
+																			</xr:Value>
+																		</xr:Item>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Basic</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:string">Basic</Value>
+																			</xr:Value>
+																		</xr:Item>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>NTLM</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:string">NTLM</Value>
+																			</xr:Value>
+																		</xr:Item>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Digest</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:string">Digest</Value>
+																			</xr:Value>
+																		</xr:Item>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation>
+																					<v8:item>
+																						<v8:lang>ru</v8:lang>
+																						<v8:content>Bearer</v8:content>
+																					</v8:item>
+																				</Presentation>
+																				<Value xsi:type="xs:string">Bearer</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ТипАутентификацииКонтекстноеМеню" id="128"/>
+																	<ExtendedTooltip name="ТипАутентификацииРасширеннаяПодсказка" id="129"/>
+																	<Events>
+																		<Event name="OnChange">ТипАутентификацииПриИзменении</Event>
+																	</Events>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+														<InputField name="ПользовательАутентификации" id="130">
+															<DataPath>ПользовательАутентификации</DataPath>
 															<Visible>false</Visible>
 															<Title>
 																<v8:item>
@@ -679,30 +701,30 @@
 															</Title>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<VerticalStretch>false</VerticalStretch>
-															<ContextMenu name="ПользовательАвторизацииКонтекстноеМеню" id="131"/>
-															<ExtendedTooltip name="ПользовательАвторизацииРасширеннаяПодсказка" id="132"/>
+															<ContextMenu name="ПользовательАутентификацииКонтекстноеМеню" id="131"/>
+															<ExtendedTooltip name="ПользовательАутентификацииРасширеннаяПодсказка" id="132"/>
 														</InputField>
-														<UsualGroup name="ГруппаПарольАвторизации" id="136">
+														<UsualGroup name="ГруппаПарольАутентификации" id="136">
 															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа пароль авторизации</v8:content>
+																	<v8:content>Группа пароль аутентификации</v8:content>
 																</v8:item>
 															</Title>
 															<ToolTip>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа пароль авторизации</v8:content>
+																	<v8:content>Группа пароль аутентификации</v8:content>
 																</v8:item>
 															</ToolTip>
 															<Group>AlwaysHorizontal</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ГруппаПарольАвторизацииРасширеннаяПодсказка" id="137"/>
+															<ExtendedTooltip name="ГруппаПарольАутентификацииРасширеннаяПодсказка" id="137"/>
 															<ChildItems>
-																<InputField name="ПарольАвторизации" id="133">
-																	<DataPath>ПарольАвторизации</DataPath>
+																<InputField name="ПарольАутентификации" id="133">
+																	<DataPath>ПарольАутентификации</DataPath>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -712,42 +734,42 @@
 																	<AutoMaxWidth>false</AutoMaxWidth>
 																	<VerticalStretch>false</VerticalStretch>
 																	<PasswordMode>true</PasswordMode>
-																	<ContextMenu name="ПарольАвторизацииКонтекстноеМеню" id="134"/>
-																	<ExtendedTooltip name="ПарольАвторизацииРасширеннаяПодсказка" id="135"/>
+																	<ContextMenu name="ПарольАутентификацииКонтекстноеМеню" id="134"/>
+																	<ExtendedTooltip name="ПарольАутентификацииРасширеннаяПодсказка" id="135"/>
 																</InputField>
-																<Button name="ПоказатьПарольАвторизации" id="138">
+																<Button name="ПоказатьПарольАутентификации" id="138">
 																	<Type>UsualButton</Type>
 																	<Representation>Picture</Representation>
-																	<CommandName>Form.Command.ПоказатьПарольАвторизации</CommandName>
+																	<CommandName>Form.Command.ПоказатьПарольАутентификации</CommandName>
 																	<Picture>
 																		<xr:Ref>StdPicture.DataSearch</xr:Ref>
 																		<xr:LoadTransparent>true</xr:LoadTransparent>
 																	</Picture>
-																	<ExtendedTooltip name="ПоказатьПарольАвторизацииРасширеннаяПодсказка" id="139"/>
+																	<ExtendedTooltip name="ПоказатьПарольАутентификацииРасширеннаяПодсказка" id="139"/>
 																</Button>
 															</ChildItems>
 														</UsualGroup>
-														<UsualGroup name="ГруппаТокенАвторизации" id="434">
+														<UsualGroup name="ГруппаТокенАутентификации" id="434">
 															<Visible>false</Visible>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа токен авторизации</v8:content>
+																	<v8:content>Группа токен аутентификации</v8:content>
 																</v8:item>
 															</Title>
 															<ToolTip>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа токен авторизации</v8:content>
+																	<v8:content>Группа токен аутентификации</v8:content>
 																</v8:item>
 															</ToolTip>
 															<Group>AlwaysHorizontal</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ГруппаТокенАвторизацииРасширеннаяПодсказка" id="435"/>
+															<ExtendedTooltip name="ГруппаТокенАутентификацииРасширеннаяПодсказка" id="435"/>
 															<ChildItems>
-																<InputField name="ТокенАвторизации" id="247">
-																	<DataPath>ТокенАвторизации</DataPath>
+																<InputField name="ТокенАутентификации" id="247">
+																	<DataPath>ТокенАутентификации</DataPath>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -757,18 +779,18 @@
 																	<AutoMaxWidth>false</AutoMaxWidth>
 																	<VerticalStretch>false</VerticalStretch>
 																	<PasswordMode>true</PasswordMode>
-																	<ContextMenu name="ТокенАвторизацииКонтекстноеМеню" id="248"/>
-																	<ExtendedTooltip name="ТокенАвторизацииРасширеннаяПодсказка" id="249"/>
+																	<ContextMenu name="ТокенАутентификацииКонтекстноеМеню" id="248"/>
+																	<ExtendedTooltip name="ТокенАутентификацииРасширеннаяПодсказка" id="249"/>
 																</InputField>
-																<Button name="ПоказатьТокенАвторизации" id="436">
+																<Button name="ПоказатьТокенАутентификации" id="436">
 																	<Type>UsualButton</Type>
 																	<Representation>Picture</Representation>
-																	<CommandName>Form.Command.ПоказатьТокенАвторизации</CommandName>
+																	<CommandName>Form.Command.ПоказатьТокенАутентификации</CommandName>
 																	<Picture>
 																		<xr:Ref>StdPicture.DataSearch</xr:Ref>
 																		<xr:LoadTransparent>true</xr:LoadTransparent>
 																	</Picture>
-																	<ExtendedTooltip name="ПоказатьТокенАвторизацииРасширеннаяПодсказка" id="437"/>
+																	<ExtendedTooltip name="ПоказатьТокенАутентификацииРасширеннаяПодсказка" id="437"/>
 																</Button>
 															</ChildItems>
 														</UsualGroup>
@@ -795,6 +817,7 @@
 															<AutoInsertNewRow>true</AutoInsertNewRow>
 															<EnableStartDrag>true</EnableStartDrag>
 															<EnableDrag>true</EnableDrag>
+															<FileDragMode>AsFile</FileDragMode>
 															<DataPath>ЗаголовкиЗапроса</DataPath>
 															<RowFilter xsi:nil="true"/>
 															<ContextMenu name="ЗаголовкиЗапросаКонтекстноеМеню" id="104"/>
@@ -1029,6 +1052,7 @@
 																			<AutoMaxHeight>false</AutoMaxHeight>
 																			<AutoMaxRowsCount>false</AutoMaxRowsCount>
 																			<AutoInsertNewRow>true</AutoInsertNewRow>
+																			<FileDragMode>AsFile</FileDragMode>
 																			<DataPath>ТелоЗапросаДанныеФормы</DataPath>
 																			<RowFilter xsi:nil="true"/>
 																			<ContextMenu name="ТелоЗапросаДанныеФормыКонтекстноеМеню" id="158"/>
@@ -1180,6 +1204,7 @@
 																			<AutoMaxHeight>false</AutoMaxHeight>
 																			<AutoMaxRowsCount>false</AutoMaxRowsCount>
 																			<AutoInsertNewRow>true</AutoInsertNewRow>
+																			<FileDragMode>AsFile</FileDragMode>
 																			<DataPath>ТелоЗапросаДанныеHTMLФормы</DataPath>
 																			<RowFilter xsi:nil="true"/>
 																			<ContextMenu name="ТелоЗапросаДанныеHTMLФормыКонтекстноеМеню" id="258"/>
@@ -1573,6 +1598,7 @@
 															<AutoInsertNewRow>true</AutoInsertNewRow>
 															<EnableStartDrag>true</EnableStartDrag>
 															<EnableDrag>true</EnableDrag>
+															<FileDragMode>AsFile</FileDragMode>
 															<DataPath>ЗаголовкиОтвета</DataPath>
 															<Title>
 																<v8:item>
@@ -1715,7 +1741,7 @@
 																		<Presentation>
 																			<v8:item>
 																				<v8:lang>ru</v8:lang>
-																				<v8:content>HTML</v8:content>
+																				<v8:content>Просмотр</v8:content>
 																			</v8:item>
 																		</Presentation>
 																		<Value xsi:type="xs:string">HTML</Value>
@@ -1864,6 +1890,7 @@
 																			<AutoMaxWidth>false</AutoMaxWidth>
 																			<AutoMaxHeight>false</AutoMaxHeight>
 																			<PictureSize>AutoSize</PictureSize>
+																			<FileDragMode>AsFile</FileDragMode>
 																			<ContextMenu name="ОтветКартинкаКонтекстноеМеню" id="314"/>
 																			<ExtendedTooltip name="ОтветКартинкаРасширеннаяПодсказка" id="315"/>
 																		</PictureField>
@@ -2053,6 +2080,7 @@
 											<v8:content>Группа контекст выполнения</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаКонтекстВыполненияРасширеннаяПодсказка" id="359"/>
@@ -2126,6 +2154,7 @@
 											<v8:content>Группа файл тела ответа</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаФайлТелаОтветаРасширеннаяПодсказка" id="238"/>
@@ -2356,19 +2385,97 @@
 											<ContextMenu name="НеИспользоватьПроксиДляЛокальныхАдресовКонтекстноеМеню" id="350"/>
 											<ExtendedTooltip name="НеИспользоватьПроксиДляЛокальныхАдресовРасширеннаяПодсказка" id="351"/>
 										</CheckBoxField>
-										<InputField name="СерверПрокси" id="334">
-											<DataPath>СерверПрокси</DataPath>
+										<UsualGroup name="ГруппаСерверПрокси" id="443">
 											<Enabled>false</Enabled>
-											<Title>
+											<ToolTip>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Сервер</v8:content>
+													<v8:content>Сервер прокси</v8:content>
 												</v8:item>
-											</Title>
-											<AutoMarkIncomplete>true</AutoMarkIncomplete>
-											<ContextMenu name="СерверПроксиКонтекстноеМеню" id="335"/>
-											<ExtendedTooltip name="СерверПроксиРасширеннаяПодсказка" id="336"/>
-										</InputField>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСерверПроксиРасширеннаяПодсказка" id="444"/>
+											<ChildItems>
+												<InputField name="ПротоколПрокси" id="445">
+													<DataPath>ПротоколПрокси</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сервер</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Протокол прокси</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HorizontalStretch>false</HorizontalStretch>
+													<VerticalStretch>false</VerticalStretch>
+													<DropListButton>true</DropListButton>
+													<ChoiceButton>false</ChoiceButton>
+													<ClearButton>false</ClearButton>
+													<SpinButton>false</SpinButton>
+													<OpenButton>false</OpenButton>
+													<CreateButton>false</CreateButton>
+													<TextEdit>false</TextEdit>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>https</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">https</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>http</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:string">http</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ПротоколПроксиКонтекстноеМеню" id="446"/>
+													<ExtendedTooltip name="ПротоколПроксиРасширеннаяПодсказка" id="447"/>
+												</InputField>
+												<InputField name="СерверПрокси" id="448">
+													<DataPath>СерверПрокси</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сервер</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сервер прокси</v8:content>
+														</v8:item>
+													</ToolTip>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<AutoMaxHeight>false</AutoMaxHeight>
+													<VerticalStretch>false</VerticalStretch>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<ContextMenu name="СерверПроксиКонтекстноеМеню" id="449"/>
+													<ExtendedTooltip name="СерверПроксиРасширеннаяПодсказка" id="450"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
 										<InputField name="ПортПрокси" id="337">
 											<DataPath>ПортПрокси</DataPath>
 											<Enabled>false</Enabled>
@@ -2542,6 +2649,7 @@
 							<AutoMaxRowsCount>false</AutoMaxRowsCount>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>История</DataPath>
 							<CommandSet>
 								<ExcludedCommand>Add</ExcludedCommand>
@@ -2939,11 +3047,11 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="ТипАвторизации" id="11">
+		<Attribute name="ТипАутентификации" id="11">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Тип авторизации</v8:content>
+					<v8:content>Тип аутентификации</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -2954,11 +3062,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ПользовательАвторизации" id="12">
+		<Attribute name="ПользовательАутентификации" id="12">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Пользователь авторизации</v8:content>
+					<v8:content>Пользователь аутентификации</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -2969,11 +3077,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ПарольАвторизации" id="13">
+		<Attribute name="ПарольАутентификации" id="13">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Пароль авторизации</v8:content>
+					<v8:content>Пароль аутентификации</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -3242,11 +3350,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ТокенАвторизации" id="28">
+		<Attribute name="ТокенАутентификации" id="28">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Токен авторизации</v8:content>
+					<v8:content>Токен аутентификации</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -3664,6 +3772,21 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ПротоколПрокси" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Протокол прокси</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>5</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -3880,20 +4003,20 @@
 			<Shortcut>F7</Shortcut>
 			<Action>ВыполнитьЗапрос</Action>
 		</Command>
-		<Command name="ПоказатьПарольАвторизации" id="2">
+		<Command name="ПоказатьПарольАутентификации" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Показать пароль авторизации</v8:content>
+					<v8:content>Показать пароль аутентификации</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Показать пароль авторизации</v8:content>
+					<v8:content>Показать пароль аутентификации</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ПоказатьПарольАвторизации</Action>
+			<Action>ПоказатьПарольАутентификации</Action>
 		</Command>
 		<Command name="ПрименитьНастройки" id="3">
 			<Title>
@@ -4096,20 +4219,20 @@
 			</ToolTip>
 			<Action>ПоказатьПарольПрокси</Action>
 		</Command>
-		<Command name="ПоказатьТокенАвторизации" id="16">
+		<Command name="ПоказатьТокенАутентификации" id="16">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Показать токен авторизации</v8:content>
+					<v8:content>Показать токен аутентификации</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Показать токен авторизации</v8:content>
+					<v8:content>Показать токен аутентификации</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ПоказатьТокенАвторизации</Action>
+			<Action>ПоказатьТокенАутентификации</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
