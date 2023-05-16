@@ -918,6 +918,12 @@
 														<InputField name="СервисAWS" id="483">
 															<DataPath>AWSСервис</DataPath>
 															<Visible>false</Visible>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сервис</v8:content>
+																</v8:item>
+															</Title>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<HorizontalStretch>true</HorizontalStretch>
 															<VerticalStretch>false</VerticalStretch>
