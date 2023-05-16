@@ -2492,6 +2492,40 @@
 										</Title>
 									</ExtendedTooltip>
 								</CheckBoxField>
+								<InputField name="АгентПользователя" id="486">
+									<DataPath>АгентПользователя</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пользовательское значение заголовка "User-Agent"</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>false</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<SpinButton>false</SpinButton>
+									<OpenButton>false</OpenButton>
+									<CreateButton>false</CreateButton>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>значение платформы по умолчанию</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="АгентПользователяКонтекстноеМеню" id="487"/>
+									<ExtendedTooltip name="АгентПользователяРасширеннаяПодсказка" id="488">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Пользовательское значение заголовка "User-Agent"</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</InputField>
 								<UsualGroup name="ГруппаНастройкиИспользованияСессии" id="428">
 									<Title>
 										<v8:item>
@@ -2569,6 +2603,19 @@
 													<ContextMenu name="ПорогПеренаправленийКонтекстноеМеню" id="210"/>
 													<ExtendedTooltip name="ПорогПеренаправленийРасширеннаяПодсказка" id="211"/>
 												</InputField>
+												<CheckBoxField name="ПеренаправлениеКакGET" id="489">
+													<DataPath>ПеренаправлениеКакGET</DataPath>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Принудительно переключаться на метод GET для кодов перенаправления 301 и 302</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ПеренаправлениеКакGETКонтекстноеМеню" id="490"/>
+													<ExtendedTooltip name="ПеренаправлениеКакGETРасширеннаяПодсказка" id="491"/>
+												</CheckBoxField>
 												<CheckBoxField name="ПоддержкаCookie" id="212">
 													<DataPath>ПоддержкаCookie</DataPath>
 													<Title>
@@ -4189,6 +4236,32 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АгентПользователя" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Агент пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПеренаправлениеКакGET" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенаправление как GET</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
