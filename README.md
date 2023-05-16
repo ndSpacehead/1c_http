@@ -44,6 +44,8 @@
 
 ## Ссылки
 
+[URI - Uniform Resource Identifier (RFC 3986)](https://www.ietf.org/rfc/rfc3986)
+
 [Cookies: HTTP State Management Mechanism](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis)
 
 [Punycode](https://datatracker.ietf.org/doc/html/rfc3492)
@@ -51,3 +53,5 @@
 [Описание формата ZIP файла](https://blog2k.ru/archives/3391), [Запись ZIP файла](https://blog2k.ru/archives/3397)
 
 [curl man page](https://curl.se/docs/manpage.html)
+
+[Создание подписанного запроса для AWS API](https://docs.aws.amazon.com/IAM/latest/UserGuide/create-signed-request.html) и [аутентификация AWS Signature v4](https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html) от Amazon.
