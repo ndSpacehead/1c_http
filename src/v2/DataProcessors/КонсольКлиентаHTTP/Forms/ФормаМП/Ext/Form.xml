@@ -770,6 +770,72 @@
 													<ContextMenu name="ИдентификаторHawkКонтекстноеМеню" id="370"/>
 													<ExtendedTooltip name="ИдентификаторHawkРасширеннаяПодсказка" id="371"/>
 												</InputField>
+												<InputField name="ДополнениеHawk" id="385">
+													<DataPath>HawkДополнение</DataPath>
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ext</v8:content>
+														</v8:item>
+													</Title>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>нарпимер, some-app-extra-data</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="ДополнениеHawkКонтекстноеМеню" id="386"/>
+													<ExtendedTooltip name="ДополнениеHawkРасширеннаяПодсказка" id="387">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Специфические данные клиента</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+												</InputField>
+												<InputField name="ИдентификаторПриложенияHawk" id="388">
+													<DataPath>HawkИдентификаторПриложения</DataPath>
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>app</v8:content>
+														</v8:item>
+													</Title>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<ContextMenu name="ИдентификаторПриложенияHawkКонтекстноеМеню" id="389"/>
+													<ExtendedTooltip name="ИдентификаторПриложенияHawkРасширеннаяПодсказка" id="390">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Идентификатор приложения</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+												</InputField>
+												<InputField name="ДелегированиеHawk" id="391">
+													<DataPath>HawkДелегирование</DataPath>
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>dlg</v8:content>
+														</v8:item>
+													</Title>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<ContextMenu name="ДелегированиеHawkКонтекстноеМеню" id="392"/>
+													<ExtendedTooltip name="ДелегированиеHawkРасширеннаяПодсказка" id="393">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Делегированный идентификатор приложения</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+												</InputField>
 												<UsualGroup name="ГруппаКлючHawk" id="372">
 													<Visible>false</Visible>
 													<Title>
@@ -1997,6 +2063,38 @@
 												<Event name="Click">ДекорацияКонтекстВыполненияНастройкиНажатие</Event>
 											</Events>
 										</LabelDecoration>
+										<InputField name="АгентПользователя" id="379">
+											<DataPath>АгентПользователя</DataPath>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пользовательское значение заголовка "User-Agent"</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<DropListButton>false</DropListButton>
+											<ChoiceButton>false</ChoiceButton>
+											<ClearButton>true</ClearButton>
+											<SpinButton>false</SpinButton>
+											<OpenButton>false</OpenButton>
+											<CreateButton>false</CreateButton>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>значение платформы по умолчанию</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="АгентПользователяКонтекстноеМеню" id="380"/>
+											<ExtendedTooltip name="АгентПользователяРасширеннаяПодсказка" id="381">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Пользовательское значение заголовка "User-Agent"</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</InputField>
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="ГруппаНастройкиИспользованияСессии" id="45">
@@ -2080,6 +2178,19 @@
 													<ContextMenu name="ПорогПеренаправленийКонтекстноеМеню" id="53"/>
 													<ExtendedTooltip name="ПорогПеренаправленийРасширеннаяПодсказка" id="54"/>
 												</InputField>
+												<CheckBoxField name="ПеренаправлениеКакGET" id="382">
+													<DataPath>ПеренаправлениеКакGET</DataPath>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Принудительно переключаться на метод GET для кодов перенаправления 301 и 302</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ПеренаправлениеКакGETКонтекстноеМеню" id="383"/>
+													<ExtendedTooltip name="ПеренаправлениеКакGETРасширеннаяПодсказка" id="384"/>
+												</CheckBoxField>
 												<CheckBoxField name="ПоддержкаCookie" id="55">
 													<DataPath>ПоддержкаCookie</DataPath>
 													<Title>
@@ -3129,6 +3240,77 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Ключ Hawk</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АгентПользователя" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Агент пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПеренаправлениеКакGET" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенаправление как GET</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="HawkДополнение" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные данные Hawk</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="HawkИдентификаторПриложения" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор приложения Hawk</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="HawkДелегирование" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Делегирование Hawk</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
