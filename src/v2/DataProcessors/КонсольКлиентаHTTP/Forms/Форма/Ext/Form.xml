@@ -2653,6 +2653,25 @@
 										</Title>
 									</ExtendedTooltip>
 								</InputField>
+								<InputField name="Таймаут" id="537">
+									<DataPath>Таймаут</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таймаут соединения в секундах</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ClearButton>true</ClearButton>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧН=</v8:content>
+										</v8:item>
+									</EditFormat>
+									<ContextMenu name="ТаймаутКонтекстноеМеню" id="538"/>
+									<ExtendedTooltip name="ТаймаутРасширеннаяПодсказка" id="539"/>
+								</InputField>
 								<UsualGroup name="ГруппаНастройкиИспользованияСессии" id="428">
 									<Title>
 										<v8:item>
@@ -2767,6 +2786,256 @@
 														<Event name="OnChange">ПоддержкаCookieПриИзменении</Event>
 													</Events>
 												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПовторноеВыполнение" id="513">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Повторное выполнение</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Повторять попытки выполнить HTTP-запрос после неуспешного результата.
+
+Неуспешным считается вызов исключения и ответ с кодом состояния 5хх или каким-либо из определённых пользователем.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ГруппаПовторноеВыполнениеРасширеннаяПодсказка" id="514"/>
+									<ChildItems>
+										<InputField name="СпособПовторногоВыполнения" id="515">
+											<DataPath>СпособПовторногоВыполнения</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Способ</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Способ расчёта паузы перед повторным выполнением</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<DropListButton>true</DropListButton>
+											<ChoiceButton>false</ChoiceButton>
+											<ClearButton>false</ClearButton>
+											<SpinButton>false</SpinButton>
+											<OpenButton>false</OpenButton>
+											<CreateButton>false</CreateButton>
+											<ListChoiceMode>true</ListChoiceMode>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Разово</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Разово</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Фиксировано</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Фиксировано</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Линейно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Линейно</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Экспоненциально</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Экспоненциально</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="СпособПовторногоВыполненияКонтекстноеМеню" id="516"/>
+											<ExtendedTooltip name="СпособПовторногоВыполненияРасширеннаяПодсказка" id="517"/>
+											<Events>
+												<Event name="OnChange">СпособПовторногоВыполненияПриИзменении</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="ГруппаПараметрыПовторногоВыполнения" id="521">
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа параметры повторного выполнения</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа параметры повторного выполнения</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПараметрыПовторногоВыполненияРасширеннаяПодсказка" id="522"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаПараметрыДлительностиПаузы" id="535">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа параметры длительности паузы</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа параметры длительности паузы</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаПараметрыДлительностиПаузыРасширеннаяПодсказка" id="536"/>
+													<ChildItems>
+														<InputField name="ДлительностьПаузыПовторногоВыполнения" id="518">
+															<DataPath>ДлительностьПаузыПовторногоВыполнения</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Длительность</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Длительность в секундах паузы после первой попытки выполнения HTTP-запроса</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>Button</ToolTipRepresentation>
+															<ContextMenu name="ДлительностьПаузыПовторногоВыполненияКонтекстноеМеню" id="519"/>
+															<ExtendedTooltip name="ДлительностьПаузыПовторногоВыполненияРасширеннаяПодсказка" id="520"/>
+														</InputField>
+														<InputField name="МаксимальнаяДлительностьПаузыПовторногоВыполнения" id="529">
+															<DataPath>МаксимальнаяДлительностьПаузыПовторногоВыполнения</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>в пределе до</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Максимальная длительность в секундах паузы между попытками в секундах (ограничение фреймворка 3600)</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>Button</ToolTipRepresentation>
+															<ContextMenu name="МаксимальнаяДлительностьПаузыПовторногоВыполненияКонтекстноеМеню" id="530"/>
+															<ExtendedTooltip name="МаксимальнаяДлительностьПаузыПовторногоВыполненияРасширеннаяПодсказка" id="531"/>
+														</InputField>
+														<InputField name="КоэффициентУвеличенияПаузыПовторногоВыполнения" id="523">
+															<DataPath>КоэффициентУвеличенияПаузыПовторногоВыполнения</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Коэффициент</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Коэффициент увеличения паузы между попытками выполнить HTTP-запрос</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>Button</ToolTipRepresentation>
+															<ContextMenu name="КоэффициентУвеличенияПаузыПовторногоВыполненияКонтекстноеМеню" id="524"/>
+															<ExtendedTooltip name="КоэффициентУвеличенияПаузыПовторногоВыполненияРасширеннаяПодсказка" id="525"/>
+														</InputField>
+														<InputField name="ПорогКоличестваПопытокПовторногоВыполнения" id="526">
+															<DataPath>ПорогКоличестваПопытокПовторногоВыполнения</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Количество попыток</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Максимальное количество неуспешных попыток выполнить HTTP-запрос</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>Button</ToolTipRepresentation>
+															<MinValue xsi:type="xs:decimal">1</MinValue>
+															<ContextMenu name="ПорогКоличестваПопытокПовторногоВыполненияКонтекстноеМеню" id="527"/>
+															<ExtendedTooltip name="ПорогКоличестваПопытокПовторногоВыполненияРасширеннаяПодсказка" id="528"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<InputField name="КодыСостоянияОтветаПовторногоВыполнения" id="532">
+													<DataPath>КодыСостоянияОтветаПовторногоВыполнения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Коды состояния ответа</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>коды состояния ответа, при получении которых необходимо повторять попытки</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MultiLine>false</MultiLine>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>true</ChoiceButton>
+													<ClearButton>true</ClearButton>
+													<SpinButton>false</SpinButton>
+													<OpenButton>false</OpenButton>
+													<CreateButton>false</CreateButton>
+													<Mask>999</Mask>
+													<MinValue xsi:type="xs:decimal">100</MinValue>
+													<MaxValue xsi:type="xs:decimal">599</MaxValue>
+													<ContextMenu name="КодыСостоянияОтветаПовторногоВыполненияКонтекстноеМеню" id="533"/>
+													<ExtendedTooltip name="КодыСостоянияОтветаПовторногоВыполненияРасширеннаяПодсказка" id="534"/>
+												</InputField>
 											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
@@ -4476,6 +4745,124 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СпособПовторногоВыполнения" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ повторного выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДлительностьПаузыПовторногоВыполнения" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Длительность паузы повторного выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоэффициентУвеличенияПаузыПовторногоВыполнения" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коэффициент увеличения паузы повторного выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПорогКоличестваПопытокПовторногоВыполнения" id="65">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порог количества попыток повторного выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МаксимальнаяДлительностьПаузыПовторногоВыполнения" id="66">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Максимальная длительность паузы повторного выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КодыСостоянияОтветаПовторногоВыполнения" id="67">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коды состояния ответа повторного выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>КодыСостоянияОтветаПовторногоВыполнения.Picture</Field>
+				<Field>КодыСостоянияОтветаПовторногоВыполнения.ValueType</Field>
+			</UseAlways>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="Таймаут" id="68">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймаут</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
