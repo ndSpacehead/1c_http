@@ -2526,6 +2526,25 @@
 										</Title>
 									</ExtendedTooltip>
 								</InputField>
+								<InputField name="Таймаут" id="492">
+									<DataPath>Таймаут</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Таймаут соединения в секундах</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ClearButton>true</ClearButton>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧН=</v8:content>
+										</v8:item>
+									</EditFormat>
+									<ContextMenu name="ТаймаутКонтекстноеМеню" id="493"/>
+									<ExtendedTooltip name="ТаймаутРасширеннаяПодсказка" id="494"/>
+								</InputField>
 								<UsualGroup name="ГруппаНастройкиИспользованияСессии" id="428">
 									<Title>
 										<v8:item>
@@ -4262,6 +4281,22 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Таймаут" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймаут</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
