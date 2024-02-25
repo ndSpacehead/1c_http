@@ -34,6 +34,7 @@
 			<Form>РедакторCookies</Form>
 			<Form>ЭлементыИмпортаPostman</Form>
 			<Form>КонструкторИдентификатораРесурса</Form>
+			<Form>ФормаОбъединенияСертификатаИКлюча</Form>
 			<Template>MonacoEditor</Template>
 		</ChildObjects>
 	</DataProcessor>
