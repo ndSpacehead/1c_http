@@ -2463,9 +2463,13 @@
 													</v8:item>
 												</Title>
 											</ExtendedTooltip>
+											<Events>
+												<Event name="OnChange">ТелоОтветаВФайлПриИзменении</Event>
+											</Events>
 										</CheckBoxField>
 										<InputField name="ИмяФайлаТелаОтвета" id="234">
 											<DataPath>ИмяФайлаТелаОтвета</DataPath>
+											<Enabled>false</Enabled>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -2482,7 +2486,6 @@
 											<ContextMenu name="ИмяФайлаТелаОтветаКонтекстноеМеню" id="235"/>
 											<ExtendedTooltip name="ИмяФайлаТелаОтветаРасширеннаяПодсказка" id="236"/>
 											<Events>
-												<Event name="OnChange">ИмяФайлаТелаОтветаПриИзменении</Event>
 												<Event name="StartChoice">ИмяФайлаТелаОтветаНачалоВыбора</Event>
 											</Events>
 										</InputField>
