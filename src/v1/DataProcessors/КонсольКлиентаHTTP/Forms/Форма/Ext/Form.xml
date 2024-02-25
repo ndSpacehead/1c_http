@@ -2410,6 +2410,22 @@
 									<ContextMenu name="СохранятьВИсториюКонтекстноеМеню" id="439"/>
 									<ExtendedTooltip name="СохранятьВИсториюРасширеннаяПодсказка" id="440"/>
 								</CheckBoxField>
+								<CheckBoxField name="ОтображатьСекреты" id="548">
+									<DataPath>ОтображатьСекреты</DataPath>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОтображатьСекретыКонтекстноеМеню" id="549"/>
+									<ExtendedTooltip name="ОтображатьСекретыРасширеннаяПодсказка" id="550">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Режим отображения секретов в результатах кодогенерации и экспорта в команду curl.
+
+Если опция отключена, отображение секретов регулируется индивидуально интерфейсными кнопками для каждого поля с секретом.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</CheckBoxField>
 								<UsualGroup name="ГруппаФайлТелаОтвета" id="237">
 									<Title>
 										<v8:item>
@@ -4941,6 +4957,17 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтображатьСекреты" id="71">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать секреты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
