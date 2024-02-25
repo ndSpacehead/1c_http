@@ -2063,6 +2063,22 @@
 												<Event name="Click">ДекорацияКонтекстВыполненияНастройкиНажатие</Event>
 											</Events>
 										</LabelDecoration>
+										<CheckBoxField name="ОтображатьСекреты" id="446">
+											<DataPath>ОтображатьСекреты</DataPath>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОтображатьСекретыКонтекстноеМеню" id="447"/>
+											<ExtendedTooltip name="ОтображатьСекретыРасширеннаяПодсказка" id="448">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Режим отображения секретов в результате экспорта в команду curl.
+
+Если опция отключена, отображение секретов регулируется индивидуально интерфейсными кнопками для каждого поля с секретом.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</CheckBoxField>
 										<InputField name="АгентПользователя" id="379">
 											<DataPath>АгентПользователя</DataPath>
 											<ToolTip>
@@ -2461,6 +2477,199 @@
 													<ContextMenu name="КодыСостоянияОтветаПовторногоВыполненияКонтекстноеМеню" id="416"/>
 													<ExtendedTooltip name="КодыСостоянияОтветаПовторногоВыполненияРасширеннаяПодсказка" id="417"/>
 												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСертификаты" id="421">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>SSL сертификаты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа сертификаты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ГруппаСертификатыРасширеннаяПодсказка" id="422"/>
+									<ChildItems>
+										<CheckBoxField name="ИспользоватьСертификаты" id="423">
+											<DataPath>ИспользоватьСертификаты</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Использовать</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Использовать клиентский сертификат OpenSSL для выполнения запроса</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользоватьСертификатыКонтекстноеМеню" id="424"/>
+											<ExtendedTooltip name="ИспользоватьСертификатыРасширеннаяПодсказка" id="425"/>
+											<Events>
+												<Event name="OnChange">ИспользоватьСертификатыПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="ИмяФайлаКлиентскогоСертификата" id="428">
+											<DataPath>ИмяФайлаКлиентскогоСертификата</DataPath>
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Файл клиентского сертификата</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Top</TitleLocation>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<DropListButton>false</DropListButton>
+											<ChoiceButton>true</ChoiceButton>
+											<ClearButton>false</ClearButton>
+											<SpinButton>false</SpinButton>
+											<OpenButton>false</OpenButton>
+											<CreateButton>false</CreateButton>
+											<ContextMenu name="ИмяФайлаКлиентскогоСертификатаКонтекстноеМеню" id="429"/>
+											<ExtendedTooltip name="ИмяФайлаКлиентскогоСертификатаРасширеннаяПодсказка" id="430">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Путь к файлу клиентского сертификата OpenSSL. Допустимо применение форматов PEM и PKCS#12.
+
+Если требуется передавать два файла - сертификат и его ключ - можно получить конкатенацию этих файлов и передать получившийся единый файл как сертификат.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+											<Events>
+												<Event name="StartChoice">ИмяФайлаКлиентскогоСертификатаНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="ГруппаПарольКлиентскогоСертификата" id="426">
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа пароль клиентского сертификата</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа пароль клиентского сертификата</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПарольКлиентскогоСертификатаРасширеннаяПодсказка" id="427"/>
+											<ChildItems>
+												<InputField name="ПарольКлиентскогоСертификата" id="436">
+													<DataPath>ПарольКлиентскогоСертификата</DataPath>
+													<TitleLocation>Top</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<AutoMaxHeight>false</AutoMaxHeight>
+													<HorizontalStretch>true</HorizontalStretch>
+													<VerticalStretch>false</VerticalStretch>
+													<PasswordMode>true</PasswordMode>
+													<ContextMenu name="ПарольКлиентскогоСертификатаКонтекстноеМеню" id="437"/>
+													<ExtendedTooltip name="ПарольКлиентскогоСертификатаРасширеннаяПодсказка" id="438"/>
+												</InputField>
+												<Button name="ПоказатьПарольКлиентскогоСертификата" id="431">
+													<Type>UsualButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>Form.Command.ПоказатьПарольКлиентскогоСертификата</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.DataSearch</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="ПоказатьПарольКлиентскогоСертификатаРасширеннаяПодсказка" id="432"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="ИмяФайлаСертификатовУЦ" id="433">
+											<DataPath>ИмяФайлаСертификатовУЦ</DataPath>
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Файл сертификатов УЦ</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Top</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Путь к файлу сертификатов удостоверяющих центров OpenSSL, загружаемые из системного хранилища сертификатов операционной системы. Допустимо применение форматов PEM и PKCS#12.</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<DropListButton>false</DropListButton>
+											<ChoiceButton>true</ChoiceButton>
+											<ClearButton>false</ClearButton>
+											<SpinButton>false</SpinButton>
+											<OpenButton>false</OpenButton>
+											<CreateButton>false</CreateButton>
+											<ContextMenu name="ИмяФайлаСертификатовУЦКонтекстноеМеню" id="434"/>
+											<ExtendedTooltip name="ИмяФайлаСертификатовУЦРасширеннаяПодсказка" id="435"/>
+											<Events>
+												<Event name="StartChoice">ИмяФайлаСертификатовУЦНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="ГруппаПарольФайлаСертификатовУЦ" id="439">
+											<Enabled>false</Enabled>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа пароль файла сертификатов УЦ</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа пароль файла сертификатов УЦ</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПарольФайлаСертификатовУЦРасширеннаяПодсказка" id="440"/>
+											<ChildItems>
+												<InputField name="ПарольФайлаСертификатовУЦ" id="441">
+													<DataPath>ПарольФайлаСертификатовУЦ</DataPath>
+													<TitleLocation>Top</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<HorizontalStretch>true</HorizontalStretch>
+													<VerticalStretch>false</VerticalStretch>
+													<PasswordMode>true</PasswordMode>
+													<ContextMenu name="ПарольФайлаСертификатовУЦКонтекстноеМеню" id="442"/>
+													<ExtendedTooltip name="ПарольФайлаСертификатовУЦРасширеннаяПодсказка" id="443"/>
+												</InputField>
+												<Button name="ПоказатьПарольФайлаСертификатовУЦ" id="444">
+													<Type>UsualButton</Type>
+													<Representation>Picture</Representation>
+													<CommandName>Form.Command.ПоказатьПарольФайлаСертификатовУЦ</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.DataSearch</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="ПоказатьПарольФайлаСертификатовУЦРасширеннаяПодсказка" id="445"/>
+												</Button>
 											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
@@ -3687,6 +3896,89 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ИспользоватьСертификаты" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать сертификаты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяФайлаКлиентскогоСертификата" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя файла клиентского сертификата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ИмяФайлаСертификатовУЦ" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя файла сертификатов УЦ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольКлиентскогоСертификата" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль клиентского сертификата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольФайлаСертификатовУЦ" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль файла сертификатов УЦ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтображатьСекреты" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать секреты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -3965,6 +4257,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПоказатьКлючHawk</Action>
+		</Command>
+		<Command name="ПоказатьПарольКлиентскогоСертификата" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать пароль клиентского сертификата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать пароль клиентского сертификата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьПарольКлиентскогоСертификата</Action>
+		</Command>
+		<Command name="ПоказатьПарольФайлаСертификатовУЦ" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать пароль файла сертификатов УЦ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать пароль файла сертификатов УЦ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьПарольФайлаСертификатовУЦ</Action>
 		</Command>
 	</Commands>
 </Form>
