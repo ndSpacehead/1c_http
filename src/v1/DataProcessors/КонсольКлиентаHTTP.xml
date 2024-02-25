@@ -33,6 +33,7 @@
 			<Form>РедакторCookies</Form>
 			<Form>ЭлементыИмпортаPostman</Form>
 			<Form>КонструкторИдентификатораРесурса</Form>
+			<Form>ФормаОбъединенияСертификатаИКлюча</Form>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>
