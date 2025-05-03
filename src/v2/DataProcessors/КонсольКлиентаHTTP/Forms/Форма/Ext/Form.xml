@@ -1455,6 +1455,38 @@
 																						<Event name="Opening">ДанныеФормыЗначениеОткрытие</Event>
 																					</Events>
 																				</InputField>
+																				<InputField name="ДанныеФормыТипКонтента" id="572">
+																					<DataPath>ТелоЗапросаДанныеФормы.ТипКонтента</DataPath>
+																					<EditMode>EnterOnInput</EditMode>
+																					<DropListButton>false</DropListButton>
+																					<ChoiceButton>true</ChoiceButton>
+																					<ClearButton>true</ClearButton>
+																					<SpinButton>false</SpinButton>
+																					<OpenButton>false</OpenButton>
+																					<CreateButton>false</CreateButton>
+																					<ChooseType>false</ChooseType>
+																					<ContextMenu name="ДанныеФормыТипКонтентаКонтекстноеМеню" id="573"/>
+																					<ExtendedTooltip name="ДанныеФормыТипКонтентаРасширеннаяПодсказка" id="574"/>
+																					<Events>
+																						<Event name="StartChoice">ДанныеФормыТипКонтентаНачалоВыбора</Event>
+																					</Events>
+																				</InputField>
+																				<InputField name="ДанныеФормыИмяФайла" id="575">
+																					<DataPath>ТелоЗапросаДанныеФормы.ИмяФайла</DataPath>
+																					<EditMode>EnterOnInput</EditMode>
+																					<DropListButton>false</DropListButton>
+																					<ChoiceButton>true</ChoiceButton>
+																					<ClearButton>true</ClearButton>
+																					<SpinButton>false</SpinButton>
+																					<OpenButton>false</OpenButton>
+																					<CreateButton>false</CreateButton>
+																					<ChooseType>false</ChooseType>
+																					<ContextMenu name="ДанныеФормыИмяФайлаКонтекстноеМеню" id="576"/>
+																					<ExtendedTooltip name="ДанныеФормыИмяФайлаРасширеннаяПодсказка" id="577"/>
+																					<Events>
+																						<Event name="StartChoice">ДанныеФормыИмяФайлаНачалоВыбора</Event>
+																					</Events>
+																				</InputField>
 																			</ChildItems>
 																		</Table>
 																	</ChildItems>
@@ -4200,6 +4232,36 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="ТипКонтента" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип контента</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяФайла" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя файла</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ТелоЗапросаФайл" id="17">
@@ -5385,6 +5447,46 @@
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ЦветТекста</dcscor:parameter>
 						<dcscor:value xsi:type="v8ui:Color">web:RoyalBlue</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДанныеФормыИмяФайла</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТелоЗапросаДанныеФормы.Тип</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Текст</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДанныеФормыИмяФайла</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТелоЗапросаДанныеФормы.Тип</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string">Файл</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
